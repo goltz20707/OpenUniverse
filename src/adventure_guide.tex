@@ -1,0 +1,124 @@
+%%
+%% $Id: adventure_guide.tex,v 1.2 2004/10/07 18:28:59 goltz20707 Exp $
+%%
+\documentclass[letterpaper,notitlepage]{book}
+%%
+%% Packages
+%%
+\usepackage{times}
+\usepackage{mathptm}
+\usepackage{varioref}
+\usepackage[in]{fullpage}
+\usepackage{color}
+\usepackage{colortbl}
+\usepackage{rotate}
+\usepackage{textcomp}
+\usepackage{titlesec}
+\usepackage{remreset}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{xr-hyper}
+\externaldocument[GM-]{gm_guide}
+%% This one must be last!
+\usepackage[ps2pdf,bookmarks,
+  extension=pdf,
+  pdfpagemode=UseBookmarks,
+  pdftitle="Universe Adventure Guide",
+  pdfborder={0 0 10},
+  pdfstartview=Fit]{hyperref}
+%%
+%% Commands
+%%
+\renewcommand{\textdegree}{\ensuremath{{^\circ}}}
+\definecolor{gray}{gray}{0.8}
+\definecolor{grey}{gray}{0.8}
+%%
+%% Index stuff
+%%
+\newcommand{\bb}[1]{\textbf{#1}} % For bold-faced index entries
+\makeindex
+%%
+\begin{document}
+%%
+%% Counters, section numbering, etc.
+%%
+\makeatletter
+\@removefromreset{section}{chapter}
+\@addtoreset{section}{part}
+\@addtoreset{footnote}{page}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\renewcommand{\thechapter}{\Roman{chapter}}
+\renewcommand{\thesection}{\arabic{section}.\arabic{subsection}}
+\renewcommand{\thesubsection}{\thesection}
+\renewcommand{\thetable}{\thesection}
+\renewcommand{\thefigure}{\thesection}
+\titlelabel{[\thetitle]\quad}
+\titleformat{\section}[block]
+  {\Large\bfseries}{[\thesection]\quad}{10pt}{\Large}
+\titleformat{\subsection}[block]
+  {\large\bfseries}{[\thesubsection]\quad}{10pt}{\large}
+%%
+%% Environments
+%%
+\newcommand{\tasklistmark}{\textbf{T$\Rightarrow$}}
+\newenvironment{tasklist}{\begin{list}{\tasklistmark}{}}{\end{list}}
+%%
+%% START OF TEXT
+%%
+
+\renewcommand{\rmdefault}{phv}
+\sffamily
+
+\begin{titlepage}
+~
+
+\vfill
+
+  \begin{center}
+    {\Huge\textsc{Universe}}
+
+    \vspace{2.5cm}
+
+    {\Large Adventure Guide}
+
+    \vspace{2.5cm}
+
+    {\large Version 0.75\\Based on SPI 2nd Edition,
+      1982\\Incorporating additional material 
+      from \textsc{Ares} Magazine and other sources}
+
+    \bigskip
+
+  \end{center}
+
+\vfill
+
+~
+\end{titlepage}
+
+
+\tableofcontents
+
+\cleardoublepage\addcontentsline{toc}{chapter}{List of Tables}\listoftables
+
+\cleardoublepage\addcontentsline{toc}{chapter}{List of Figures}\listoffigures
+
+%% \mainmatter
+
+\addcontentsline{toc}{chapter}{Introduction}
+\input{ag_intro.tex}
+
+\input{ag_encounters.tex}
+%\setcounter{chapter}{1}
+%\setcounter{section}{4}
+
+\input{ag_lost_on_laidley.tex}
+%\setcounter{chapter}{2}
+%\setcounter{section}{7}
+
+\end{document}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 

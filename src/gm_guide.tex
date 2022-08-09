@@ -1,0 +1,167 @@
+\documentclass[letterpaper,notitlepage]{book}
+%%
+%% $Id: gm_guide.tex,v 1.6 2004/11/26 21:49:39 goltz20707 Exp $
+%%
+%% Packages
+%%
+\usepackage{times}
+\usepackage{mathptm}
+\usepackage{makeidx}
+\usepackage{varioref}
+\usepackage[in]{fullpage}
+\usepackage{color}
+\usepackage{colortbl}
+\usepackage{rotate}
+\usepackage{textcomp}
+\usepackage{titlesec}
+\usepackage{remreset}
+\usepackage{multicol}
+\usepackage{graphics}
+\usepackage{xr-hyper}
+%% This one must be last!
+\usepackage[pdftex,bookmarks,
+extension=pdf,
+hyperindex,
+bookmarks=true,
+bookmarksnumbered=true,
+bookmarksopen=true,
+pdfpagemode=UseBookmarks,
+pdftitle="Universe Gamesmaster's Guide",
+pdfauthor="James P. Goltz",
+pdfborder={0 0 1},
+colorlinks=true,
+pdfstartview=Fit,
+hyperfootnotes=false]{hyperref}
+%%
+%% Commands
+%%
+\renewcommand{\textdegree}{\ensuremath{{^\circ}}}
+\definecolor{gray}{gray}{0.8}
+\definecolor{grey}{gray}{0.8}
+%%
+%% Index stuff
+%%
+\newcommand{\bb}[1]{\textbf{#1}} % For bold-faced index entries
+\makeindex
+%%
+\begin{document}
+%%
+%% Counters, section numbering, etc.
+%%
+\makeatletter
+\@removefromreset{section}{chapter}
+\@addtoreset{section}{part}
+\renewcommand{\thechapter}{\Roman{chapter}}
+\renewcommand{\thesection}{\arabic{section}.\arabic{subsection}}
+\renewcommand{\thesubsection}{\thesection}
+\renewcommand{\thetable}{\thesection}
+\renewcommand{\thefigure}{\thesection}
+\titlelabel{[\thetitle]\quad}
+\titleformat{\chapter}[block]
+  {\huge\bfseries\sffamily}{Chapter \thechapter: }{10pt}{\huge}
+\titleformat{\section}[block]
+  {\Large\bfseries\sffamily}{[\thesection]\quad}{10pt}{\Large}
+\titleformat{\subsection}[block]
+  {\large\bfseries\sffamily}{[\thesubsection]\quad}{10pt}{\large}
+%%
+%% Environments
+%%
+\newcommand{\tasklistmark}{\textbf{T$\triangleright$}}
+\newenvironment{tasklist}{\begin{list}{\tasklistmark}{}}{\end{list}}
+%%
+%% START OF TEXT
+%%
+
+%% \frontmatter
+
+\begin{titlepage}
+~
+
+\vfill
+
+  \begin{center}
+    {\Huge\textsc{Universe}}
+
+    \vspace{2.5cm}
+
+    {\Large Gamemaster's Guide}
+
+    \vspace{2.5cm}
+
+    {\large\input{RELEASE.tex}\\Based on SPI 2nd Edition,
+      1982\\
+      Incorporating additional material\\
+      from \textsc{Ares} Magazine and other sources}
+
+    \bigskip
+
+  \end{center}
+
+\vfill
+
+~
+\end{titlepage}
+
+
+
+\tableofcontents
+
+\listoftables\cleardoublepage\addcontentsline{toc}{chapter}{List of Tables}
+
+\listoffigures\cleardoublepage\addcontentsline{toc}{chapter}{List of Figures}
+
+%% \mainmatter
+
+\input{introduction.tex}
+%\setcounter{chapter}{1}
+%\setcounter{section}{4}
+
+\input{charactergen.tex}
+%\setcounter{chapter}{2}
+%\setcounter{section}{7}
+
+\input{skills.tex}
+%\setcounter{chapter}{3}
+%\setcounter{section}{15}
+
+\input{robots.tex}
+%\setcounter{chapter}{4}
+%\setcounter{section}{17}
+
+\input{equipment.tex}
+%\setcounter{chapter}{5}
+%\setcounter{section}{22}
+
+\input{worldgen.tex}
+%\setcounter{chapter}{6}
+%\setcounter{section}{25}
+
+\input{charact.tex}
+%\setcounter{chapter}{7}
+%\setcounter{section}{30}
+
+\input{space_travel.tex}
+%\setcounter{chapter}{8}
+%\setcounter{section}{34}
+
+\backmatter
+
+\input{additional.tex}
+%\setcounter{chapter}{9}
+%\setcounter{section}{35}
+
+\input{changes.tex}
+
+\input{acknowledgment.tex}
+
+\input{license.tex}
+
+\addcontentsline{toc}{chapter}{Index}
+\printindex
+
+\end{document}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 

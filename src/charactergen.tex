@@ -1,0 +1,2414 @@
+%%
+%% $Id: charactergen.tex,v 1.3 2004/10/27 20:04:37 goltz20707 Exp $
+%%
+\chapter{\index{character!generation|(}Character Generation}
+\label{sec:character-generation}
+\newcounter{myprofs}
+
+Each player of Universe assumes the role of a character. The player
+develops the distinct personality and abilities of his character
+during adventures, as the character interacts with the other players
+characters and the various entities controlled by the Gamemaster.
+
+The player generates a character by using the rules in Sections
+\ref{sec:character-heritage}, \ref{sec:char-devel}, and
+\ref{sec:char-prof}. By rolling dice and. making choices in the order
+laid out in these Sections, the character is developed into an adult
+who is a result of the luck of his parentage, the pressures of his
+environment, and the decisions he has made throughout adolescence and
+young adulthood. A completely generated character is defined by a
+series of numerical \emph{Characteristic Ratings} and \emph{Skill
+  Levels} that represent the character's strengths and weaknesses in
+all situations that might occur while playing adventures.
+
+Each player keeps track of his character's attributes and acquisitions
+during character generation and throughout his adventuring life on a
+\emph{Character Record}. The GM should provide each player with a
+photocopy of the Character Record included with this booklet. The
+players should use pencil to fill in their Character Record, as much
+of the information they record will be altered during play. At some
+point during character generation, the player must select a name and a
+sex for his character. These decisions are entirely up to the player,
+but it is suggested that a character's sex be the same as that of the
+player. The GM should supervise character generation and all record
+keeping on each Character Record, to make sure the current status of a
+character is noted correctly. If the GM wishes, he may make a second
+copy of each Character Record to verify all character information
+and/or to note things about a character that he does not want the
+player to know (such as a price on his head or an undetectable alien
+disease).
+
+
+\subsection*{Terms Used in Character Generation}
+\label{sec:terms-used-character}
+
+
+
+\begin{description}
+\item[Characteristic.] A numerical \emph{rating}, ranging from
+  \textbf{1} to \textbf{12}, which describes a facet of a character's
+  physical, mental, or emotional makeup. Characteristic Ratings are
+  determined during character generation and may not be increased once
+  play begins. The nine characteristics each character receives are:
+
+  \begin{description}
+  \item[\index{strength|bb}\index{characteristics!strength|see{strength}}Strength.] The brute force a character can exert using the
+    muscles of his arms, legs, and torso. Strength determines how much
+    a character can carry, how far he can throw an object, and the
+    force with which he may strike.
+  \item[Endurance.] The amount of punishment the character's body can
+    absorb before he loses consciousness or dies. Endurance determines
+    the length of time a character may keep up an exertive action
+    (such as sprinting) and the amount of time required for the
+    character to heal from wounds or diseases.
+  \item[\index{characteristics!dexterity|see{dexterity}}Dexterity.] The character's digital control and eye-hand
+    coordination. Dexterity affects the character's use of any
+    hand-held weapon and the efficiency with which he may perform
+    complex tasks with his hands.
+  \item[\index{characteristics!agility|see{agility}}Agility.] The quickness with which the character uses his
+    body. Agility determines the speed with which a character can move
+    and his  ability to dodge and maneuver in close quarters.
+    
+    \textbf{Note:} The preceding four characteristics are collectively
+    referred to as the \emph{Physical Characteristics}.
+  \item[\index{characteristics!intelligence|see{intelligence}}Intelligence.] The character's intuitive and acquired
+    knowledge. Intelligence affects the character's ability to note
+    peculiarities and to deduce information in a situation.
+  \item[\index{characteristics!mental power|see{mental power}}Mental Power.] The character's control of his mind and
+    emotions, especially in stress situations.  A character with high
+    mental power (\textbf{4}, \textbf{5} or \textbf{6}) may be
+    psionic.  \textbf{Note:} The mental power Characteristic Rating
+    ranges from \textbf{0} to \textbf{6}.
+  \item[\index{characteristics!leadership|see{leadership}}Leadership.] The character's ability to lead others and to
+    control a situation. Leadership determines whether or not a party
+    of characters have the initiative during combat (see
+    \ref{sec:initiative}).
+  \item[\index{characteristics!empathy|see{empathy}}Empathy.] The character's ability to interact with humans and
+    other intelligent and semi-intelligent beings. Empathy affects the
+    chances of communication with alien life forms and may allow a
+    character to perceive another human's unspoken intentions.
+  \item[\index{characteristics!aggression|see{aggression}}Aggression.] The base instincts a character exhibits,
+    especially in a stress situation. A character with a low
+    Aggression Rating will often behave in a cowardly or
+    self-preserving manner, while a character with a high Aggression
+    Rating will often take reckless actions in combat. A character's
+    aggression may be controlled by his mental power.
+  \end{description}
+  
+\item[\index{field of study}Field of Study.] One of seven areas of schooling that a
+  character undertakes in his youth, including theoretical science,
+  applied science, business, the humanities, the mind, the body, and
+  the military. In addition, each character's basic education is
+  represented by the \emph{general} field of study. The fields of
+  study a character undertakes affect his characteristics, the
+  professions he may choose, and the skills he may acquire.
+\item[\index{habitat|bb}Habitat.] The environment in which the character was raised.
+  Each character's habitat consists of a home environ (expressed in
+  terms of the contour of the land and its major features), a gravity
+  type, a temperature range and, in some cases, an urban background.
+\item[\index{potential|bb}Potential.] A numerical rating, expressed as a multiplier from
+  \textbf{$\frac12$} to \textbf{4}, representing the strengths and
+  weaknesses exhibited by the character in his childhood. There are
+  four potentials: physique, coordination, intellect, and social
+  background. Once character generation is completed, potentials have
+  no effect on the character.
+\item[\index{skill}Skill.] A specific area of expertise that may be acquired by a
+  character. During character generation, each character receives
+  \emph{Initial} Skill Points, with which to acquire skills before
+  entering a profession, and normal Skill Points, with which to
+  acquire skills while practicing his profession. The proficiency that
+  a character has with a given skill is represented by a numerical
+  \emph{level} ranging from \textbf{1} up to a maximum level that
+  varies from one skill to another and is sometimes limited by one of
+  his Characteristic Ratings.  \textbf{Exception:} An Environ Skill
+  Level or a Gravity Skill Level may be a negative number or
+  \textbf{0}.  Unlike characteristics, skills may be acquired and
+  improved during play. The nature and use of all skills are detailed
+  in Chapter \ref{cha:skills}.  Three skills are introduced in the
+  early part of character generation:
+
+  \begin{description}
+  \item[Environ Skill.] The character's knowledge and acclimation in a
+    specific environ. Each character receives Skill Levels in all 33
+    environs listed on the Environ Skill Display of the Character
+    Record during character generation. The single highest Environ
+    Skill Level received is his Skill Level in his home environ.
+  \item[Gravity Skill.] The character's ability to function in a
+    specific gravity type. Each character receives a Skill Level in
+    all four gravity types on the Character Record during character
+    generation. The single highest Gravity Skill Level received is his
+    Skill Level in the gravity type of his home planet.
+  \item[Urban Skill.] The character's familiarity with the ways of
+    city life and the upper classes. Certain characters receive an
+    Urban Skill Level during character generation; those that do not
+    are considered to come from essentially rural areas.
+  \end{description}
+  
+\item[Study Point.] A representation of a commitment by the character
+  to a certain field of study. Each character receives \textbf{2} to
+  \textbf{6} Study Points, which he expends to enter any of the seven
+  fields of study.
+\end{description}
+
+
+
+
+\subsection*{\index{character!generation sequence}Character Generation Sequence}
+\label{sec:char-gener-sequ}
+
+
+
+To generate a character, the player should conduct the following steps
+in order. The specific procedures mentioned in this outline are
+explained in detail in Sections \ref{sec:character-heritage},
+\ref{sec:char-devel}, and \ref{sec:char-prof}.
+
+\renewcommand{\theenumi}{\Alph{enumi}}
+\renewcommand{\theenumii}{\arabic{enumii}}
+\begin{enumerate}
+\item \textsc{character heritage}
+  \begin{enumerate}
+  \item \textbf{Determine 4 Potential Multipliers.}  Each character
+    begins as a series of four numbers, representing his potential in
+    the areas of physique, coordination, intellect, and social
+    background.
+  \item \textbf{Calculate the number of Study Points the character
+      receives.} A character receives from \textbf{2} to \textbf{6}
+    Study Points, depending on his potentials.
+  \item \textbf{Determine the character's natural habitat.} This
+    includes the character's home environ, his Skill Levels in all
+    environs, his Skill Levels in various gravities, his comfortable
+    temperature range, and his Skill Level in urban areas. Certain
+    characters may come from a deep space environ.
+  \item \textbf{Determine the character's social standing.} Each
+    character receives a particular family history and, initial
+    wealth. Each character receives from \textbf{1} to \textbf{5}
+    Initial Skill Points, depending on his social standing.
+  \end{enumerate}
+\item \textsc{character development}
+  \begin{enumerate}
+    \setcounter{enumii}{4}
+  \item \textbf{Choose fields of study for the character.} Study
+    Points are expended to choose any of seven fields of study.
+  \item \textbf{Choose initial skills for the character.} Initial
+    Skill Points are expended to choose a variety of basic skills.
+    Skills that may be chosen depend on the character's fields of
+    study.
+  \item \textbf{Determine the character's 9 Characteristic Ratings.}
+    The character's Potential Multipliers and fields of study affect
+    the determination of his characteristics.
+  \end{enumerate}
+\item \textsc{character professions}
+  \begin{enumerate}
+    \setcounter{enumii}{7}
+  \item \textbf{Choose a profession for the character.} Any one of 
+%    23
+    \ref{item:myprofs}
+    professions is available, depending on the character's fields of
+    study and Characteristic Ratings.
+  \item \textbf{Declare how many years the character will practice his
+      profession.} A character may not be able to spend as many years
+    at his profession as the player declares; he may be discharged or
+    without work for part of the declared time.
+  \item \textbf{Determine the effects of age on the character.} His
+    physical characteristics (strength, endurance, dexterity, and
+    agility) may be reduced if the character is beyond the age of 24.
+  \item \textbf{Calculate the number of Skill Points the character
+      receives.}  The character's profession, his Intelligence Rating,
+    and the number of years he spent at it affect the number of Skill
+    Points received.
+  \item \textbf{Choose skills for the character.} Skill Points are
+    expended to choose and improve a variety of skills related to the
+    character's profession and his fields of study. Mark an \textbf{\textsf{X}}
+    next to the skills for which the character is eligible that were
+    not chosen for him.
+  \item \textbf{Determine benefits the character receives from his
+      profession.}  Weapons, equipment, money and/or prestige are avail
+    able to a character, depending on how long he spent at his
+    profession.
+  \end{enumerate}
+\end{enumerate}
+\renewcommand{\theenumi}{\arabic{enumi}}
+\renewcommand{\theenumii}{(\alph{enumii})}
+
+
+\section{\index{character!heritage}Character Heritage}
+\label{sec:character-heritage}
+
+The early years of a character's life are very important in forming
+the basis of his physical and mental makeup. The well being of his
+predecessors determines the opportunities the character will be able
+to exploit. Each character receives a series of potential values
+representing an early assessment of high attributes, skills in the
+habitat in which he was raised, and a financial endowment base on his
+family's social standing.
+
+
+
+\subsection[Potentials]{The player begins generating his character by
+  determining the character's \index{potential}potential in the areas of physique,
+  coordination, intellect, and social background.}
+\label{sec:potentials}
+
+For each of these four, the player roll one die and locates the result
+on the \textbf{Character Heritage Table} (table \vref{tab:heritage})
+to find the character's \emph{Potential Multiplier} for that area.
+
+The player must roll for each Potential Multiplier in the order listed
+above. As each potential is determined, its Multiplier is recorded on
+the Character Record.
+
+After determining all four potentials, the player \emph{adds} the
+multipliers together to find how many \emph{Study Points} his
+character receives, in accordance with the \emph{Character Heritage
+  Table} (\vref{tab:heritage}).
+
+Note the number of Study Points received on the Character Record.
+
+\begin{table}[htbp]
+  \centering
+  \fbox{%
+    \begin{minipage}{3.3in}
+      \centering
+      \caption{Character Heritage}
+      \label{tab:heritage}
+
+      \medskip
+
+      \begin{tabular}{cllc}
+        Die & \parbox{2.5cm}{\centering Potential\\Multiplier} &
+          \parbox{1.5cm}{\centering Sum of\\
+          Potential\\Multiplers} & \parbox{1.5cm}{\centering Study Points\\Received}\\
+        \rowcolor{grey}
+        1 & $\frac12$ (Poor) & 4 or fewer & 6\\
+        2--3 & 1 (Below Average) & $4\frac12$ to $6\frac12$ & 5\\
+        \rowcolor{grey}
+        4--6 & 2 (Average) & 7 to $9\frac12$ & 4\\
+        7--9 & 3 (Above Average) & 10 to $11\frac12$ & 3\\
+        \rowcolor{grey}
+        10 & 4 (Exceptional) & 12 or more & 2\\
+      \end{tabular}
+
+      \medskip
+
+      \parbox{0.9\textwidth}{To determine potential
+        multiplier for physique, 
+        coordination, intellect, and social background, roll one die and
+        locate the result under ``Potential Multiplier''. After all four
+        potentials are determined; add all four multipliers together to
+        determine how many Study Points the character receives under the
+        ``Study Points Received'' column.}
+    \end{minipage}}
+  \end{table}
+
+\subsection[Habitat Table]{The player uses the  \index{habitat}Habitat Table to
+  determine the 
+  natural environment in which his character grew up and in which he
+  will be most effective during play.}
+\label{sec:habitat-table}
+
+The player rolls one die to determine the column of the Table used and
+rolls a second die to determine the entry referred to in that column.
+The second die result is modified by \emph{adding} the character's
+\emph{Physique Multiplier} and subtracting his \emph{Coordination
+  Multiplier}. A multiplier of \textbf{$\frac12$} is considered
+\textbf{0} for this purpose. Each entry on the Home Environ Table
+contains the following information:
+
+\begin{itemize}
+\item \textbf{The specific type of environ from which the character
+    comes.}  Each environ type is stated as a two-part abbreviation,
+  explained on the Table. The first part represents the contour of the
+  land (flat, hills, mountains, or peaks). The second part represents
+  the major features of the land (volcanic, craters, barren, light
+  vegetation, woods, forest, jungle, marsh, or ice). Exceptions to
+  this two-part system include the three \emph{water} environs (inland
+  waterways, sea surface, or sea submerged). Certain characters may be
+  able to choose a \emph{deep-space} environ (see
+  \ref{sec:deep-space}).
+\item \textbf{The character's Home Environ Skill Level.} Each
+  character receives a Skill Level ranging from \textbf{1} to
+  \textbf{6} in his home environ. This level may be reduced if the
+  player chooses to increase his character's \emph{Gravity} Skill
+  Level (see \ref{sec:habitat-table-use}). A character's Skill Level
+  in his home environ affects his Skill Level in other environs and
+  may be improved during play of the game.
+\item \textbf{The gravity on the character's home planet.} Each
+  gravity type is stated as an abbreviation, explained on the Table.
+  \emph{Near weightless gravity} represents from \textbf{0.0} to
+  \textbf{0.4 G}, \emph{light gravity} represents from \textbf{0.7} to
+  \textbf{1.0 G}, \emph{heavy gravity} represents from \textbf{1.3} to
+  \textbf{1.7 G}, and \emph{extreme gravity} represents from
+  \textbf{2.0} to \textbf{2.5 G}. Each character is considered to be at
+  Skill Level 1 in his own gravity type and at lesser Skill Levels in
+  other gravity types (unless his Gravity Skill Level is increased per
+  \ref{sec:habitat-table-use}). Gravity Skills may also be improved
+  during play.
+\item \textbf{The temperature range in the character's home
+    environ.}\label{sec:player-uses-habitat-change-temp}
+  Each temperature range is stated as an abbreviation, explained on
+  the Table. \emph{Cold} ranges from \textbf{-50} to \textbf{0}
+  degrees Fahrenheit (\textbf{-45} to \textbf{-18} degrees Celsius,
+  \textbf{228} to \textbf{255} Kelvins); \emph{normal} ranges from
+  \textbf{25} to \textbf{100} degrees (\textbf{-4} to \textbf{38}
+  degrees C, \textbf{269} to \textbf{311} K); and \emph{hot} ranges
+  from \textbf{125} to \textbf{175} degrees (\textbf{52} to
+  \textbf{79} degrees C, \textbf{325} to \textbf{353} K).  Characters
+  receive no Skill Level in their temperature range.
+\item \textbf{The character's Urban Skill Level.} Certain results give
+  a character an Urban Skill Level ranging from \textbf{1} to
+  \textbf{4}. If a result from the Table lists no Urban Skill Level,
+  the character receives none. A character's Urban Skill may be
+  improved during play.
+\end{itemize}
+
+
+\subsection{Habitat Table}
+\label{sec:habitat-table-1}
+
+See table \vref{tab:habitat}.
+
+\newlength{\cellwidth}
+\setlength{\cellwidth}{1.2cm}
+\newlength{\extralinespace}
+\setlength{\extralinespace}{3mm}
+\begin{table}[htbp]
+  \setlength{\tabcolsep}{0.25\tabcolsep}
+%  \tiny
+  \scriptsize
+  \centering
+  \fbox{%
+    \begin{minipage}{0.9\textwidth}
+      \centering
+      \caption{Habitat Table}
+      \label{tab:habitat}
+
+      \medskip
+
+      \begin{tabular}{c|cccccccccc}
+    & \multicolumn{10}{c}{First Die Roll}\\[\extralinespace]
+    \\[\extralinespace]
+    \parbox{\cellwidth}{Second Die + Ph - Co} & 1 & 
+    2 & 3 & 4 & 5 & 6 & 7 & 8 &
+    9 & 10\\[\extralinespace] 
+    \hline
+    -3 & 
+    \parbox{\cellwidth}{4:HL-VO\\NW-HO} & 
+    \parbox{\cellwidth}{6:SF\\HY-NL} & 
+    \parbox{\cellwidth}{4:FL-CR\\LT-NL} & 
+    \parbox{\cellwidth}{4:HL-IC\\NW-NL/1} & 
+    \parbox{\cellwidth}{2:HL-CR\\NW-NL/2} & 
+    \parbox{\cellwidth}{2:HL-CR\\HY-NL/2} & 
+    \parbox{\cellwidth}{3:FL-CR\\LT-NL/1} & 
+    \parbox{\cellwidth}{2:HL-BN\\HY-CD/2} & 
+    \parbox{\cellwidth}{4:FL-MA\\HY-NL/1} & 
+    \parbox{\cellwidth}{3:HL-IC\\NW-NL/3}\\[\extralinespace]
+    \rowcolor{grey}
+    -2 & 
+    \parbox{\cellwidth}{3:HL-WD\\LT-NL/1} & 
+    \parbox{\cellwidth}{4:HL-LV\\NW-NL} & 
+    \parbox{\cellwidth}{4:FL-CR\\NW-CD/1} & 
+    \parbox{\cellwidth}{3:PL-BN\\LT-HO/1} & 
+    \parbox{\cellwidth}{4:SF\\LT-NL/4} & 
+    \parbox{\cellwidth}{2:HL-CR\\HY-NL/1} & 
+    \parbox{\cellwidth}{3:HL-FT\\LT-NL/1} & 
+    \parbox{\cellwidth}{4:MN-VO\\NW-HO/1} & 
+    \parbox{\cellwidth}{3:HL-VO\\LT-HO/1} & 
+    \parbox{\cellwidth}{2:HL-WD\\LT-HO}\\[\extralinespace]
+    -1 & 
+    \parbox{\cellwidth}{4:HL-JU\\EX-NL} & 
+    \parbox{\cellwidth}{6:FL-LV\\NW-HO} & 
+    \parbox{\cellwidth}{3:HL-WD\\LT-NL} & 
+    \parbox{\cellwidth}{3:HL-LV\\HY-NL/1} & 
+    \parbox{\cellwidth}{4:HL-IC\\HY-CD/1} & 
+    \parbox{\cellwidth}{2:HL-WD\\LT-NL/1} & 
+    \parbox{\cellwidth}{4:FL-BN\\LT-CD} & 
+    \parbox{\cellwidth}{3:PK-WD\\LT-NL/1} & 
+    \parbox{\cellwidth}{3:MN-LV\\LT-NL/1} & 
+    \parbox{\cellwidth}{5:SF\\LT-NL/2}\\[\extralinespace]
+    \rowcolor{grey}
+    0 & 
+    \parbox{\cellwidth}{5:FL-IC\\HY-NL} & 
+    \parbox{\cellwidth}{3:HL-CR\\HY-NL/1} & 
+    \parbox{\cellwidth}{3:FL-JU\\LT-HO/1} & 
+    \parbox{\cellwidth}{3:HL-VO\\NW-CD/1} & 
+    \parbox{\cellwidth}{2:MN-LV\\NW-NL/2} & 
+    \parbox{\cellwidth}{3:MN-CR\\HY-NL/1} & 
+    \parbox{\cellwidth}{3:MN-WD\\HY-NL/1} & 
+    \parbox{\cellwidth}{3:FL-WD\\LT-NL/1} & 
+    \parbox{\cellwidth}{3:MN-VO\\HY-NL/2} & 
+    \parbox{\cellwidth}{3:HL-VO\\LT-NL/2}\\[\extralinespace]
+    1 & 
+    \parbox{\cellwidth}{4:MN-WD\\HY-NL} & 
+    \parbox{\cellwidth}{3:MN-LV\\HY-NL/1} & 
+    \parbox{\cellwidth}{4:PK-FT\\HY-HO} & 
+    \parbox{\cellwidth}{5:FT-IC\\HY-CD} & 
+    \parbox{\cellwidth}{2:HL-BN\\EX-NL/2} & 
+    \parbox{\cellwidth}{4:FL-WD\\EX-NL} & 
+    \parbox{\cellwidth}{3:HL-BN\\LT-HO} & 
+    \parbox{\cellwidth}{3:HL-JU\\LT-NL/2} & 
+    \parbox{\cellwidth}{3:MN-FT\\LT-NL/1} & 
+    \parbox{\cellwidth}{2:FL-JU\\HY-NL/3}\\[\extralinespace]
+    \rowcolor{grey}
+    2 & 
+    \parbox{\cellwidth}{4:MN-WD\\HY-NL} & 
+    \parbox{\cellwidth}{6:SB\\HY-NL} & 
+    \parbox{\cellwidth}{3:HL-LV\\HY-HO/1} & 
+    \parbox{\cellwidth}{2:MN-BN\\LT-HO/1} & 
+    \parbox{\cellwidth}{4:FL-BN\\LT-NL} & 
+    \parbox{\cellwidth}{2:FL-LV\\LT-NL/1} & 
+    \parbox{\cellwidth}{2:FT-LV\\LT-NL/1} & 
+    \parbox{\cellwidth}{3:MN-FT\\HY-NL/1} & 
+    \parbox{\cellwidth}{4:FL-WD\\HY-CD/1} & 
+    \parbox{\cellwidth}{3:MN-CR\\NW-HO/3}\\[\extralinespace]
+    3 & 
+    \parbox{\cellwidth}{5:MN-JU\\EX-NL} & 
+    \parbox{\cellwidth}{4:HL-LV\\LT-NL} & 
+    \parbox{\cellwidth}{4:HL-JU\\HY-HO} & 
+    \parbox{\cellwidth}{3:HL-BN\\NW-NL/1} & 
+    \parbox{\cellwidth}{6:FL-IC\\EX-CD} & 
+    \parbox{\cellwidth}{5:IN\\HY-NL} & 
+    \parbox{\cellwidth}{4:FL-MA\\HY-NL/2} & 
+    \parbox{\cellwidth}{2:MN-LV\\LT-NL/1} & 
+    \parbox{\cellwidth}{4:FL-IC\\HY-NL/1} & 
+    \parbox{\cellwidth}{2:HL-CR\\LT-NL/2}\\[\extralinespace]
+    \rowcolor{grey}
+    4 & 
+    \parbox{\cellwidth}{5:NL-IC\\LT-NL} & 
+    \parbox{\cellwidth}{4:FL-WD\\HY-HO} & 
+    \parbox{\cellwidth}{2:MN-BN\\LT-NL/1} & 
+    \parbox{\cellwidth}{4:HL-WD\\LT-NL} & 
+    \parbox{\cellwidth}{3:FL-CR\\LT-NL/1} & 
+    \parbox{\cellwidth}{3:FL-WD\\HY-NL/1} & 
+    \parbox{\cellwidth}{2:HL-BN\\LT-HO/2} & 
+    \parbox{\cellwidth}{3:HL-LV\\LT-NL/1} & 
+    \parbox{\cellwidth}{4:MN-VO\\EX-CD/2} & 
+    \parbox{\cellwidth}{2:HL-LV\\HY-NL/1}\\[\extralinespace]
+    5 & 
+    \parbox{\cellwidth}{4:HL-LV\\HY-NL} & 
+    \parbox{\cellwidth}{4:FL-BN\\HY-NL} & 
+    \parbox{\cellwidth}{3:HL-WD\\LT-NL/1} & 
+    \parbox{\cellwidth}{5:FL-IC\\HY-NL} & 
+    \parbox{\cellwidth}{3:HL-CR\\HY-CD/1} & 
+    \parbox{\cellwidth}{5:IN\\LT-NL/1} & 
+    \parbox{\cellwidth}{3:HL-VO\\HY-NL/1} & 
+    \parbox{\cellwidth}{2:FL-LV\\EX-HO/3} & 
+    \parbox{\cellwidth}{3:MN-WD\\EX-NL/2} & 
+    \parbox{\cellwidth}{1:HL-WD\\HY-NL/4}\\[\extralinespace]
+    \rowcolor{grey}
+    6 & 
+    \parbox{\cellwidth}{4:FL-LV\\HY-CD} & 
+    \parbox{\cellwidth}{4:FL-LV\\LT-HO} & 
+    \parbox{\cellwidth}{4:PK-LV\\HY-NL} & 
+    \parbox{\cellwidth}{4:IN\\LT-NL/1} & 
+    \parbox{\cellwidth}{3:PK-BN\\HY-HO/1} & 
+    \parbox{\cellwidth}{3:FL-FT\\LT-CD/2} & 
+    \parbox{\cellwidth}{3:MN-VO\\EX-NL/1} & 
+    \parbox{\cellwidth}{3:FL-JU\\HY-HO/1} & 
+    \parbox{\cellwidth}{5:PL-MA\\EX-HO/2} & 
+    \parbox{\cellwidth}{2:FL-LV\\NW-HO/4}\\[\extralinespace]
+    7 & 
+    \parbox{\cellwidth}{4:MN-WD\\LT-HO} & 
+    \parbox{\cellwidth}{3:HL-VO\\LT-NL/1} & 
+    \parbox{\cellwidth}{4:MN-FT\\HY-NL} & 
+    \parbox{\cellwidth}{2:FL-WD\\HY-HO/1} & 
+    \parbox{\cellwidth}{3:SB\\EX-NL/3} & 
+    \parbox{\cellwidth}{3:HL-FT\\HY-NL/1} & 
+    \parbox{\cellwidth}{3:MN-FT\\LT-NL/2} & 
+    \parbox{\cellwidth}{3:PK-LV\\HY-NL/1} & 
+    \parbox{\cellwidth}{3:HL-JU\\LT-HO/2} & 
+    \parbox{\cellwidth}{2:HL-CR\\LT-HO/4}\\[\extralinespace]
+    \rowcolor{grey}
+    8 & 
+    \parbox{\cellwidth}{4:FL-BN\\HY-NL} & 
+    \parbox{\cellwidth}{4:MN-FT\\HY-NL} & 
+    \parbox{\cellwidth}{3:FL-FT\\HY-NL/1} & 
+    \parbox{\cellwidth}{3:MN-FT\\HY-NL/1} & 
+    \parbox{\cellwidth}{4:HL-WD\\EX-HO} & 
+    \parbox{\cellwidth}{3:FL-FT\\LT-CD/1} & 
+    \parbox{\cellwidth}{4:FL-IC\\HY-NL/1} & 
+    \parbox{\cellwidth}{4:HL-FT\\EX-CD/1} & 
+    \parbox{\cellwidth}{2:HL-CR\\HY-NL/1} & 
+    \parbox{\cellwidth}{1:HL-LV\\HY-NL/2}\\[\extralinespace]
+    9 & 
+    \parbox{\cellwidth}{5:SB\\EX-NL} & 
+    \parbox{\cellwidth}{3:HL-WD\\HY-NL} & 
+    \parbox{\cellwidth}{4:HL-LV\\LT-HO} & 
+    \parbox{\cellwidth}{3:HL-LV\\HY-HO/1} & 
+    \parbox{\cellwidth}{4:FL-IC\\HY-NL/1} & 
+    \parbox{\cellwidth}{4:FL-IC\\LT-NL/1} & 
+    \parbox{\cellwidth}{4:SF\\HY-NL/1} & 
+    \parbox{\cellwidth}{4:MN-JU\\EX-NL/1} & 
+    \parbox{\cellwidth}{3:HL-VO\\HY-HO/1} & 
+    \parbox{\cellwidth}{3:HL-FT\\HY-NL/1}\\[\extralinespace]
+    \rowcolor{grey}
+    10 & 
+    \parbox{\cellwidth}{5:FL-MA\\EX-NL} & 
+    \parbox{\cellwidth}{4:FL-JU\\LT-NL} & 
+    \parbox{\cellwidth}{4:HL-JU\\LT-HO} & 
+    \parbox{\cellwidth}{4:HL-LV\\LT-HO} & 
+    \parbox{\cellwidth}{3:FL-WD\\LT-NL/1} & 
+    \parbox{\cellwidth}{2:MN-LV\\LT-NL/1} & 
+    \parbox{\cellwidth}{3:HL-WD\\LT-HO} & 
+    \parbox{\cellwidth}{3:MN-FT\\NW-NL/1} & 
+    \parbox{\cellwidth}{4:HL-FT\\EX-HO/2} & 
+    \parbox{\cellwidth}{2:MN-BN\\HY-NL/2}\\[\extralinespace]
+    11 & 
+    \parbox{\cellwidth}{4:FL-JU\\LT-NL} & 
+    \parbox{\cellwidth}{4:FL-WD\\HY-CD} & 
+    \parbox{\cellwidth}{3:HL-BN\\LT-CD/1} & 
+    \parbox{\cellwidth}{4:FL-BN\\HY-CD} & 
+    \parbox{\cellwidth}{3:HL-FT\\EX-NL/1} & 
+    \parbox{\cellwidth}{4:MN-LV\\HY-NL} & 
+    \parbox{\cellwidth}{3:PK-BN\\LT-NL/1} & 
+    \parbox{\cellwidth}{3:FL-WD\\LT-CD/1} & 
+    \parbox{\cellwidth}{2:HL-CR\\EX-NL/2} & 
+    \parbox{\cellwidth}{1:FL-LV\\LT-CD/3}\\[\extralinespace]
+    \rowcolor{grey}
+    12 & 
+    \parbox{\cellwidth}{3:HL-BN\\HY-NL} & 
+    \parbox{\cellwidth}{5:MN-FT\\EX-CD} & 
+    \parbox{\cellwidth}{3:HL-CR\\HY-NL/1} & 
+    \parbox{\cellwidth}{3:MN-CR\\HY-HO/1} & 
+    \parbox{\cellwidth}{5:FL-CR\\EX-CD} & 
+    \parbox{\cellwidth}{4:PL-WD\\LT-NL} & 
+    \parbox{\cellwidth}{3:FL-FT\\HY-HO/1} & 
+    \parbox{\cellwidth}{3:HL-FT\\LT-CD/1} & 
+    \parbox{\cellwidth}{4:HL-FT\\EX-HO/1} & 
+    \parbox{\cellwidth}{2:FL-CR\\LY-CD/3}\\[\extralinespace]
+    13 & 
+    \parbox{\cellwidth}{4:MN-CR\\HY-NL} & 
+    \parbox{\cellwidth}{3:MN-BN\\LT-NL} & 
+    \parbox{\cellwidth}{3:PK-CR\\LT-CD/1} & 
+    \parbox{\cellwidth}{3:FL-BN\\EX-NL/1} & 
+    \parbox{\cellwidth}{4:FL-MA\\EX-NL/1} & 
+    \parbox{\cellwidth}{3:PK-CR\\HY-HO/1} & 
+    \parbox{\cellwidth}{2:MN-BN\\EX-NL/2} & 
+    \parbox{\cellwidth}{4:MN-JU\\HY-NL/1} & 
+    \parbox{\cellwidth}{2:HL-BN\\HY-NL/1} & 
+    \parbox{\cellwidth}{3:FL-MA\\HY-HO/4}\\[\extralinespace]
+    \rowcolor{grey}
+    14 & 
+    \parbox{\cellwidth}{3:MN-LV\\EX-NL/1} & 
+    \parbox{\cellwidth}{4:MN-BN\\EX-NL} & 
+    \parbox{\cellwidth}{4:MN-FT\\EX-NL} & 
+    \parbox{\cellwidth}{3:MN-VO\\EX-NL/1} & 
+    \parbox{\cellwidth}{2:HL-WD\\HY-HO/1} & 
+    \parbox{\cellwidth}{3:HL-LV\\EX-NL/1} & 
+    \parbox{\cellwidth}{4:HL-VO\\EX-NL/1} & 
+    \parbox{\cellwidth}{2:FL-LV\\LT-NL/1} & 
+    \parbox{\cellwidth}{3:FL-WD\\HY-NL/2} & 
+    \parbox{\cellwidth}{3:FL-LV\\EX-HO/1}\\[\extralinespace]
+  \end{tabular}
+
+  \medskip
+
+  \parbox{0.9\textwidth}{Environ Skill Level:Coutour-Feature\\
+    Gravity-Temperature/Urbal Skill Level (if any)
+
+    All abbreviations are explained in the Environ, Gravity, and
+    Temperature sections of Character Record. See
+    \ref{sec:habitat-table} for explanation of use.}
+\end{minipage}}
+\end{table}
+              
+
+\subsection[Recording Habitat Table Info]{The player records the
+    information obtained for his 
+    character from the Habitat Table on the \index{character!record}Character Record as
+    follows:}
+\label{sec:habitat-table-use}
+
+\begin{itemize}
+\item If an Urban Skill Level is obtained, note the number in the
+  Urban Skill Level box.
+\item Place an \textbf{\textsf{X}} rather than a number in the
+  Temperature space corresponding to the character's comfortable
+  temperature range.
+\item Record a \textbf{1} in the proper Gravity Type box.
+  
+  \index{gravity skill!reducing}\index{environ skill!increasing}If desired, a character's Gravity Skill Level may be increased at
+  this time by \emph{reducing} the \emph{Environ Skill Level} the
+  character received. Thus, a character that received an Environ Skill
+  Level of \textbf{3} may receive a Gravity Skill Level of \textbf{2}
+  (or \textbf{3}) in his gravity type by reducing his Environ Skill
+  Level to \textbf{2} (or \textbf{1}). A character's Environ Skill
+  Level may never be reduced below \textbf{1}. A character's
+  \emph{Urban Skill Level} may not be reduced to increase his Gravity
+  Skill Level. After recording the character's Gravity Skill Level,
+  subtract \textbf{2} from the Level and record this result in the
+  Gravity Type boxes \emph{adjacent} to the character's home Gravity
+  Type box (even if the number is negative). Then subtract \textbf{2}
+  \emph{more} and note this result in the box adjacent to the boxes
+  just filled in. Repeat this once more if necessary. These numbers
+  represent the character's Gravity Skill Levels in gravity types
+  other than the one in which he grew up.
+  
+  \textbf{Example:} A character has a Skill Level of \textbf{1} in
+  \emph{Light Gravity}. A \textbf{-1} is entered in the \emph{Near
+    Weightless} box and in the \emph{Heavy} box. A \textbf{-3} is
+  entered in the \emph{Extreme} box.
+  
+\item Record the character's Environ Skill Level in the proper box of
+  the Environ Skill Display. The Level may be reduced if the
+  character's Gravity Skills were increased (see preceding). Then
+  \emph{reduce} the Environ Skill Level by \textbf{1} and enter this
+  number in every box on the Display \emph{directly adjacent to a
+    side} (not diagonal) of the character's Home Environ box. Reduce
+  the Skill Level by \textbf{1} \emph{again} and enter this number in
+  every box on the display directly adjacent to the boxes just filled
+  in. Repeat this process until the entire Environ Skill Display is
+  filled. Negative numbers will be used in some boxes. However, an
+  Environ Skill may never be below \textbf{-6}. These numbers are the
+  character's Environ Skill Levels in environ types other than the one
+  in which he grew up.
+\end{itemize}
+
+\label{sec:play-records-inform-change-display}\textbf{Example:} The
+player has filled out the Display (Figure 
+\ref{fig:example-environ-disp}) to show the Environ Skill Levels that
+his character (who has a Skill Level of \textbf{4} in his home
+flat/jungle environ) has in all possible environs, plus a home gravity
+type of \emph{light} and a home temperature range of \emph{normal}
+(see Figure \ref{fig:example-environ-disp}).
+
+\begin{figure}[htbp]
+  \centering
+  \fbox{%
+    \begin{minipage}{0.95\textwidth}
+      \centering
+      \caption{Example Environ Skill Display}
+      \label{fig:example-environ-disp}
+
+      \medskip
+      \begin{tabular}{l|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+        \multicolumn{1}{c}{}& \multicolumn{1}{c}{VO} &
+        \multicolumn{1}{c}{CR} & \multicolumn{1}{c}{BN} &
+        \multicolumn{1}{c}{LV} & \multicolumn{1}{c}{WD} &
+        \multicolumn{1}{c}{FT} & \multicolumn{1}{c}{JU} &
+        \multicolumn{1}{c}{MA} & \multicolumn{1}{c}{IC} &  
+        \multicolumn{4}{l}{Urban Skill Level: 1}\\
+        \cline{2-7}\cline{12-14}
+        PK & --5 & --4 & --3 & --2 & --1 &  0 & \multicolumn{3}{c}{} &
+        & Gravity &
+        --1 & 0.0--0.4 G (NW)\\
+        \cline{2-8}\cline{13-13}
+        MN & --4 & --3 & --2 & --1 &  0 &  1 &  2 & \multicolumn{2}{c}{} &
+        & Skill & 1 & 0.7--1.0 G (LT)\\
+        \cline{2-10}\cline{13-13}
+        HL & --3 & --2 & --1 &  0 &  1 &  2 &  3 &  2 &  1 &
+        & Levels & --1 &
+        1.3--1.7 G (HY)\\
+        \cline{2-10}\cline{13-13}
+        \multicolumn{1}{l}{FL} &    & --1 &  0 &  1 &  2 &  3 &  4 &  3 &
+        2 &  &  & --3 & 2.0--2.5 G (EX)\\
+        \cline{3-10}\cline{12-14}
+        \multicolumn{8}{r}{IN} \vline &  2 & \multicolumn{1}{c}{} & & Temp &  &
+        --50\textdegree--0\textdegree (CD)\\
+        \cline{9-9}\cline{13-13}
+        \multicolumn{8}{r}{SF} \vline & 1 & \multicolumn{1}{c}{} & & Range
+        & \textsf{X} & 
+        25\textdegree--100\textdegree (NL)\\
+        \cline{9-9}\cline{13-13}
+        \multicolumn{8}{r}{SB} \vline & 0 & \multicolumn{1}{c}{} & & & &
+        125\textdegree--175\textdegree (HO)\\
+        \cline{9-9}\cline{12-14}
+      \end{tabular}
+    \end{minipage}}
+\end{figure}
+
+\subsection[Deep-Space Environs]{The player may choose a \index{home environ!deep-space}deep-space
+  environ for his character if the character meets the following
+  prerequisites:}
+\label{sec:deep-space}
+
+\begin{itemize}
+\item He has a \emph{Physique Multiplier} of \textbf{$\frac12$} or
+  \textbf{1}. 
+\item He has a \emph{Coordination Multiplier} of \textbf{3} or
+  \textbf{4}.
+\item His home planet gravity type is \emph{near weightless}.
+\end{itemize}
+
+The player may voluntarily declare that such a character is from a
+deep space environ, such as an orbiting space station, a spaceport,
+or an asteroid mining complex. The character's Habitat Table result is
+ignored and his Character Record is \emph{not} filled out in accordance with
+\ref{sec:habitat-table-use}. Instead, the following steps are
+conducted:
+
+\begin{enumerate}
+\item The character receives an Urban Skill Level of \textbf{4}; note this in
+  the Urban Skill Level box on the Character Record.
+\item The character is accustomed to normal temperatures; place an
+  \textbf{\textsf{X}} in the Normal Temperature space.
+\item The character has a Near Weightless Gravity Skill Level of
+  \textbf{3}; enter a \textbf{3} in the Near Weightless box, a
+  \textbf{0} in the Light Gravity box, a \textbf{--2} in the Heavy
+  Gravity box, and a \textbf{--5} in the Extreme Gravity box.
+\item The character is accustomed to no natural environs; enter a
+  \textbf{--4} in all 33 boxes of the Environ Skill Display.
+\end{enumerate}
+
+When using the Social Standing Table (see
+\ref{sec:social-standing-table}), add twice the character's Social
+Background Multiplier to the die result \emph{only} (the character's
+Urban and Environ Skill Levels are ignored).
+
+When expending Initial Skill Points (see \ref{sec:init-sp}), the
+following skills may be chosen in addition to those listed for the
+character in \ref{sec:fos-skills}: \index{agriculture!and deep space environ}agriculture, EVA, and asteroid
+mining. These skills are \emph{not} available to the character when
+expending Skill Points acquired from his profession (unless they are
+listed in his profession or one of his fields of study).
+
+
+\subsection[Social Standing Table]{The player uses the \index{social standing}Social Standing
+  Table to determine his 
+  character's family history and the amount of money with which he is
+  endowed.}
+\label{sec:social-standing-table}
+
+ 
+
+The player rolls one die and modifies the die result as follows:
+
+\begin{itemize}
+\item \emph{Double} the character's \emph{Social Background
+    Multiplier} and \emph{add} the product to the die result.
+\item \emph{Add} the character's \emph{Urban Skill Level} to the die
+  result.
+\item \emph{Subtract} the character's \emph{Home Environ Skill Level}
+  from the die result (use the number derived from the Habitat Table,
+  before it was  reduced to increase Gravity Skill Levels).
+\end{itemize}
+
+Note the social standing result corresponding to the modified die
+result on the Character Record.
+
+Roll one die again and \emph{multiply} the die result by the amount of
+\index{money!initial}money shown for the acquired social standing. Note this product on the
+Character Record. Remember, one Tran equals 1,000 Mils.
+
+The Initial Skill Point Modifier shown for the acquired social
+standing is used in conjunction with \ref{sec:initial-skill-points}.
+
+Aside from 
+determining how much money and how many Initial Skill Points he
+receives, a character's social standing will affect him during play.
+When encountering NPC's and when dealing with bureaucracy and
+government, the GM should take into account a character's social
+standing. Class distinctions in \emph{Universe} are not as pronounced
+as in, say, a feudal society; but people still feel most comfortable
+with those of similar background.
+
+
+\begin{table}[htbp]
+  \centering
+  \fbox{%
+    \begin{minipage}{5in}
+      \centering
+      \caption{Social Standing Table}
+      \label{tab:social-standing-table}
+
+      \medskip
+
+      \begin{tabular}{cp{2in}lc}
+        \parbox{1.5cm}{\centering Modified Die Result} &   Social Standing &
+        \parbox{1.5cm}{\centering Wealth: One Die $\times$} &
+        \parbox{2.5cm}{\centering Initial Skill
+          Point Modifier}\\
+        \rowcolor{grey}
+        --1 or Less & Unfostered Orphan & 1 Mil & +3\\
+        0 & Oppressed minority & 10 Mils & 0\\
+        \rowcolor{grey}
+        1,2 & Poor colonist family & 10 Mils & +1\\
+        3 & Family fallen on hard times & 100 Mils & +1\\
+        \rowcolor{grey}
+        4 & Communal colony & 10 Mils & +2\\
+        5--7 & Lower middle class family & 100 Mils & 0\\
+        \rowcolor{grey}
+        8--10 & Skilled tech family & 1 Tran & +1\\
+        11--13 & Local establishment (business or farm run by family) & 1
+        Tran & --1\\
+        \rowcolor{grey}
+        14--15 & Independent trading family & 10 Trans & +2\\
+        16--17 & Family runs planetary corporation & 10 Trans & --1\\
+        \rowcolor{grey}
+        18 & Family dominates planet & 100 Trans & --2\\
+        19 & Family dominates star system & 100 Trans & --2\\
+        \rowcolor{grey}
+        20 & Family influences entire Federation & 200 Trans & --3\\
+        21 & Wealthy dilettante & 200 Trans & --4
+      \end{tabular}
+
+      \medskip
+
+      \parbox{0.9\textwidth}{See \ref{sec:social-standing-table} for
+      explanation of use.}
+    \end{minipage}}
+  \end{table}
+
+
+\subsection[Initial Skill Points]{The player determines how many
+  \index{skill points!initial}Initial Skill Points his character receives for experience gained in
+  the early part of his life.}
+\label{sec:initial-skill-points}
+
+The player rolls one die, adds the Initial Skill Point Modifier
+(listed with the character's social standing on the Social Standing
+Table) to the die result, and refers to the \textbf{Initial Skill
+  Points Table}
+(table \vref{tab:initial-skill-points}).
+
+A player expends
+Initial Skill Points after choosing fields of study for his character
+(see \ref{sec:init-sp}).
+
+           
+
+\begin{table}[htbp]
+  \centering
+  \fbox{%
+    \begin{minipage}{.6\textwidth}
+      \centering
+      \caption{Initial Skill Points}
+      \label{tab:initial-skill-points}
+
+      \medskip
+
+      \begin{tabular}{ll}
+        If the modified  result is{\ldots} &  The character
+        receives{\ldots}\\
+        \rowcolor{grey}
+        0 or less &  1 Initial Skill Point\\
+        1--3 &  2 Initial Skill Points\\
+        \rowcolor{grey}
+        4--6 &  3 Initial Skill Points\\
+        7--9 &  4 Initial Skill Points\\
+        \rowcolor{grey}
+        10 or more &  5 Initial Skill Point\\
+      \end{tabular}
+      
+      \medskip
+      
+      \parbox{0.9\textwidth}{Roll one die and add the Initial Skill Point
+        Modifier (listed with character's social standing on the
+        Social Standing Table) to the die result.}
+    \end{minipage}}
+\end{table}
+
+
+\section{\index{character!development}Character Development}
+\label{sec:char-devel}
+
+Each character undertakes one or more fields of study during his teen
+years. His schooling provides him with basic skills and, along with
+his potentials, determines his final characteristics.
+
+
+\subsection[Study Points and Fields of Study]{The player expends
+  \index{study points|bb}\index{fields of study|bb}Study
+  Points to have his character undertake any of 7 fields of study.}
+\label{sec:fos}
+
+These include theoretical science, applied science, business, the
+humanities, the mind, the body, and the military. An eighth field of
+study, general, is automatically undertaken by every character, with
+no charge in Study Points.
+
+Each field of study costs \textbf{1} Study Point to enter
+(\textbf{Exception:} See the \emph{mind}, following). The player
+declares which fields of study his character is entering and notes the
+choices on his Character Record. A character may enter any given field
+of study \emph{twice} at a cost of \textbf{2} Study Points
+(representing heavy concentration by the character in that field). If
+this is done, write the field of study twice on the Character Record.
+A given field of study may not be studied more than twice.
+
+\textbf{Restrictions on the Study of the \index{fields of study!mind,
+    restrictions on study}Mind}: A character must have an
+\emph{Intellect} Potential of at least \textbf{2} in order to study
+the mind. The expenditure of \textbf{2} Study Points is required to
+study the mind \emph{once}; \textbf{4} Study Points must be expended
+to study the mind \emph{twice}. A character may \emph{not} study the
+mind if he is studying the \emph{military} and/or \emph{business}.
+
+A player should expend all his available Study Points when generating
+his character. Unused Study Points are useless during play.
+
+
+\subsection[Initial Skill Points]{The player expends \index{initial skill
+  points|bb}Initial Skill
+  Points to give his character basic skills acquired in youth.}
+\label{sec:init-sp}
+
+
+
+The expenditure of \textbf{1} Initial Skill Point allows the character
+to receive any skill for which he is eligible at Skill Level
+1 \emph{only}. No more than \textbf{1} Initial Skill Point
+may be expended for a particular skill at this time.
+
+The types of skills that may be chosen for a character depend on his
+fields of study. The skills listed in \ref{sec:fos-skills} may be chosen for
+a character that has undertaken the appropriate field of study. At
+this time, a character may receive no skill that is not mentioned in
+one of his chosen fields of study. All characters may receive skills
+in the \emph{general} category on the skill list.
+
+Initial Skill Points that are not expended before determining
+characteristics are lost.
+
+
+\subsection[Initial Skills]{\index{skills!initial}The following skills may be chosen for a
+  character that has undertaken the appropriate field of study.}
+\label{sec:fos-skills}
+
+See Chapter \ref{cha:skills} for a detailed explanation of each of these
+skills.
+
+\begin{description}
+\item[Theoretical Science:]\index{fields of study!theoretical science} Chemistry, physics, programming, biology,
+  geology, astronomy.
+\item[Applied Science:]\index{fields of study!applied science} Suit tech, electro tech, construction, vehicle
+  tech, programming.
+\item[Business:]\index{fields of study!business} Programming, recruiting, law, economics, trading.
+\item[Humanities:]\index{fields of study!humanities} Linguistics, diplomacy, law, teaching.
+\item[The Mind:]\index{fields of study!mind} Psionic boost, psionic communication, life sense.
+\item[The Body:]\index{fields of study!body} Unarmed combat, ambush, EVA, gravity (home gravity
+  type only), jetpack, survival.
+\item[Military:]\index{fields of study!military} Battlefield, longarms, handguns, demolitions,
+  grenades.
+\item[General:]\index{fields of study!general} Streetwise, laser/stun pistol, gambling, blades,
+  ground vehicles, urban (only if character already has an Urban Skill
+  Level of \textbf{1} or greater), environ (home environ only).
+\end{description}
+
+
+\subsection[Generating Characteristics]{\index{characteristics!generating}The player determines his
+  character's 9 characteristics one at a time, by using the
+  Characteristic Modifier Chart and the Characteristic Generation
+  Table.}
+\label{sec:characteristics}
+
+
+The Characteristic Modifier Chart is used to calculate the effect of
+the character's potentials and fields of study on each characteristic.
+The Characteristic Generation Table is used to find the actual rating
+of each characteristic.
+
+For each characteristic, the player completes the following steps:  
+
+\begin{enumerate}
+\item \emph{Add together} all numbers listed for the characteristic
+  on the Modifier Chart that correspond to the fields of study
+  undertaken by the character. If a given field was studied
+  \emph{twice}, double the corresponding number. Note that every
+  character is considered to have undertaken the \emph{general} field
+  of study and may add its number to the total.\label{item:chargen-1}
+\item Check the \emph{potential} section of the chart to find which
+  potential affects the characteristic and multiply the total
+  determined in Step \ref{item:chargen-1} by the Potential Multiplier.
+  If \emph{two} potentials affect the characteristic, multiply the
+  total by the first Potential Multiplier and then multiply this
+  product by the second Potential Multiplier.\label{item:chargen-2}
+\item Roll percentile dice and add the final product derived in Step
+  \ref{item:chargen-2} to the dice result. Locate this modified result
+  on the Characteristic Generation Table to find the rating for the
+  characteristic. Mark the rating on the Character Record.
+\end{enumerate}
+
+\textbf{Important:} If an \emph{\index{agility!minimum}Agility Rating} of \emph{less than}
+\textbf{5} is received at this time, it is considered a \textbf{5}.
+\index{mental power!rounded down}The \emph{Mental Power Rating} is \emph{divided by \textbf{2}}
+(rounding fractions down) before being noted on the Character Record.
+The Mental Power Rating may range from \textbf{0} to \textbf{6}.
+
+This procedure is conducted nine times when generating a
+character --- once for each characteristic.
+
+Note that no potentials affect the \index{aggression!and potentials}aggression characteristic. The
+modifiers listed under aggression on the Modifier Chart are simply
+added to (or subtracted from) the characteristic generation dice
+result, as appropriate.
+
+
+\subsection{Characteristic Modifier Chart}
+\label{sec:char-modif-chart}
+
+See page \pageref{tab:char-mod}.
+
+\begin{table}[htbp]
+  \setlength{\tabcolsep}{0.5\tabcolsep}
+  \centering
+  \fbox{%
+    \begin{minipage}{4.75in}
+      \centering
+      \caption{Characteristic Modifier Chart}
+      \label{tab:char-mod}
+
+      \medskip
+
+      \begin{tabular}{lccccccccr}
+        Characteristic\\
+        Field of Study      & ST & EN & DX & AY & IN & MP & LD & EM &  \multicolumn{1}{c}{AG}\\[1ex]
+        Theoretical Science &  0 &  0 &  0 &  0 &  8 &  2 &  0 &  0 &   0\\
+        \rowcolor{grey}
+        Applied Science     &  0 &  0 &  4 &  0 &  8 &  0 &  0 &  0 &   0\\
+        Business            &  0 &  0 &  0 &  0 &  0 &  0 &  2 &  4 &   0\\
+        \rowcolor{grey}
+        Humanities          &  0 &  0 &  0 &  0 &  6 &  2 &  0 &  4 & --15\\
+        The Mind            &  0 &  2 &  0 &  0 &  4 &  6 &  0 &  0 & --25\\
+        \rowcolor{grey}
+        The Body            &  8 &  4 &  4 &  4 &  0 &  0 &  0 &  0 & +15\\
+        Military            &  4 &  5 &  0 &  4 &  0 &  0 &  5 &  0 & +25\\
+        \rowcolor{grey}
+        General             &  1 &  1 &  1 &  1 &  1 &  1 &  1 &  1 &   0\\
+        Multiply by: & \multicolumn{1}{c}{Ph,} & \multicolumn{1}{c}{Ph}
+        & \multicolumn{1}{c}{Co,} & \multicolumn{1}{c}{Ph,} &
+        \multicolumn{1}{c}{In} & \multicolumn{1}{c}{In} &
+        \multicolumn{1}{c}{In,} &
+        \multicolumn{1}{c}{In}\\
+         & \multicolumn{1}{c}{Co} & 
+        & \multicolumn{1}{c}{In} & \multicolumn{1}{c}{Co} &
+        & &
+        \multicolumn{1}{c}{SB} &
+        \\
+      \end{tabular}
+
+      \medskip
+
+      \parbox{0.9\textwidth}{Modifiers are applied to the
+        percentile dice roll for the listed characteristic if the
+        character studied the listed field. All applicable modifiers for a
+        single characteristic are  added together. Then the total is
+        multiplied by the Potential Multipliers that apply to that
+        characteristic.
+        
+        See \ref{sec:characteristics} for further explanation.}
+    \end{minipage}}
+\end{table}
+
+
+\subsection{Characteristic Generation Table}
+\label{sec:char-gener-table}
+
+See page \pageref{tab:characteristic-gen}.
+
+\begin{table}[htbp]
+  \centering
+  \fbox{%
+    \begin{minipage}{2.65in}
+      \centering
+      \caption{Characteristic Generation Table}
+      \label{tab:characteristic-gen}
+
+      \medskip
+
+      \begin{tabular}{lc}
+        \multicolumn{1}{c}{Percentile Dice} & Characteristic\\
+        \multicolumn{1}{c}{Result + Modifier} & Rating\\[1ex]
+        7 or less & 1\\
+        \rowcolor{grey}
+        8--15 & 2\\
+        16--24 & 3\\
+        \rowcolor{grey}
+        25--34 & 4\\
+        35--57 & 5\\
+        \rowcolor{grey}
+        58--83 & 6\\
+        84--96 & 7\\
+        \rowcolor{grey}
+        97--108 & 8\\
+        109--119 & 9\\
+        \rowcolor{grey}
+        120--129 & 10\\
+        130--139 & 11\\
+        \rowcolor{grey}
+        140 or more & 12\\
+      \end{tabular}
+      
+      \medskip
+
+      \parbox{0.9\textwidth}{When generating the Mental Power
+        Rating, divide the rating  by 2 (rounding fractions down). An
+        Agility Rating of less than 5 is considered a 5.
+        
+        See \ref{sec:characteristics} for explanation of use.}
+    \end{minipage}}
+\end{table}
+
+\section{\index{professions}Character Professions}
+\label{sec:char-prof}
+
+Every character in \emph{Universe} undertakes a profession --- a
+particular area of employment where he may hone his abilities, gain
+skills, accumulate wealth, and/or acquire weapons and equipment
+otherwise difficult to obtain. There are 
+% 23
+\ref{item:myprofs}
+professions, including
+seven branches of military service. However, the character must
+fulfill certain requirements to enter a profession, and sometimes
+these are quite strict. A character with poor attributes can always be
+a \emph{colonist} for a short while and start his adventuring early,
+while still young and naive. Each character practices his profession
+for a number of years and, if he has been in the military, is then
+discharged; if he has been in a commercial profession, he is
+considered ``for hire'' at the end of his term of employment, and his
+life of individual exploits then commence.
+
+Each character is considered to be 20 years old upon entering a
+profession. The player should look over the entire list of professions
+before choosing one, and then note his choice on the Character Record.
+The procedures of the following Cases should be carried out in order
+by each player that is generating a character.
+
+
+\subsection[Prerequisites]{Each profession has a list of \index{professions!prerequisites}prerequisites
+  that a 
+  character must  fulfill in order to enter that profession.}
+\label{sec:each-profession-has}
+
+Certain fields of study must have been undertaken by the character.
+Some of his Characteristic Ratings must meet certain minimums. In some
+professions, a certain amount of initial wealth is required and/or
+other special requirements must be met. A character that does not meet
+all the prerequisites of a given profession may not enter that
+profession.
+
+
+\subsection[Mental Power Waiver]{A character with a \index{mental power!waiver}Mental Power
+  Rating of 5 or 6 may enter 
+  certain professions whether or not he  meets any prerequisites of
+  that profession.}
+\label{sec:mental-power-waiver}
+
+Such professions list a \emph{mental power waiver} in their
+prerequisites, and include star sailors, scouts, space pirates,
+armed traders, and merchant explorers.
+
+A character that enters one of these professions in this manner is
+considered to be a \emph{Psionic navigator}, an interstellar pilot
+whose Psionic powers enhance the efficiency and accuracy of
+hyperjumping. Such a character must spend \textbf{2} Skill Points
+acquired from his profession (see \ref{sec:each-prof-descr}) to
+achieve \emph{Navigator} Skill Level 2 and \textbf{2} more Skill
+Points to achieve \emph{Pilot} Skill Level 2. If the character
+receives fewer than \textbf{4} Skill Points for practicing his
+profession, he must apply all the points to these two skills as evenly
+as possible. Other than these requirements, a Psionic navigator
+undertakes his profession like any other character. If he wishes,
+however, he may choose additional Skill Levels in navigation and
+piloting within the restrictions of \ref{sec:skill-points-are}.
+
+
+\subsection[Years In Profession]{The player must declare how many
+  \index{professions!years in}years his character 
+  wishes to spend at his profession and then must use the Employment
+  Table to determine how many years are actually spent in the
+  profession.}
+\label{sec:player-must-declare}
+
+The player declares that his character wishes to spend \textbf{4},
+\textbf{8}, \textbf{12}, \textbf{16} or \textbf{20} years at his
+profession. Then he carries out one of the following procedures:
+
+\begin{itemize}
+\item \emph{If the character is a colonist or a thinker}, the declared
+  number of years is the \emph{actual} number of years employed. The
+  Employment Table is not used. Add \textbf{20} to the number of years
+  spent in the profession and note this sum as the character's age on
+  the Character Record.
+\item \emph{If the character is in a military profession}, roll one
+  die and cross-reference the die result with the column of the
+  Employment Table corresponding to the declared years of employment.
+  The result represents the \emph{actual} number of years the
+  character served before being discharged. Add \textbf{20} to the actual
+  number of years employed and note this sum as the character's age on
+  the Character Record. The character is considered to be at the point
+  in his life immediately after his discharge; his declared years of
+  employment has no further effect on play and does not count against
+  him if greater than his actual years of employment.
+\item \emph{If the character is in any other profession}, add
+  \textbf{20} to the \emph{declared} years of employment and note this
+  sum as the character's age on the Character Record. Then roll one
+  die and cross-reference the die result with the column of the
+  Employment Table corresponding to the declared years of employment.
+  The result represents the \emph{actual} number of years in which the
+  character was gainfully employed. If the result is less than the
+  \emph{declared} number of years, the difference in years is
+  considered to be time of \emph{unemployment}; the character does not
+  receive the benefits of experience from those years, but has aged
+  through them.
+\end{itemize}
+
+\begin{table}[htbp]
+  \centering
+  \fbox{%
+    \begin{minipage}{2in}
+      \centering
+      \caption{Employment Table}
+      \label{tab:employment}
+
+      \medskip
+
+      \begin{tabular}{lrrrrr}
+        & \multicolumn{5}{c}{\textbf{Declared Years of}}\\
+        & \multicolumn{5}{c}{\textbf{Employment}}\\
+        \textbf{Die}   & \textbf{4} & \textbf{8} & \textbf{12} &
+        \textbf{16} & \textbf{20}\\
+        \rowcolor{grey}
+        \textbf{1--2} & 4 & 4 &  8 & 12 & 12\\
+        \textbf{3--5} & 4 & 8 &  8 & 12 & 16\\
+        \rowcolor{grey}
+        \textbf{6--8} & 4 & 8 & 12 & 12 & 16\\
+        \textbf{9--10} & 4 & 8 & 12 & 16 & 20\\
+      \end{tabular}
+      
+      \medskip
+
+      \parbox{0.9\textwidth}{A character in the Thinker or Colonist
+        profession does not use this table. See
+        \ref{sec:player-must-declare}.}
+    \end{minipage}}
+\end{table}
+
+
+\subsection[Effects of Age]{If a character is 28 years of age or
+  older, the player 
+  must use the \index{age!effects of}Effects of Age Table to determine if any of the
+  character's physical characteristics are permanently reduced.}
+\label{sec:if-character-28}
+
+The player rolls one die and \emph{adds} the character's \emph{age} to
+the die result. He then locates the modified result on the Table to
+find how many points must be removed from his character's
+\index{endurance!decrease due to aging|see{age, effects of}}Endurance,
+\index{agility!decrease due to aging|see{age, effects of}}Agility,
+\index{strength!decrease due to aging|see{age, effects of}}Strength,
+and/or \index{dexterity!decrease due to aging|see{age, effects of}}Dexterity Ratings. Points must be removed from among the
+characteristics as evenly as possible \emph{in the order indicated}.
+Erase the listed rating and replace it with the new reduced rating.
+\textbf{Example:} A 36 year old character receives a reduction result
+of \textbf{5} from the Table. The player reduces the character's
+Endurance Rating by \textbf{2} and his Agility, Strength, and
+Dexterity Ratings each by \textbf{1}.
+
+A single rating may not be reduced below \textbf{1} in this manner. If
+this were about to happen, skip to the next characteristic.
+
+\begin{table}[htbp]
+  \centering
+  \fbox{%
+    \begin{minipage}{2.25in}
+      \centering
+      \caption{Effects of Age Table}
+      \label{tab:age}
+
+      \medskip
+
+      \begin{tabular}{lc}
+        \textbf{1 Die + Age} & \parbox{1in}{\centering\textbf{Physical
+        Characteristic Points Lost}}\\
+        \rowcolor{grey}
+        \textbf{34 or less} & 0\\
+        \textbf{35, 36} & 1\\
+        \rowcolor{grey}
+        \textbf{37, 38} & 2\\
+        \textbf{39, 40} & 3\\
+        \rowcolor{grey}
+        \textbf{41, 42} & 4\\
+        \textbf{43, 44} & 5\\
+        \rowcolor{grey}
+        \textbf{45, 46} & 6\\
+        \textbf{47 or more} & 7\\
+      \end{tabular}
+
+      \medskip
+
+      \parbox{0.9\textwidth}{See \ref{sec:if-character-28} for explanation.}
+    \end{minipage}}
+\end{table}
+
+
+\subsection[Skill Point Modifier]{Each profession description contains
+  a \index{skill point modifier}Skill  Point 
+  Modifier used with the Skill Point Table to determine the number of
+  Skill Points the character  receives.}
+\label{sec:each-prof-descr}
+
+The player refers to the column of the table matching his character's
+\emph{actual} years of employment. He then rolls one die,
+\emph{adding} the character's \emph{Intelligence Rating} and the
+\emph{Skill Point Modifier} to the die result. Locating the modified
+die result in the proper column yields the number of Skill Points that
+the character receives for practicing his profession.
+
+\subsection[Skill Points]{\index{skill points!initial}Skill Points are expended to purchase a
+  variety of skills 
+  for the character, representing expertise acquired during his years
+  of employment.}
+\label{sec:skill-points-are}
+
+
+A player may choose any skills for his character that are listed in
+his profession description. He may also choose any skills in the
+listings for the character's fields of study in \ref{sec:fos-skills}.
+\textbf{Exception:} A character that studied the mind may choose or
+improve only a skill from that field of study if his Mental Power
+Rating is \textbf{4} or greater. Any skills listed in the
+\emph{general} category of \ref{sec:fos-skills} are also available.
+The expenditure of \textbf{1} Skill Point allows the character to
+receive \textbf{1} Skill Level in any skill for which he is eligible.
+Skill Points may be expended to receive more than one level in a given
+skill (at the rate of \textbf{1} point per level), within the
+following \index{skills!maximum level (generation)}restrictions:
+
+\begin{itemize}
+\item If the character was employed for \textbf{4} years, no single
+  skill may exceed Level 3.
+\item If the character was employed for \textbf{8} to \textbf{12}
+  years, no single skill may exceed Level 4.
+\item If the character was employed for \textbf{16} to \textbf{20}
+  years, no single skill may exceed Level 5.
+\end{itemize}
+
+The skill list in each profession may place additional restrictions on
+specific skills or may require the acquisition of a certain skill. A
+character that received a skill by the expenditure of an
+\emph{Initial} Skill Point (see \ref{sec:init-sp}) may now expend
+Skill Points to increase the level of that skill, but he is still
+subject to these restrictions.
+
+A player may \index{environ skill!improving}improve an environ skill (if allowed by his fields of
+study or profession) by expending a Skill Point. The expenditure of
+\textbf{1} Skill Point allows the player to increase the Skill Level
+in \textbf{1} environ \emph{and the} \textbf{4} \emph{environs
+  directly} (\emph{not} diagonally) \emph{adjacent to it} on the
+Environ Skill Display by \textbf{1} level each. Thus, a Skill Point
+expended to increase woods/hills would also increase light
+vegetation/hills, woods/mountains, woods/ flat, and forest/hills.
+Environ, urban, and gravity Skill Levels are not affected by the years
+of employment restrictions in this Case; however, the limits listed in
+\ref{sec:environmental-skills} must be adhered to.
+
+
+\index{skills!familiar (X)}After all chosen skills have been assigned Skill Levels, the player
+places an \textbf{\textsf{X}} in each Skill Level space for every
+skill his character was eligible to receive but did not take. This
+includes all skills listed for his profession, his fields of study
+and, if from a deep space environ, those listed in
+\ref{sec:deep-space}. Skills marked in this manner are familiar to the
+character and he will be able to acquire them easily during play (see
+\ref{sec:experience-points}).
+
+\begin{table}[htbp]
+  \centering
+  \fbox{%
+    \begin{minipage}{2.30in}
+      \centering
+      \caption{Skill Point Table}
+      \label{tab:skillpoint}
+      
+      \medskip
+      
+      \begin{tabular}{clllll}
+        & \multicolumn{5}{c}{\textbf{Actual Years}}\\
+        & \multicolumn{5}{c}{\textbf{Of Employment}}\\
+        \textbf{Modified}\\
+        \textbf{Die Result} & \textbf{4} & \textbf{8} & \textbf{12} &
+        \textbf{16} & \textbf{20}\\
+        \rowcolor{grey}
+        2--5 & 1 & 4 &  6 &  7 &  7\\
+        6--9  & 2 & 5 &  7 &  8 &  8\\
+        \rowcolor{grey}
+        10--13 & 2 & 6 &  8 &  9 & 10\\
+        14--17 & 3 & 6 &  8 & 10 & 11\\
+        \rowcolor{grey}
+        18--21 & 3 & 7 &  9 & 11 & 12\\
+        22--26 & 4 & 7 & 10 & 12 & 14\\
+        \rowcolor{grey}
+        27--32 & 4 & 8 & 11 & 13 & 15\\
+      \end{tabular}
+    \end{minipage}}
+\end{table}
+
+\subsection[Benefits]{Each profession description contains a variety of
+  material \index{benefits}benefits the character may receive from  practicing that
+  profession.}
+\label{sec:benefits}
+
+The player rolls one die and adds the character's actual years of
+employment to the die result. He then locates the modified die result
+on the Benefit Table to find his character's Benefit Level (a letter
+from \textbf{A} to \textbf{F}). The character receives the benefits
+listed for the acquired Benefit Level in the description of his
+profession.
+
+Benefits include weapons, equipment and/or cash. The capabilities of
+weapons and equipment are detailed in Chapter \ref{cha:equipment}.
+Cash is received as \emph{lump sum} (add this to any money the
+character may possess) or as a \emph{multiplier} (multiply the listed
+amount of money by this number). \index{uniform}Characters in a military profession
+also receive a \emph{rank of office}, a duty uniform, a dress uniform
+(uniforms are not listed in the benefits) and, in some instances, an
+annual pension.
+
+\textbf{GM Note:} The rank a character achieves in a military
+profession will help him during play when dealing with other military
+characters and non-player characters, especially if he is wearing his
+uniform. For example, a captain of the space sailors may receive
+special favours when travelling in a government spacecraft, such as
+preferential accommodations or extra information concerning the
+destination. The GM is responsible for handing out pensions (although
+the player should record the amount in the Money section of his
+Character Record). A character's first pension payment is received one
+game-year after the character is generated. See \ref{sec:keeping-time}
+for timekeeping guidelines.
+
+
+\begin{table}[htbp]
+  \centering
+  \fbox{%
+    \begin{minipage}{2.35in}
+      \centering
+      \caption{Benefits Table}
+      \label{tab:benefits}
+      
+      \medskip
+      
+      \begin{tabular}{cc}
+        \parbox{1in}{\centering 1 DIE + ACTIVE YEARS IN PROFESSION} &
+        \parbox{1in}{\centering BENEFIT LEVEL}\\
+        \rowcolor{grey}
+        5--10  & A \\
+        11--14 & B \\
+        \rowcolor{grey}
+        15--18 & C \\
+        19--23 & D \\
+        \rowcolor{grey}
+        24--28 & E \\
+        29--30 & F \\
+      \end{tabular}
+
+      \medskip
+
+      \parbox{0.9\textwidth}{Explanation of each 
+        result is listed in 
+        appropriate 
+        Profession. 
+        See \ref{sec:benefits} for 
+        explanation of use.}
+    \end{minipage}}
+\end{table}
+
+\subsection[Profession Tables]{The Profession Tables include the
+  Employment Table, 
+  Effects of Age Table, Skill Point  Table, and Benefits Table.}
+\label{sec:prof-tabl-incl}
+
+See pages \pageref{tab:employment} through \pageref{tab:benefits}.
+
+
+\subsection[Professions]{Each player may choose one of the following
+%  23 
+  \ref{item:myprofs}
+  \index{professions}professions 
+  for his character. }
+\label{sec:each-player-may}
+
+\pagebreak[2]
+
+\noindent{\large\textbf{ASTROGUARD (Military)}}\label{sec:prof-astroguard}\index{astroguard}
+\stepcounter{myprofs}
+
+A member of a planetary or star system spaceship force. The
+astroguards protect the space lanes from privateers and monitor all
+ship traffic coming into and out of local space.  Usually operating in
+groups of small craft, astroguards also respond to distress calls and
+are sometimes called upon for
+combat duty.
+
+\renewcommand{\theenumi}{\textbf{\Alph{enumi}}}
+\textbf{Prerequisites:} Study of the military; Aggression Rating of at
+least \textbf{5}.
+
+\textbf{Skill Point Modifier:} 1.
+
+\textbf{Skills Available:} Gunnery, missile guidance, space tactics,
+pilot, air vehicles, EVA, spaceship tech (\textbf{1} Level only).
+
+\pagebreak[2]
+\textbf{Benefits:}
+\begin{enumerate}
+\item Corporal: 300 Mils cash.
+\item Flight Sergeant: 1 Tran cash.
+\item Flight Lieutenant: 3 Trans cash; \hyperlink{tag:gravity-web}{internal gravity web}.
+\item Squadron Leader: 10 Trans cash; 250 Mils per year pension;
+  \hyperlink{tag:gravity-web}{internal gravity web}.
+\item Wing Commander: 25 Trans cash; 750 Mils per year  pension;
+  \hyperlink{tag:gravity-web}{internal gravity web}.
+\item Group Captain: 60 Trans cash; 2.5 Trans per year pension;
+  \hyperlink{tag:gravity-web}{internal gravity web}.
+\end{enumerate}
+
+\bigskip
+
+\pagebreak[2]
+
+
+\noindent{\large\textbf{CIVIL
+    INSPECTOR}}\label{sec:prof-civil-inspector}\index{civil inspector}
+\stepcounter{myprofs}
+
+A civilian employed by the federation's Agency for Interstellar
+Development. A civil inspector travels from world to world
+administering the progress of colonization programs. He watches for
+and prevents private exploitation of planets still in the early stages
+of development. Although he receives some self-defense training (in
+case of hostile merchants in isolated areas), a civil inspector
+usually calls for military aid when things get rough.
+
+\textbf{Prerequisites:} Study of the humanities and business;
+Characteristic Ratings of at least Intelligence \textbf{6}, Leadership
+\textbf{4}, Empathy \textbf{6}, and Mental Power \textbf{2}.
+
+\textbf{Skill Point Modifier:} 4.  
+
+\textbf{Skills Available:}  Handguns, unarmed combat, agriculture,
+  biology, planetology, urban.
+
+\pagebreak[2]
+\textbf{Benefits:}
+
+\begin{enumerate}
+\item 250 Mils cash.
+\item  700 Mils cash; \hyperlink{tag:translator}{translator}.
+\item  2 Trans cash; \hyperlink{tag:translator}{translator} or \hyperlink{tag:commlink}{interstellar commlink}.
+\item  7 Trans cash; \hyperlink{tag:translator}{translator} and \hyperlink{tag:commlink}{interstellar commlink}.
+\item 20 Trans cash; \hyperlink{tag:bot-frazette-blue}{Frazette Blue
+  robot} with \hyperlink{tag:bot-information}{information system} and 
+  \hyperlink{tag:bot-recorder}{recorder system}.
+\item 40 Trans cash; \hyperlink{tag:bot-manner-36sd}{Manner 36sd robot} with \hyperlink{tag:bot-information}{information system},
+  \hyperlink{tag:bot-weapon-target}{weapon targeting system}, \hyperlink{tag:bot-weapon}{laser pistol system}, \hyperlink{tag:bot-recorder}{recorder system}.
+\end{enumerate}
+
+\bigskip
+
+\pagebreak[2]
+
+\noindent{\large\textbf{COLONIST}}\label{sec:prof-colonist}\index{colonist}
+\stepcounter{myprofs}
+
+A citizen of the federation, living and working on a newly settled
+planet.
+
+\textbf{Prerequisites:} None.
+
+\textbf{Skill Point Modifier:} 0.
+
+\textbf{Skills Available:}  Trading, air vehicles, marine vehicles,
+agriculture, mining.
+
+\pagebreak[2]
+\textbf{Benefits:}
+\begin{enumerate}
+\item Nothing.
+\item 1 Tran.
+\item  2 Trans; \hyperlink{tag:cl6-laser}{Civ Level 6 laser pistol}.
+\item  4 Trans; \hyperlink{tag:cl6-laser}{Civ Level 6 laser pistol}.
+\item  8 Trans; \hyperlink{tag:auto}{car}.
+\item  15 Trans; \hyperlink{tag:auto}{Civ Level 5 automobile}; \hyperlink{tag:cl6-laser}{Civ Level 6 laser pistol}.  
+\end{enumerate}
+
+\bigskip
+
+\pagebreak[2]
+
+\noindent{\large\textbf{DIPLOMAT}}\label{sec:prof-diplomat}\index{diplomat}
+\stepcounter{myprofs}
+
+An employee of the federation or any planet government serving as a
+representative to other planets. Diplomats are ``couriers'' of
+official decisions and agreements. As a symbol of goodwill, diplomats
+enjoy great hospitality whenever visiting an area in an official
+capacity.
+
+\textbf{Prerequisites:} Study of the humanities and the mind;
+Characteristic Ratings of at least Intelligence \textbf{7}, Empathy \textbf{7}, Mental
+Power \textbf{2}. The Aggression Rating may not exceed \textbf{6}. The character's
+initial wealth must be at least 1 Tran.
+
+\textbf{Skill Point Modifier:} 8.
+
+\textbf{Skills Available:}  Recruitment, programming, computer/robot
+   tech (\textbf{1} Level only), urban.
+
+\pagebreak[2]
+\textbf{Benefits:}
+\begin{enumerate}
+\item 300 Mils cash.
+\item 1 Tran cash; \hyperlink{tag:audio-sealed-case}{audio-sealed case}.
+\item 3 Trans cash; \hyperlink{tag:audio-sealed-case}{audio-sealed case}; \hyperlink{tag:translator}{translator}.
+\item 10 Trans cash; \hyperlink{tag:audio-sealed-case}{audio-sealed case}; \hyperlink{tag:translator}{translator}; interstellar
+  commlink.
+\item 25 Trans cash; \hyperlink{tag:bot-manner-38sdf}{Manner 38sdf robot} with \hyperlink{tag:bot-holographer}{holographer system},
+  \hyperlink{tag:bot-language}{language system}.
+\item 60 Trans cash; \hyperlink{tag:bot-soidistant-v-201}{Soidistant V-201} with \hyperlink{tag:bot-creative-thought}{creative thought system},
+  \hyperlink{tag:bot-holographer}{holographer system}.
+\end{enumerate}
+
+\bigskip
+
+\pagebreak[2]
+
+\noindent{\large\textbf{DOCTOR}}\label{sec:prof-doctor}\index{doctor}
+\stepcounter{myprofs}
+
+An esteemed member of the medical profession. The state of medicine in
+the 24th Century allows MDs to perform feats of healing approaching
+the miraculous. Doctors work out of medical offices in urban areas or,
+in sparsely populated colonies, travel from settlement to settlement
+as called for.
+
+\textbf{Prerequisites:} Study of theoretical and applied science;
+   Characteristic Ratings of at least Dexterity  \textbf{7}, Intelligence  \textbf{8},
+   Mental Power \textbf{2}, and Empathy  \textbf{6}.
+
+\textbf{Skill Point Modifier:} 10.
+
+\textbf{Skills Available:} Teaching, diagnosis, treatment.
+
+\pagebreak[2]
+\textbf{Benefits:}
+\begin{enumerate}
+\item \hyperlink{tag:first-aid-kit}{first aid kit}.
+\item 3 Trans cash; \hyperlink{tag:first-aid-kit}{first aid kit}.
+\item 1 Tran x Intelligence Rating in cash; \hypertarget{tag:cl6-mediscanner}{Civ Level 6 mediscanner}.
+\item 4 Trans x Intelligence Rating in cash; \hypertarget{tag:cl6-mediscanner}{Civ Level 6 mediscanner}.
+\item 10 Trans x Intelligence Rating in cash; \hypertarget{tag:cl8-mediscanner}{Civ Level 8 mediscanner}.
+\item 20 Trans x Intelligence Rating in cash; 
+%% Original:
+%%Manner 36sdf robot with medical system.
+%% New:
+\hyperlink{tag:bot-manner-38sdf}{Manner 38sdf robot} with \hyperlink{tag:bot-medical}{medical system}.
+%% End change
+
+\end{enumerate}
+%% Label placed here so it generates the right reference.
+\label{sec:prof-doctor-bot}
+
+\bigskip
+
+\pagebreak[2]
+
+\noindent{\large\textbf{ENFORCER}}\label{sec:prof-enforcer}\index{enforcer}
+\stepcounter{myprofs}
+
+A privately employed bodyguard, soldier, or security specialist.
+Enforcers usually work for corporations that control a large area of a
+world, executing the rules of the company or patrolling restricted
+lands. Enforcers are sometimes hired by backwater colonies to quell
+criminal activity or civil unrest. Enforcers are generally disliked by
+those they are watching over.
+
+\textbf{Prerequisites:} Study of the mind and the body; all Physical
+Characteristics must be at least \textbf{4}; Intelligence must be at least \textbf{5};
+Leadership must be at least \textbf{5}.
+
+\textbf{Skill Point Modifier:} 6.
+
+\textbf{Skills Available:} Battlefield, demolitions, machine guns,
+longarms, handguns, paint gun, recruiting, law, military ground
+vehicles.
+
+\pagebreak[2]
+\textbf{Benefits:}
+\begin{enumerate}
+\item 500 Mils cash.
+\item 1.5 Trans cash.
+\item 3 Trans cash; Civ Level 5 pistol.
+\item 10 Trans cash; \hyperlink{tag:cl8-laser}{Civ Level 8 laser pistol}.
+\item 25 Trans cash; \hyperlink{tag:cl8-paintgun}{Civ Level 8 paint gun}.
+\item 60 Trans cash; \hyperlink{tag:cl8-paintgun}{Civ Level 8 paint gun}; Civ Level 5 submachine
+  gun.
+\end{enumerate}
+
+\bigskip
+
+\pagebreak[2]
+
+\noindent{\large\textbf{EXPLORER}}\label{sec:prof-explorer}\index{explorer}
+\stepcounter{myprofs}
+
+A crewman or part-owner of an interstellar exploration vessel.
+Explorers organize and carry out private expeditions to unsettled
+planets, gathering information to facilitate future commercial
+development. Often their efforts are financed by large corporations
+and private investors. Explorers are most concerned with the
+profitable gain of knowl edge; they rarely transport large cargoes and
+their ships are not usually armed.
+
+\textbf{Prerequisites:} Study of business and either theoretical or
+applied science; Characteristic Ratings of at least Intelligence
+\textbf{7}, Mental Power \textbf{3}, and Empathy \textbf{4}. The
+character's initial wealth must be at least 500 Mils. The mental power
+waiver applies (see \ref{sec:mental-power-waiver}).
+
+\textbf{Skill Point Modifier:} 7.
+
+\textbf{Skills Available:} Handguns, paint gun, gunnery, pilot,
+linguistics, survival, air vehicles, marine vehicles, planetology,
+biology, geology, astronomy, navigation, any environs, any gravity.
+
+\pagebreak[2]
+\textbf{Benefits:}
+\begin{enumerate}
+\item Nothing.
+\item Initial wealth x 3.
+\item Initial wealth x 5; Civ Level 8 \hyperlink{tag:bioscanner}{bioscanner}.
+\item Initial wealth x 10; Civ Level 8 \hyperlink{tag:geoscanner}{geoscanner}.
+\item Initial wealth x 25; \hyperlink{tag:neuroscanner}{neuroscanner}.
+\item Initial wealth x 50; \hyperlink{tag:bot-manner-50sd}{Manner 50sd robot} with \hyperlink{tag:bot-bio}{bio system},
+  \hyperlink{tag:self-activation}{self-activation} system, and \hyperlink{tag:holographer}{holographer} system.
+\end{enumerate}
+
+\bigskip
+
+\pagebreak[2]
+
+\noindent{\large\textbf{FREEFALLER (Military)}}\label{sec:prof-freefaller}\index{freefaller}
+\stepcounter{myprofs}
+
+A soldier in the zero gravity branch of the federal armed forces.
+Freefallers are usually assigned to a fleet patrolling a single star
+system. They attack and defend asteroid belts, small moons, and space
+colonies, and specialize in spaceship boarding operations.
+
+\textbf{Prerequisites:} Study of \textbf{2} of the following fields:
+applied science, the body, and the military; Characteristic Ratings of
+at least Dexterity \textbf{6}, Agility \textbf{7}, and Aggression
+\textbf{4}. The character's home gravity type may not be \emph{heavy}
+or \emph{extreme}.
+
+\textbf{Skill Point Modifier:} 3.  
+
+\textbf{Skills Available:} Near Weightless Gravity Skill Level is
+automatically increased to \textbf{2} (if not already equal to or greater than
+\textbf{2}) at no cost in Skill Points. Battlefield, body armor, machine guns,
+arc guns, longarms, hand guns, jetpack, demolitions, EVA, suit tech,
+weapon tech, near weightless gravity (in addition to any levels
+received as described in the preceding).
+
+\pagebreak[2]
+\textbf{Benefits:}
+\begin{enumerate}
+\item Lancer: 300 Mils cash.
+\item Corporal: 1 Tran cash; Civ Level 6 \hyperlink{tag:expedsuit}{expedition suit}.
+\item Sergeant: 3 Trans cash; Civ Level 7 \hyperlink{tag:expedsuit}{expedition suit}.
+\item Lieutenant: 10 Trans cash; 250 Mils per year pension; Civ Level
+  7 \hyperlink{tag:expedsuit}{expedition suit}.
+\item Captain: 25 Trans cash; 750 Mils per year pension; Civ Level 7
+  \hyperlink{tag:expedsuit}{expedition suit}; \hyperlink{tag:arcgun}{arc gun}.
+\item Colonel: 60 Trans cash; 2.5 Trans per year pension; Civ Level 7
+  \hyperlink{tag:expedsuit}{expedition suit}; \hyperlink{tag:arcgun}{arc gun}; \hyperlink{tag:jetpack}{jetpack}.
+\end{enumerate}
+
+\bigskip
+
+\pagebreak[2]
+
+\noindent{\large\textbf{HANDYMAN}} \label{sec:prof-handyman}\index{handyman}
+\stepcounter{myprofs}
+
+An engineer or technician working with any kind of planet-based
+technology. Handymen build and repair electrical devices, protective
+suits, weapons, computers, robots, and vehicles. They are employed by
+all branches of government, military and commercial concerns.
+
+\textbf{Prerequisites:} Study of applied science \emph{twice}; Characteristic
+Ratings of at least Dexterity \textbf{6} and Intelligence \textbf{6}.
+
+\textbf{Skill Point Modifier:} 5.
+
+\textbf{Skills Available:} Agriculture, programming, physics, energy
+tech, spaceship tech (\textbf{1} Level only), weapon tech, compu/robot tech.
+
+\pagebreak[2]
+\textbf{Benefits:}
+\begin{enumerate}
+\item \hyperlink{tag:basicrepair}{Basic repair kit}. 
+\item 1 Tran cash; \hyperlink{tag:basicrepair}{basic repair kit}.  
+\item 3 Trans cash; Civ Level 7 \hyperlink{tag:electrokit}{electrokit}.   
+\item 10 Trans cash; Civ Level 8 \hyperlink{tag:electrokit}{electrokit}.  
+\item 20 Trans cash; Civ Level 8 \hyperlink{tag:vehiclekit}{vehicle kit}.  
+\item 40 Trans cash; Civ Level 8 \hyperlink{tag:vehiclekit}{vehicle kit} and \hyperlink{tag:robotkit}{robot kit}.
+\end{enumerate}
+
+\bigskip
+
+\pagebreak[2]
+
+\noindent{\large\textbf{INTERSTELLAR
+    TRADER}}\label{sec:prof-interstellar-trader}\index{interstellar trader}
+\stepcounter{myprofs}
+
+A crewman or part owner of an interstellar freight vessel. Traders
+travel from world to world, purchasing and selling goods for profit.
+Trader ships are usually armed, as a defense against space pirates and
+unfriendly planet governments. Although traders stay on the right side
+of the law, they are always willing to venture away from established
+trade routes if good money can be made.
+
+\textbf{Prerequisites:} Study of business; Characteristic Ratings of
+at least Intelligence \textbf{6} and Mental Power \textbf{2}. The
+character's initial wealth must be at least 1 Tran. The mental power
+waiver applies (see \ref{sec:mental-power-waiver}).
+
+\textbf{Skill Point Modifier:} 4.
+
+\textbf{Skills Available:} Longarms, handguns, arc gun, gunnery,
+missile guidance, space tactics, pilot, linguistics, diplomacy,
+asteroid mining, astronomy, EVA.
+
+\pagebreak[2]
+\textbf{Benefits:}
+\begin{enumerate}
+\item Nothing; all initial wealth lost.   
+\item Civ Level 7 \hyperlink{tag:buscomp}{business computer}.    
+\item Initial wealth x 2; \hyperlink{tag:buscomp}{business computer}.  
+\item Initial wealth x 5; \hyperlink{tag:buscomp}{business computer}.   
+\item Initial wealth x 12; \hyperlink{tag:buscomp}{business computer}.   
+\item Initial wealth x 30; \hyperlink{tag:bot-brummagen-ii}{Brummagen II robot} with \hyperlink{tag:bot-spacecraft-tech}{spaceship tech
+  system}; \hyperlink{tag:buscomp}{business computer}.
+\end{enumerate}
+
+\bigskip
+
+\pagebreak[2]
+
+\noindent{\large\textbf{LAWMAN (Military)}}\label{sec:prof-lawman}\index{lawman}
+\stepcounter{myprofs}
+
+A member of a planetary law enforcement agency. Lawmen perform the
+functions of today's policemen, protecting the citizenry and
+investigating crimes. However, the sparse and spread out populations
+of most worlds often require lawmen to travel from settlement to
+settlement executing justice wherever necessary, much like the
+marshals of the old west.
+
+\textbf{Prerequisites:} Study of the body and the humanities; all Physical Characteristic Ratings must be at least  \textbf{4}.
+
+\textbf{Skill Point Modifier:} 3.
+
+\textbf{Skills Available:} Machine guns, longarms, handguns, paint
+gun, air vehicles, marine vehicles, urban, any environs, any gravity.
+
+\pagebreak[2]
+\textbf{Benefits:}   
+\begin{enumerate}
+\item  Patrolman: 250 Mils cash.  
+\item Constable: 700 Mils cash; \hyperlink{tag:cl6-laser}{Civ Level 6 laser pistol}.  
+\item Sergeant: 2 Trans cash; \hyperlink{tag:cl8-laser}{Civ Level 8 laser pistol}.   
+\item Marshal: 7 Trans cash; \hyperlink{tag:cl6-paint}{Civ Level 6 paint gun} and used rover (ATV).  
+\item Inspector: 20 Trans cash; 500 Mils per year pension; \hyperlink{tag:cl8-paint}{Civ Level 8
+  paint gun}.
+\item Chief: 40 Trans cash; 2 Trans per year pension; \hyperlink{tag:cl8-paint}{Civ Level 8
+  paint gun} and any hand gun.
+\end{enumerate}
+
+\bigskip
+
+\pagebreak[2]
+
+\noindent{\large\textbf{MERCHANT}}\label{sec:prof-merchant}\index{merchant}
+\stepcounter{myprofs}
+
+A trader of goods on the local (planetary) level. Merchants travel
+from settlement to settlement on a sparsely populated world, or
+arrange for transport of goods from point to point on a world.
+Merchants handle every thing from basic foodstuffs to fine electronic
+equipment to contraband.
+
+\textbf{Prerequisites:} Study of business \emph{twice} or study of
+business \emph{and} applied science; Characteristic Ratings of at
+least Intelligence \textbf{5} and Empathy \textbf{7}. The character's
+initial wealth must be at least 1 Tran.
+
+\textbf{Skill Point Modifier:} 5.
+
+\textbf{Skills Available:} Diplomacy, air vehicles, marine vehicles,
+agriculture, electro tech, computer/robot tech, vehicle tech, urban,
+any environs.
+
+\pagebreak[2]
+\textbf{Benefits:}
+\begin{enumerate}
+\item Nothing; all initial wealth lost.  
+\item Civ Level 7 \hyperlink{tag:buscomp}{business computer}.   
+\item Initial wealth x 3; Civ Level 7 \hyperlink{tag:buscomp}{business computer}.  
+\item Initial wealth x 10; Civ Level 7 \hyperlink{tag:buscomp}{business computer}.  
+\item Initial wealth x 20; Civ Level 5 truck.   
+\item Initial wealth x 40; Civ Level 7 jet.
+\end{enumerate}
+
+\bigskip
+
+\pagebreak[2]
+
+\noindent{\large\textbf{RANGER (Military)}}\label{sec:prof-ranger}\index{ranger}
+\stepcounter{myprofs}
+
+A soldier in the standard federal ground force. A ranger's
+responsibilities cover all aspects of line and garrison duty on a
+planet surface, including air and marine patrol. During combat,
+rangers come in as the ``second wave'' following the Space Troopers
+and carrying out any ``mopping up'' operations.
+
+\textbf{Prerequisites:} Study of the military and the body; all
+ Physical Characteristic Ratings must be at least  \textbf{4}.
+
+\textbf{Skill Point Modifier:} 2.  
+
+\textbf{Skills Available:} Artillery, machine guns, paint gun, bows,
+military ground vehicles, air vehicles, marine vehicles, weapon tech,
+vehicle tech, treatment, any environs.
+
+\pagebreak[2]
+\pagebreak[2]
+\textbf{Benefits:}
+\begin{enumerate}
+\item Ranger: 300 Mils cash; \hyperlink{tag:respirator}{respirator}.
+\item Corporal: 1 Tran cash; Civ Level 6 \hyperlink{tag:respirator-helmet}{respirator helmet}.
+\item Sergeant: 3 Trans cash; Civ Level 8 \hyperlink{tag:respirator-helmet}{respirator helmet}.
+\item Lieutenant: 10 Trans cash; 250 Mils per year pension; Civ Level
+  8 \hyperlink{tag:respirator-helmet}{respirator helmet}; \hyperlink{tag:cl6-laser}{Civ Level 6 laser pistol}.
+\item Captain: 25 Trans cash; 750 Mils per year pension; Civ Level 8
+  \hyperlink{tag:respirator-helmet}{respirator helmet}; \hyperlink{tag:cl8-laser}{Civ Level 8 laser pistol}.
+\item Colonel: 60 Trans cash; 2.5 Trans per year pension; Civ Level 8
+  \hyperlink{tag:respirator-helmet}{respirator helmet} and \hyperlink{tag:cl8-paintgun}{paint gun}.
+\end{enumerate}
+
+\bigskip
+
+\pagebreak[2]
+
+\noindent{\large\textbf{REPORTER/JOURNALIST}}\label{sec:prof-reporter-journalist}\index{reporter/journalist}
+\stepcounter{myprofs}
+
+A newsperson or media personality, this individual can become widely
+known, can establish contacts on many levels of federation society,
+from the underworld to the high echelons of government, and can be
+sent to dangerous and exotic places on assignment at no cost to self
+(other than to his safety).
+
+\textbf{Prerequisites:} Study of the humanities and either business or
+theoretical science; Characteristic Ratings of at least Intelligence
+\textbf{7}, Mental Power \textbf{2}, Aggression \textbf{5}.
+
+\textbf{Skill Point Modifier:} 7.
+
+\textbf{Skills Available:}  Unarmed combat, survival, disguise,
+   forgery/counterfeiting, urban, air vehicles, programming, electro
+   tech, recruiting.
+
+\pagebreak[2]
+\textbf{Benefits:} All reporters receive an audio recorder.
+\begin{enumerate}
+\item Nothing additional.
+\item 2 Trans cash; photographic equipment.
+\item Credentials with planetary news service; 500 Mils x Intelligence
+  Rating in cash; \hyperlink{tag:superoid}{superoid camera}.
+\item Credentials with star system news service; 3 Trans x
+  Intelligence Rating in cash; basic \hyperlink{tag:holographer}{holographer}.
+\item Credentials with federation-wide news service; 10 Trans x
+  Intelligence Rating in cash; shoulder \hyperlink{tag:holographer}{holographer}.
+\item Media celebrity throughout federation; 25 Trans x Intelligence
+  Rating in cash; \hyperlink{tag:bot-manner-38sdf}{Manner 38sdf robot} with \hyperlink{tag:bot-information}{information system},
+  \hyperlink{tag:bot-holographer}{holographer system}.
+\end{enumerate}
+
+The GM should take a reporter's status into account when the character
+requests information, assist ance, or financial backing from
+commercial, government, or media of ficials.
+
+\bigskip
+
+\pagebreak[2]
+
+\noindent{\large\textbf{SCIENTIST}}\label{sec:prof-scientist}\index{scientist}
+\stepcounter{myprofs}
+
+A researcher or inventor employed by the federation or by a private
+concern. Scientists specialize in any of the physical sciences and are
+the powers behind the advanced technology and discoveries of the 24th
+Century. As such, any expedition or venture of an exploratory nature
+will receive much more support if a qualified scientist participates.
+
+\textbf{Prerequisites:} Study of \textbf{2} of the following: theoretical
+science, applied science, or the humanities; Intelligence Rating of at
+least \textbf{8}.
+
+\textbf{Skill Point Modifier:} 9.  
+
+\textbf{Skills Available:} Teaching, agriculture, chemistry,
+planetology, programming (\textbf{1} Level only), biology, geology, astronomy,
+energy, computer/robot tech (\textbf{1} Level only).
+
+\pagebreak[2]
+\textbf{Benefits:}
+\begin{enumerate}
+\item 1 Tran cash.  
+\item 2 Trans cash; Civ Level 5 \hyperlink{tag:chemlab}{chemlab}.
+\item 500 Mils x Intelligence Rating in cash; Civ Level 6
+  \hyperlink{tag:chemsynth}{chemsynthesizer}.
+\item 2 Trans x Intelligence Rating in cash; Civ Level 7 \hyperlink{tag:chemlab}{chemlab}.
+\item 6 Trans X Intelligence Rating in cash; Civ Level 8 \hyperlink{tag:bioscanner}{bioscanner}
+  and \hyperlink{tag:geoscanner}{geoscanner}.
+\item 15 Trans x Intelligence Rating in cash; \hyperlink{tag:bot-frazette-amber}{Frazette Amber robot}
+  with \hyperlink{tag:bot-geo}{geo system}, \hyperlink{tag:bot-chemical}{chemical system}, \hyperlink{tag:bot-bio}{bio system}, and \hyperlink{tag:bot-information}{information
+  system}.
+\end{enumerate}
+
+\bigskip
+
+\pagebreak[2]
+
+\noindent{\large\textbf{SCOUT (Military)}}\label{sec:prof-scout}\index{scout}
+\stepcounter{myprofs}
+
+A member of the exploration branch of the federal armed forces. Scouts
+lead the way to unexplored worlds, gathering specimens and
+information, forging the path for future colonization. Scouts usually
+work in small teams when conducting an expedition and sometimes work
+alone. Although administered by the military, the scouts rarely
+participate in actual combat.
+
+\textbf{Prerequisites:} Study of theoretical or applied science; all
+  Physical Characteristics  must be at least  \textbf{3}; Characteristic
+  Ratings of at least Mental Power  \textbf{2} and Empathy  \textbf{6}; the mental power
+  waiver applies  (see \ref{sec:mental-power-waiver}).
+
+\textbf{Skill Point Modifier:} 4.
+
+\textbf{Skills Available:}  Longarms, handguns, pilot, EVA, survival,
+   air vehicles, marine vehicles, jetpack, planetology, treatment,
+   biology, geology, astronomy, suit tech, any environs, any gravity.
+
+\pagebreak[2]
+\textbf{Benefits:}
+\begin{enumerate}
+\item Scout Second Class: 300 Mils cash.
+\item Scout First Class: 1 Tran cash; Civ Level 6 \hyperlink{tag:expedsuit}{expedition suit}.
+\item Master Scout: 3 Trans cash; Civ Level 7 \hyperlink{tag:expedsuit}{expedition suit}.
+\item Single Scout: 5 Trans cash; Civ Level 7 \hyperlink{tag:expedsuit}{expedition suit},
+  \hypertarget{tag:neuroscanner}{neuroscanner}, and \hypertarget{tag:rover}{rover}.
+\item Expedition Leader: 25 Trans cash; 750 Mils per year pension; Civ
+  Level 7 \hyperlink{tag:expedsuit}{expedition suit} and \hyperlink{crawler}{crawler}.
+\item Scout Commodore: 60 Trans cash; 2.5 Trans per year pension; Civ
+  Level 7 \hyperlink{tag:expedsuit}{expedition suit} and used \hyperlink{tag:pod-explorer}{explorer pod}.
+\end{enumerate}
+
+\bigskip
+
+\pagebreak[2]
+
+\noindent{\large\textbf{SPACE
+    PIRATE}}\label{sec:prof-space-pirate}\index{space pirate}
+\stepcounter{myprofs}
+
+A crewmember or owner of an outlaw spaceship. Space pirates waylay
+commercial vessels in interplanetary space, smuggle legal and illegal
+goods, and terrorize asteroid mining operations and small colonies.
+Pirate vessels may sometimes be chartered for secret journeys to
+distant parts at exorbitant prices.
+
+\textbf{Prerequisites:} All Physical Characteristics must be at least
+\textbf{5}; Characteristic Ratings must be at least Aggression
+\textbf{7} and Mental Power \textbf{2}. The character \emph{must} have
+an initial wealth \emph{less than} \textbf{4} Trans and must
+\emph{not} have studied the humanities. The mental power waiver
+applies (see \ref{sec:mental-power-waiver}).
+
+\textbf{Skill Point Modifier:} 6.
+
+\textbf{Skills Available:} Body armor, handguns, paint gun, arc gun,
+bows, unarmed combat, gunnery, missile guidance, space tactics, pilot,
+linguistics, disguise, forgery/counterfeiting, EVA, air vehicles,
+asteroid mining, planetology, astronomy, spaceship tech, weapon tech,
+near weightless gravity.
+
+\pagebreak[2]
+\textbf{Benefits:}\\
+All space pirates receive an \hyperlink{tag:gravity-web}{internal gravity web}.   
+\begin{enumerate}
+\item Nothing; all initial wealth lost.  
+\item Initial wealth x 2.   
+\item Initial wealth x 4; wanted by federation.
+\item Initial wealth x 10.   
+\item Initial wealth x 10; \hyperlink{tag:terwillicker-5000}{Terwillicker 5000 Battlecraft}; wanted by
+  federation.
+\item Initial wealth x 20; \hypertarget{tag:harmonics-piccolo}{Piccolo spaceship} with \hyperlink{tag:pod-light-weapon}{light weapon pod}.
+\end{enumerate}
+
+Before beginning play, a space pirate may turn any amount of his money
+into booty. He may purchase any weapons, robots, or equipment as if he
+were on a Civ Level 6 world with no law restrictions. No bargaining is
+allowed. If a space pirate is wanted by the federation, the GM should
+take this into account when the character encounters any planetary law
+enforcement NPC's, and especially when he encounters any federal
+authorities (see \ref{sec:creating-encounters}). The character should
+be kept constantly on the run.
+
+\bigskip
+
+\pagebreak[2]
+
+\noindent{\large\textbf{SPACE
+    TECHNICIAN}}\label{sec:prof-space-technician}\index{space technician}
+\stepcounter{myprofs}
+
+A specialist in the design, construction, and repair of spaceships and
+related equipment. Space techs are
+indispensable members of any lengthy space voyage. Usually  employed
+by commercial shipping companies and  ship manufacturers, space techs
+are sometimes called upon by governments and military branches for
+their specialized  services.
+
+\textbf{Prerequisites:} Study of applied science  \emph{twice};
+Characteristic  Ratings of at least  Dexterity  \textbf{7}, Intelligence  \textbf{7},
+and Mental Power \textbf{2}.   
+
+\textbf{Skill Point Modifier:} 8.
+
+\textbf{Skills Available:}  Psion tech ( \textbf{1} Level only), EVA,
+   programming, astronomy, physics, energy tech, spaceship tech,
+   compu/robot tech.
+
+\pagebreak[2]
+\textbf{Benefits:}
+\begin{enumerate}
+\item 500 Mils cash.   
+\item 2 Trans cash.  
+\item 5 Trans cash; Civ Level 7 \hyperlink{tag:electrokit}{electrokit}.    
+\item 15 Trans cash; Civ Level 8 \hyperlink{tag:electrokit}{electrokit}.   
+\item 30 Trans cash; Civ Level 7 \hyperlink{tag:spaceshipkit}{spaceship kit}.    
+\item 60 Trans cash; \hyperlink{tag:bot-frazette-amber}{Frazette Amber
+  robot} with  \hyperlink{tag:bot-spaceshiptech}{spaceship tech system},
+   \hyperlink{tag:bot-electrotech}{electro tech system}, \hyperlink{tag:bot-self-activation}{self-activation system}.
+\end{enumerate}
+
+\bigskip
+
+
+
+\pagebreak[2]
+
+\noindent{\large\textbf{SPACETROOPER (Military)}} \label{sec:prof-spacetrooper}\index{spacetrooper}
+\stepcounter{myprofs}
+
+A soldier in the federal assault force, specializing in body armor
+combat on planet surfaces. Troopers are famous for their mass
+assaults, rapid victories, and \emph{esprit de corps}. Spacetroopers
+are always at the fore of any major attack and move on once the way is
+cleared for the standard military forces. Although their operations
+are sometimes launched from the air, spacetroopers are trained
+exclusively for ground combat.
+
+\textbf{Prerequisites:} Study of the military and the body; all
+Physical Characteristics must be at least \textbf{6}; Aggression
+Characteristic Rating must be at least \textbf{5}. The character's
+home gravity type may not be \emph{Near Weightless}.
+
+\textbf{Skill Point Modifier:} 5.
+
+\textbf{Skills Available:} All Gravity Skill Levels except Near
+Weightless are \emph{automatically} increased to \textbf{0} (if not
+already equal to or greater than 0) at no cost in Skill Points. Body
+armor (\textbf{1} Level required), artillery, machine guns, paint
+gun, arc gun, military ground vehicles, suit tech, any environs, any
+gravity except Near Weightless (in addition to any levels received as
+described above).
+
+\pagebreak[2]
+\textbf{Benefits:} 
+\begin{enumerate}
+\item Trooper: 300 Mils cash; Civ Level 6 \hyperlink{tag:armor-vest}{armor vest} and \hyperlink{tag:respirator-helmet}{respirator
+  helmet}.
+\item Corporal: 1 Tran cash; Civ Level 6 reflective \hyperlink{tag:body-armor}{body armor}.
+\item Sergeant: 3 Trans cash; Civ Level 7 impact \hyperlink{tag:body-armor}{body armor}.
+\item Lieutenant: 10 Trans cash; 250 Mils per year pension; Civ Level
+  7 reflect/impact \hyperlink{tag:body-armor}{body armor}.
+\item Captain: 25 Trans cash; 1 Tran per year pension; Civ Level 8
+  reflective \hyperlink{tag:body-armor}{body armor}.
+\item Colonel: 60 Trans cash; 3 Trans per year pension; Civ Level 8
+  reflect/impact \hyperlink{tag:body-armor}{body armor} and \hyperlink{tag:arcgun}{arc gun}.
+\end{enumerate}
+
+\bigskip
+
+\pagebreak[2]
+
+\noindent{\large\textbf{SPY}} \label{sec:prof-spy}\index{spy}
+\stepcounter{myprofs}
+
+A member of a federal or planetary intelligence agency.  Spies are
+used throughout the federation to gather information and to conduct
+secret missions on planets that the federation or rival planetary
+governments are suspicious of. Spies usually work alone, under a
+variety of identities.
+  
+\textbf{Prerequisites:} Study of the mind and the body; Characteristic
+Ratings of at least Dexterity \textbf{7}, Agility \textbf{5}, and
+Intelligence \textbf{6}; Urban Skill Level of at least \textbf{1}.
+
+\textbf{Skill Point Modifier:} 7.
+
+\textbf{Skills Available:} Demolitions, longarms, handguns, paint gun,
+arc gun, bows, linguistics, disguise,
+forgery/\linebreak[0]counterfeiting, weapon 
+tech, urban.  
+
+\pagebreak[2]
+\textbf{Benefits:}\\
+All spies receive a set of \hyperlink{tag:false-identity}{false identity papers}.
+\begin{enumerate}
+\item Nothing additional. 
+\item Civ Level 6 \hyperlink{tag:plastic-pistol}{plastic pistol}. 
+\item Any one handgun or laser pistol.   
+\item 700 Mils cash; \hyperlink{tag:cl8-laser}{Civ Level 8 laser pistol} and any other handgun. 
+\item 4 Trans cash; \hyperlink{tag:cl8-paintgun}{Civ Level 8 paint gun} and any one  handgun. 
+\item 20 Trans cash; \hyperlink{tag:arcgun}{arc gun} and any one handgun.  
+\end{enumerate}
+
+\bigskip
+
+\pagebreak[2]
+
+\noindent{\large\textbf{STAR SAILOR
+    (Military)}}\label{sec:prof-star-sailor}\index{star sailor}
+\stepcounter{myprofs}
+
+A member of the federal navy, serving aboard a spaceship.
+Responsibilities may range from plotting courses to piloting a craft
+to manning the guns during battle. A star sailor is familiar with all
+manner of known space craft and is more comfortable in a zero-G
+environment than he is on the ground.
+
+\textbf{Prerequisites:} Study of the military and either applied
+sciences or the body; Characteristic Ratings of at least Agility
+\textbf{5}, Intelligence \textbf{7}, and Mental Power \textbf{2}. The
+character's home gravity type may not be \emph{extreme}. The mental
+power waiver applies (see \ref{sec:mental-power-waiver}).
+
+\textbf{Skill Point Modifier:} 6.
+
+\textbf{Skills Available:} Near Weightless Gravity Skill Level is
+\emph{automatically} raised to \textbf{0} (if not already equal to or
+greater than \textbf{0}) at no cost in Skill Points. Pilot, astronomy,
+energy tech, suit tech, space ship tech (\textbf{1} Level only),
+weapon tech, space tactics, gunnery, missile guidance, EVA, near
+weightless gravity (in addition to any levels received as described
+above).
+
+\pagebreak[2]
+\textbf{Benefits:}\\
+All star sailors receive an \hyperlink{tag:gravity-web}{internal gravity web}
+and free passage on any interstellar federal craft (for the distance
+listed in Light Years).
+\begin{enumerate}
+\item Midshipman: 500 Mils cash; no passage.  
+\item Ensign: 1.5 Mils cash; 10 LY passage.  
+\item Lieutenant: 4 Trans cash; 300 Mils per year pension; 20  LY passage.  
+\item Captain: 15 Trans cash; 1 Tran per  year pension; 50 LY passage.  
+\item Commander: 36 Trans cash; 3 Trans per year pension; 100 LY passage.   
+\item Admiral: 80 Trans cash; 10 Trans per year pension;  perpetual passage.  
+\end{enumerate}
+
+\bigskip
+
+\pagebreak[2]
+
+\noindent{\large\textbf{THINKER}} \label{sec:prof-thinker}\index{thinker}
+\stepcounter{myprofs}
+
+A member of the exclusive psionic community.
+The advanced study of the mind has turned telepathy, telekinesis, and
+other extraor dinary mental abilities into the premier science of the
+24th Century. Thinkers effectively control interstellar travel and
+communications and are thus treated with great respect by government
+and corporate officials. Because of the freak nature of their powers,
+however, the general public greets them with a mixture of awe, fear,
+and mistrust. Thinkers often set up small colonies in luxurious
+isolation so that they may probe the mysteries of thought undisturbed.
+A thinker will keep his powers concealed when with non-Psions.
+
+\textbf{Prerequisites:} Study of the mind and either applied science
+or the humanities; Characteristic Ratings of at least Intelligence
+\textbf{7} and Mental Power \textbf{5}.
+
+\textbf{Skill Point Modifier:} 10.
+
+\textbf{Skills Available:}  Navigation, mind control, psychokinesis,
+  psion tech, teaching.
+
+\pagebreak[2]
+\textbf{Benefits:}
+\begin{enumerate}
+\item Nothing. 
+\item \hyperlink{tag:commlink}{interstellar commlink}.  
+\item 1 Tran cash; \hyperlink{tag:commlink}{interstellar commlink}.  
+\item 3 Trans cash; \hyperlink{tag:psionic-rig}{psionic rig}.
+\item 10 Trans cash; \hyperlink{tag:psionic-rig}{psionic rig}.  
+\item 25 Trans cash; \hyperlink{tag:augmented-jump}{augmented  jump pod}. 
+\end{enumerate}
+
+\bigskip
+
+\pagebreak[2]
+
+\noindent{\large\textbf{ZERO-G
+    MINER}}\label{sec:prof-zero-g-miner}\index{zero-g miner}
+\stepcounter{myprofs}
+  
+A prospector of ores and precious metals in asteroid belts and on
+small planetoids. Miners work together in small groups, surveying the
+entire ``ring'' of an asteroid belt, staking claims on those rocks
+that appear promising. Actual mining operations range from a single
+miner with a rock blaster to orbital mining cities.
+\
+textbf{Prerequisites:} Study of applied science or business;
+Characteristic Ratings of at least Dexterity \textbf{5} and Agility
+\textbf{3}. The character's initial wealth must be at least 500 Mils.
+The character's home gravity type may not be \emph{extreme}.
+
+\textbf{Skill Point Modifier:} 4.
+
+\textbf{Skills Available:} Near Weightless Gravity Skill Level is
+automatically increased to \textbf{0} (if not already equal to or
+greater than \textbf{0}) at no cost in Skill Points. Pilot, economics,
+trading, EVA, mining, asteroid mining, geology, electro tech, near
+weightless gravity (in addition to any levels received as described
+above).
+
+\pagebreak[2]
+\textbf{Benefits:}
+\begin{enumerate}
+\item Nothing.  
+\item Initial wealth x 2.   
+\item Initial wealth x 3; \hyperlink{tag:rock-blaster}{rock blaster}.  
+\item Initial wealth x 5;  Civ Level 8 \hyperlink{tag:geoscanner}{geoscanner}.  
+\item Initial wealth x 10; \hyperlink{tag:rock-blaster}{rock blaster} and Civ Level 8  \hyperlink{tag:geoscanner}{geoscanner}. 
+\item Initial wealth x 20; \hyperlink{tag:bot-manner-44}{Manner 44 robot} with \hyperlink{tag:bot-force-field}{force field system},
+  \hyperlink{tag:bot-geo}{geo system}, \hyperlink{tag:bot-pilot}{pilot system}, and \hyperlink{tag:bot-chemical}{chemical system}.
+\end{enumerate}
+
+\addtocounter{myprofs}{-1}
+\refstepcounter{myprofs}\label{item:myprofs}
+\index{character!generation|)}
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "gm_guide"
+%%% End: 

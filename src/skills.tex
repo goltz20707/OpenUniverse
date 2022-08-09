@@ -1,0 +1,2789 @@
+%%
+%% $Id: skills.tex,v 1.4 2004/11/04 15:32:02 goltz20707 Exp $
+%%
+
+% ZZYZZ hyperlinked to here Fri -10-01 1344
+
+%
+% The following two new counters are necessary to keep \LaTeX\ from
+% complaining.
+\newcounter{creature}
+\newcounter{npc}
+\externaldocument[DV-]{delta_vee}
+\externaldocument[AG-]{adventure_guide}
+
+\chapter{Skills}
+\label{cha:skills}
+
+\index{skills}Characters use skills in all aspects of play.  Each skill provides a
+character with expertise in a specific area of endeavor.  The skill
+descriptions in this Chapter explain when and how each skill can
+affect play.  Each character receives skills during character
+generation and, once he begins adventuring, a character may improve
+those skills and acquire others.
+
+\index{skills!maximum level}Each skill description lists the \emph{maximum level} that may be
+achieved in that skill (for example, the maximum level that may be
+achieved in the geology skill is \textbf{7}).
+\index{skills!characteristic limit}Each skill also lists a
+\emph{characteristic limit}, which is the highest level a character
+may achieve in a skill when his Characteristic Rating appropriate to a
+particular skill is lower than the maximum limit for that skill (thus,
+a character with an Intelligence Rating of \textbf{5} can increase his
+Geology skill to a maximum level of \textbf{5}).  These limits are
+summarized on the Character Record.
+
+When the GM is organizing an adventure or offering employment to the
+characters, he should take their skills and professions into account
+(for example, a character with high scientific Skill Levels should
+have no problem finding a sponsor for a scientific expedition).  During
+play, situations will surely arise that call for character abilities
+not specifically explained in these skills.  After familiarizing
+himself with how the skills work, the GM should easily be able to
+determine the chances and effects of any task the characters wish to
+attempt.
+
+\index{skills!tasks}Many skills are presented in the form of one or more \emph{tasks},
+each representing a particular use to which a character may put the
+skill during play.  Each task is noted with a \tasklistmark\ symbol and
+has a \emph{base chance} of success expressed as a percentage.  Each
+task is carried out according to the following procedure and any
+special rules listed with the skill or task description.
+
+\renewcommand{\theenumi}{\arabic{enumi}}
+\begin{enumerate}
+\item The character declares which specific task listed in the
+  appropriate skill description he is undertaking.  In most cases, he
+  must have access to a particular piece of equipment.
+\item One of the character's \emph{Characteristics Ratings} (specified
+  in the skill description) is added to the \emph{square} of his
+  \emph{Skill Level}, and the total is \emph{added} to the \emph{base
+    chance} listed for the task.  In some instances, the Skill Level
+  may be increased by a piece of equipment or decreased if the task is
+  especially difficult.  The base chance may be further modified by the
+  task description or at the GM's discretion (in some cases, he may
+  apply a modifier secretly).
+\item The character rolls percentile dice (the GM should roll if he
+  wishes the outcome to remain secret).  If the dice result is
+  \emph{equal to} or \emph{less than} the modified chance, the
+  character succeeds at the task.  When a task requires a certain
+  amount of time to perform (listed with the equipment description or
+  with the task description), the time required to perform the task is
+  \emph{reduced} by \textbf{1\%} for \emph{each} percentage point
+  below the chance the dice result indicates.  If the dice result is
+  \emph{greater than} the modified chance, the character either fails
+  outright, must spend more time at the task to succeed, or suffers
+  some other disappointment.  Each Skill description lists different
+  effects for failing a task.  Many skills introduce a variety of
+  results depending on how far above or below the modified chance a
+  dice result falls.
+\end{enumerate}
+
+Unless specifically prohibited, a character that does not possess a
+given skill \emph{may} attempt a task or other use of the skill.
+However, the base chance of success is \emph{not} increased by a
+Characteristic Rating or any other attribute of the character, nor
+will equipment increase his Skill Level. \textbf{Exception}:
+Treatment, \ref{sec:scientific-skills}.
+
+\index{skills!tasks!retry after failure}A character that fails at a task in a given situation may \emph{not}
+attempt that specific task again.  Another character \emph{may} attempt
+the task.  However, his chance of success is \emph{reduced} by
+\textbf{1\%} for each percentage point by which the previous attempt
+failed (for example, if a character had a \textbf{60\%} chance of
+success at a task and failed by rolling an \textbf{80}, the next
+character to attempt the task has his chances reduced by \textbf{20}).
+This reduction is cumulative; if a third character attempted the task,
+his chance would be reduced for both the first and second characters'
+failures.  The GM should not allow an additional task attempt until all
+the time required for the previous attempt has passed.
+
+
+\section{Acquiring and Improving Skills}
+\label{sec:acqu-impr-skills}
+
+\index{skills!improving}Once generated, a character possesses a variety of skills at Level 1
+or higher.  During play, he will be able to improve these skills and
+acquire others by collecting \emph{Experience Points} (EPs).  As a character
+conducts actions related to a skill, he slowly amasses EPs in that
+skill; when he has collected enough EPs, he expends them to increase
+his Skill Level.  When a Skill Level is increased, further improvement
+becomes more difficult as the number of EPs required to advance to
+the next level increases with each advance.
+
+\index{skills!unskilled}A character that has no Skill Level in a given skill is
+\emph{unskilled} in that area.  He is also unskilled if he has an
+\textbf{\textsf{X}} in the skill space on the Character Record, but he
+is somewhat \index{skills!familiar (X)}familiar with the skill and may learn it more easily than
+a character with nothing marked in that skill space.  The fact that a
+character is unskilled does not prevent him from conducting actions
+related to that skill or gaining EPs for the skill.
+\textbf{Exceptions:} An unskilled character may not undertake a task
+from a \emph{psionic} skill at all (see \ref{sec:psionicskills}).  An
+unskilled character may not undertake a task from a \emph{scientific}
+skill unless he is familiar with the skill (has an \textbf{\textsf{X}}
+in the skill space; see \ref{sec:scientific-skills}).
+
+Each character keeps track of all his current Skill Levels and the
+number of EPs he has for each skill on his Character Record.  Pencil
+should be used, since Skill Levels change and EPs are collected and
+expended.
+
+
+\subsection[Experience Points]{Each time a character uses a skill, he
+  has a chance of 
+  receiving an \index{experience points}Experience Point.}
+\label{sec:experience-points}
+
+Certain die results obtained by a character when using a skill reward
+him with one Experience Point.  Each skill description or section lists
+the die result needed and the type of rolls that are eligible to
+provide the character with an EP in that skill.
+\textbf{Example:} As explained in \ref{sec:sci-skills-ep}, a character
+that is attempting a \emph{treatment} task receives an EP if either
+die of his percentile dice result shows a \textbf{0}, \textbf{1}, or
+\textbf{2}.  Thus, he would receive one EP if the dice result were
+\textbf{01} through \textbf{32} or any higher result ending in
+\textbf{0},\textbf{1}, or \textbf{2}.
+
+ 
+
+When a character receives an EP, he immediately notes it in the EP
+space for the skill just used on the Character Record.
+
+No more than one EP may be gained from a single die or dice roll, even
+if the appropriate number appears on both dice of a percentile dice
+roll.  An EP may be gained by a character whether or not the skill was
+used successfully, as long as the appropriate number is rolled.
+(\textbf{Exception:} An \emph{unskilled} character who is attempting a
+\emph{scientific} task receives an EP only if he \emph{succeeds} at
+the task and rolls the appropriate number.) Certain skill descriptions
+contain additional methods by which Experience Points may be gained.
+
+
+\subsection[Increasing Skill Levels]{A character may increase a given
+  \index{skills!increasing}Skill Level by amassing a 
+  number of EPs equal to the next level in that skill.}
+\label{sec:char-may-incr}
+
+Each character keeps track of the EPs he has gained in each skill on
+his Character Record.  When he has collected a number of EPs for one
+skill \emph{equal to the next level} in that skill, he erases all
+those EPs and increases the Skill Level by \textbf{1}.  Thus, a
+character must acquire \textbf{2} EPs to increase a Skill Level from
+\textbf{1} to \textbf{2}, \textbf{3} \emph{more} EPs to go from level
+\textbf{2} to \textbf{3}, \textbf{4} more EPs to go from level
+\textbf{3} to \textbf{4}, and so on.  Skill Level increase may not take
+place during an \emph{Action Round} or procedure; the, character
+should wait until a pause in the action to implement an increase.
+
+\textbf{Exceptions:} A character that does \emph{not} possess a skill,
+but has an \textbf{\textsf{X}} in the skill's space on his Character
+Record (noted during character generation, see
+\ref{sec:skill-points-are}) must collect \textbf{3} EPs to attain
+Level 1 in that skill.  A character that does \emph{not} possess a
+skill, and does \emph{not} have an \textbf{\textsf{X}} in the skill's
+space, must collect \textbf{8} EPs to attain Level 1 in the skill.  If
+a character reaches Level 1 in a skill by either of these methods,
+subsequent Skill Level increases occur normally.
+
+When an EP is gained for using a skill, it may only be assigned to
+that skill.  Note that the four \emph{vehicle} skills are divided into
+\emph{sub-skills} (see \ref{sec:vehsubskills}).  An EP gained for a vehicle
+skill is assigned to the skill, not to a specific sub-skill.
+
+When a skill reaches the maximum level that a character may attain, he
+may no longer earn any EPs for that skill.  Skill Levels may never be
+permanently reduced, even if the characteristic limit for the skill
+drops below the current Skill Level attained by the character.  This
+could happen if a Characteristic Rating is permanently reduced by
+injury (see \ref{sec:rate-of-healing}).  Temporary reduction of a
+characteristic has no effect on Skill Level increase; characteristic
+limits for Skill Levels are based on the Characteristic Ratings of a
+character at his best health.
+
+Experience Points should not be confused with \emph{Skill} Points and
+\emph{Initial Skill} Points, both of which are used during character
+generation only.
+
+
+
+\bigskip
+
+\newcommand{\skill}[2]{%
+
+\bigskip
+
+\noindent\textbf{\sffamily\large\MakeUppercase{#1}}\\
+\textbf{#2}\index{#1}}
+
+%\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\skill{perception}{9 Levels/Limit: None}\label{sec:skill-perception}
+
+Perception is a measure of the character's intuition developed as a
+result of his adventuring experience.  It is used to determine if a
+character notices a detail about a situation, sees something in the
+distance, hears a footfall, etc.
+
+Every character automatically possesses the Perception Skill when
+generated.  All human characters initially possess this Skill at level
+\textbf{2}.  No initial Skill Points or Professional Skill Points need
+be spent to acquire the skill, nor may the skill be improved by
+expenditure of such points.  Perception may be improved during play by
+amassing Perception Experience Points.  Perception is used in play in
+either of two ways:
+
+\begin{enumerate}
+\item If the GM wishes to allow the chance to notice something not
+  readily apparent that is related purely to the senses (sight, smell,
+  hearing, etc.), he instructs the character to conduct a
+  \emph{Perception Check} by rolling one die.  If the die result is
+  equal to or less than the character's Perception level, the GM
+  informs him of the occurrence or item.  If the die result is greater
+  than the character's Perception level, the GM does not provide any
+  information.
+\item If the GM wishes to allow a character a chance to notice
+  something related to a particular area of expertise, he instructs
+  the character to conduct a Perception Check by rolling
+  \emph{percentile dice}.  The chance of success equals \textbf{10\%} plus the
+  character's Perception level plus the level he has with the skill
+  associated with the item or event.  The \emph{higher} of these two
+  levels is \emph{squared before adding}.
+  
+  Example: A skimmer is flying by the character at the edge of view.
+  He has Perception \textbf{3} and Air Vehicles \textbf{5}, so he has
+  a \textbf{38\%} chance ($10+5^2+3$) of noticing the vehicle and correctly
+  identifying it as a skimmer.
+\end{enumerate}
+
+Any one of many different skills may be associated with a Perception
+Check; the most common would be a scientific, technical, environ, or
+vehicle skill.  However, any skill might apply, depending on the
+situation.
+%% Original:
+%% A character who rolls a one on either die when conducting a
+%% Perception Check receives one Perception Experience Point.
+%% New:
+A character who rolls a \textbf{1} on either die when conducting a
+Perception Check receives one Perception Experience
+Point.
+%% \label{sec:char-may-incr-change-zero}
+%% End change
+
+\section{Military Skills}
+\label{sec:military-skills}
+
+\index{skills!military}Military skills include all those used in character combat (fighting
+NPC's, creatures, or other characters on a planet or in a spaceship),
+space combat (spaceship vs. spaceship), and other action-related
+situations.  Specific personal weapon skills are explained in
+\ref{sec:weapon-skills-allow}, and space combat skills are explained
+in \ref{sec:foll-four-skills}.  Explanations of other military skills
+follow.
+
+\skill{ambush}{7 Levels/Limit: Agility}\label{sec:skill-ambush}
+
+The character may move silently and swiftly and may approach and
+attack a target undetected.  The location of a character that conducts
+ambush successfully will be unknown to those he is hiding from.  The
+character's \emph{Agility Rating}, \emph{Battlefield Skill Level},
+\emph{Environ Skill Level}, and the \emph{square} of his \emph{Ambush
+  Skill Level} are added to the base chance of any ambush task.  The
+highest \emph{Environ Skill Level} and the \emph{square} of the
+highest \emph{Battlefield Skill Level} in the \emph{enemy} force
+are \emph{subtracted} from the base chance.  The GM may secretly apply
+other modifiers as the situation warrants.  A character who is
+performing ambush movement may move as far as normally allowed (see
+\ref{sec:action-round-movement}), but may not fire a weapon while
+moving.  An unskilled character may attempt only the first task listed,
+and nothing is added to his base chance.
+
+\begin{tasklist}
+\item Move secretly during an Action Round in which the enemy is
+  unaware of the character's current location: (\textbf{15$\times$}
+  the Terrain Value)\%, with addition for darkness, if applicable.
+\item Move secretly during an Action Round in which the enemy is aware
+  of the character's location: (\textbf{5$\times$} the Terrain
+  Value)\%.
+\item Attack enemy being in close combat without being detected (see
+  \ref{sec:close-combat}): \textbf{30\%}.  Character must be
+  undetected by all except victim in order to attempt this task.
+\item If currently undetected, fire at enemy being with a silent
+  ranged weapon (such as a bow or thrown knife) without being
+  detected: \textbf{50\%}.
+\end{tasklist}
+
+An ambush task may not be attempted in an area with a Terrain Value of
+less than \textbf{2} (including any modifier for darkness).  When a
+character successfully performs an ambush attack, the GM controls the
+enemy force as if they had no idea of the character's where abouts.  A
+dice result for any ambush task that is above the modified chance
+indicates failure; the character's location is known.
+
+A character who rolls a \textbf{0} or \textbf{1} on either die when
+attempting an ambush task receives an Experience Point.
+
+
+\skill{artillery}{6 Levels/Limit: Intelligence}\label{sec:skill-artillery}
+
+The character is familiar with all aspects of mounted gun use.  He may
+spot targets and aim stationary artillery, tank guns, and
+self-propelled artillery.  The base chance to hit a target with
+artillery fire is \textbf{50\%}.  From this chance, \textbf{1} is
+\emph{subtracted} for every \emph{100 meters} away the target is
+located.  The character's \emph{Intelligence Rating} and the
+\emph{square} of his \emph{Skill Level} are added to the base chance.
+If the percentile dice result is greater than the modified chance for
+a given artillery fire, the shell strikes \textbf{2} \emph{hexes} (ten
+meters) away from the target for each percentage point over the chance
+the dice result indicates (GM determines direction).
+
+An unskilled character adds nothing to his base chance when firing
+artillery and, if he misses is target, the shell strikes \textbf{4}
+hexes away from the target for each percentage point over the chance
+the dice result indicates.
+
+A character who rolls a \textbf{0} or \textbf{1} on either die when
+attempting to strike a target with artillery fire receives an
+Experience Point.
+
+\skill{battlefield}{6 Levels/Limit: Leadership}\label{sec:skill-battlefield}
+
+The character is experienced in ground combat and the execution of
+successful strategies and tactics.  He recognizes the signs of battle
+and the warning signs of battles to come.  Battlefield skill affects
+various procedures during encounters with NPC's and creatures.
+
+\begin{itemize}
+\item The highest Battlefield Skill Level among the characters in a
+  party is subtracted from the \emph{awareness chance} during a
+  creature encounter.  The \emph{square} of the highest Battlefield
+  Skill Level among the characters in a party is subtracted from the
+  \emph{awareness chance} during an NPC encounter (see
+  \ref{sec:awareness}).
+\item The character chosen as the party's \emph{leader} during an
+  Action Round (see \ref{sec:initiative}) adds his Battlefield Skill
+  Level to his \emph{Initiative} die roll.  If NPC's are the enemy,
+  \emph{twice} his \emph{Skill Level} is added.
+\item A character may use his Battlefield Skill Level \emph{instead}
+  of his Mental Power Rating when making a \emph{Willpower Check} (see
+  \ref{sec:will-power-check}).  The battlefield skill is not used when
+  making a \emph{Shock} Check.
+\end{itemize}
+
+Battlefield skill also aids a character who is planning strategy for a
+battle ahead of time.  The GM should take the character's Skill Level
+into account, as well as the quality of his stated plans, when
+determining the reaction and performance of the enemy force.
+
+A character who rolls a \textbf{0} on the die when making an
+\emph{Initiative Check} receives one Experience Point for his
+battlefield skill.  The GM may also give a player who successfully
+plans an attack (as described in the previous paragraph) an Experience
+Point.  No other die or dice rolls concerning a character's battlefield
+skill may provide him with an Experience Point.
+
+
+\skill{blades}{7 Levels/Limit: Dexterity}\label{sec:skill-blades}
+
+The character is skilled in the use of daggers and swords.
+
+When attacking or defending in close combat, a skilled character adds
+his \emph{Dexterity} or \emph{Agility Rating} (his choice) and the
+\emph{square} of his \emph{Blade Skill Level} to the Hit Strength of
+his blade (see \ref{sec:close-combat}).  An unskilled character uses
+the strength of his blade only.
+
+A dagger (but not a sword) may be thrown as a ranged weapon as
+described on the Weapon Chart and in \ref{sec:weapon-skills-allow}.
+
+A character that rolls a \textbf{0} on the die when attacking with a
+blade in close combat receives an Experience Point.  A character who
+rolls a \textbf{0} on either die when attempting to hit a target with
+a thrown knife receives an Experience Point.
+
+\skill{body armor}{6 Levels/ Limit: Agility}\label{sec:skill-body-armor}
+
+The character has experience maneuvering and fighting in 
+body armor and other protective attire.  The body armor skill
+\emph{contains all the attributes of the EVA skill},  plus the
+following:
+
+\begin{itemize}
+\item The movement rate of a skilled character wearing augmented body
+  armor may be increased if his Skill Level is high enough (see
+  \ref{sec:foot-travel} and \ref{sec:action-round-movement}).
+\item A character with body armor skill may add his \emph{Strength
+    Rating} and the \emph{square} of his \emph{Skill Level} to the Hit
+  Strength of his body armor or battle sleeve when participating in
+  close combat (see \ref{sec:close-combat}).
+\end{itemize}
+
+A character who rolls a \textbf{0} or \textbf{1} on either die when
+attempting to avoid a body armor accident receives an Experience
+Point.  A character who rolls a \textbf{0} on the die when using body
+armor to attack in close combat receives an Experience Point.
+
+\skill{demolitions}{6 Levels/Limit: Dexterity}\label{sec:skill-demolitions}
+
+The character is skilled in the use of plastic explosives and dynamite
+to blow holes through walls and doors or simply destroy a structure.
+If the character has sufficient demolitions equipment, he may attempt
+to prepare explosives so that when detonated, they will destroy all
+that the character wishes destroyed while leaving surrounding
+structures unharmed.  When setting explosives, he should declare
+whether detonation will be triggered by radio, wire, or timer.
+
+The base chance to destroy a declared structure and nothing but that
+structure is \textbf{45\%}.  The GM may reduce this chance if the
+structure to be destroyed is smaller than a trap door.  The character's
+\emph{Dexterity Rating} and the \emph{square} of his \emph{Skill
+  Level} are added to the base chance.  A percentile dice result that
+is greater than the modified chance by \textbf{30} or less indicates
+that the explosion occurs when planned but is too powerful (if an even
+dice result) or too weak (if an odd dice result).  The effect of such a
+result is left up to the GM.  A percentile dice result that is greater
+than the modified chance by more than \textbf{30} indicates that the
+explosives failed to detonate and are now defective (if an even dice
+result) or that the explosives went off while being set, thus injuring
+the character (if an odd dice result).  The nature of such an injury is
+left up to the GM.
+
+An unskilled character adds nothing to his base chance when setting
+explosives and, if his dice result is greater than the base chance at
+all, the explosives go off while being set (whether the result is even
+or odd).
+
+A character who rolls a \textbf{0}, \textbf{1} or \textbf{2} on either
+die when attempting to set explosives receives an Experience Point.
+
+%% Because of the mixed-case nature of the EVA skill heading, we
+%% have to do this one by hand.
+
+% \skill{eva {(extra vehicular activity)}}{6 Levels/Limit:
+%   Agility}\label{sec:skill-eva}
+
+\bigskip
+
+\noindent\textbf{\sffamily\large EVA (Extra-Vehicular Activity)}\\
+\textbf{6 Levels/Limit: Agility}\index{skills!EVA}
+
+The character is able to operate and maneuver in an expedition suit on
+the surface of a planet and in a zero-G environment.
+
+When a character is wearing body armor or an expedition suit with an
+Encumbrance Rating (see the Protective Attire Chart,
+\ref{tab:protective-attire}), his EVA Skill Level is \emph{subtracted}
+from the Rating to determine the Movement Rate (see
+\ref{sec:foot-travel} and \ref{sec:action-round-movement}).  A
+character wearing augmented body armor may not use his EVA skill to
+increase his movement (the body armor skill is used for augmentation).
+A character without EVA skill suffers the full effects of an
+Encumbrance Rating.
+
+A skilled character's \emph{Agility Rating} and the \emph{square} of
+his \emph{Skill Level} are added to his base chance to avoid a
+suit/armor accident (see \ref{sec:accidents}).  The base chance to
+avoid an accident and the procedure undertaken are similar to that of
+a vehicle accident (see \ref{sec:vehaccidents}).  An unskilled
+character has nothing added to his base chance of avoid ing such an
+accident.
+
+A character who rolls a \textbf{0} or \textbf{1} on either die when
+attempting to avoid an accident in an expedition suit or respirator
+helmet receives an Experience Point.
+
+\skill{jet pack}{6 Levels/Limit: Agility}\label{sec:skill-jet-pack}
+
+The character is able to operate a jetpack, a device strapped to the
+back that allows flight.  A character's Jet Pack Skill Level affects
+the speed and maneuverability he may attain with the pack (see
+\ref{sec:other-actions}).  A skilled character's \emph{Agility Rating} and the
+\emph{square} of his \emph{Skill Level} are added to his base chance
+to avoid a jet pack accident (see \ref{sec:accidents}).  An unskilled
+character has nothing added to his base chance of avoiding such an
+accident.  A character who rolls a \textbf{0} or \textbf{1} on either
+die when attempting to avoid a jetpack accident receives an Experience
+Point.
+
+\skill{unarmed combat}{8 Levels/Limit: Agility}\label{sec:skill-unarmed-combat}
+
+The character is skilled in fighting with his hands and body.  When
+attacking or defending in close combat, a skilled character uses his
+\emph{Dexterity}, \emph{Strength}, or \emph{Agility Rating} (his
+choice) plus the \emph{square} of his \emph{Unarmed Combat Skill
+  Level} (see \ref{sec:close-combat}).  An unskilled character uses one
+half (round up) of his Strength, Dexterity, or \emph{Agility Rating}
+only.
+
+A character in close combat with a creature has his Unarmed Combat
+\emph{Skill Level} reduced by \textbf{1} (to a minimum of \textbf{1}).
+
+A character that rolls a \textbf{9} or \textbf{0} on either die when
+attacking unarmed in close combat receives an Experience Point.
+
+
+\subsection[Weapons Skills]{Weapon skills allow a character to use a
+  weapon effectively during combat.}
+\label{sec:weapon-skills-allow}
+
+\index{skills!weapons}All weapon fire is conducted in accordance with
+\ref{sec:firing-weapons} and the Weapon Chart (\ref{tab:weapon}).  The
+chance to hit a target with a weapon is equal to the \emph{base
+  chance} listed for the weapon on the Fire Chart plus the character's
+\emph{Dexterity Rating} plus the \emph{square} of his \emph{Skill
+  Rating} with the weapon.  A character that is skilled with a weapon
+may often fire it more than once in a single Action Round (depending
+on the weapon).
+
+A character that is not skilled with a weapon may use the weapon with
+the following restrictions:
+
+\begin{itemize}
+\item His chance to hit is equal to the base chance listed on the
+  Weapon Chart \emph{only}; nothing is added for his Characteristic
+  Ratings.
+\item He may fire the weapon only \emph{once} per Action Round.
+\item He may \emph{not} fire while moving or controlling a vehicle (he
+  may fire while riding in a vehicle, see
+  \ref{sec:fire-modifier-chart}).
+\end{itemize}
+
+The following skill descriptions list the specific types of weapons
+that each skill allows the character to use (if more than one).
+
+\skill{arc gun}{8 Levels/Limit: Dexterity}\label{sec:skill-arc-gun}
+
+The character may fire an arc gun.  
+
+\skill{bows}{7 Levels/Limit: Dexterity}\label{sec:skill-bows}
+
+The character may shoot a short bow, long bow, or crossbow.  When
+shooting a long distance with a short bow or long bow, the character's
+Strength Rating (as well as his Dexterity Rating) is added to his hit
+chance (see Weapon Chart).
+
+\skill{handguns}{5 Levels/Limit: Dexterity}\label{sec:skill-handguns}
+
+The character may fire a pistol, needle pistol, laser pistol, or stun
+pistol.  Note that the latter two weapons are also included in the
+laser/stun pistol skill listing.  A character may use either Skill
+Level when firing a stun or laser pistol; however, any Experience
+Points gained when doing so may only be applied to the laser/stun
+pistol skill.
+
+\skill{grenades}{8 Levels/Limit: Dexterity}\label{sec:skill-grenades}
+
+The character may throw fragmentation, smoke, illumination, and gas
+grenades.  When throwing a grenade a long distance, the character's
+Strength Rating (as well as his Dexterity Rating) is added to his hit
+chance (see Weapon Chart).
+
+\skill{laser/stun pistol}{5 Levels/Limit: Dexterity}\label{sec:skill-laser-stun-pistol}
+
+The character may fire a laser or stun pistol.  
+
+\skill{longarms}{6 Levels/Limit: Dexterity}\label{sec:skill-longarms}
+
+The character may fire a musket, rifle, car bine, or needle rifle.
+
+\skill{machine guns}{5 Levels/Limit: Dexterity}\label{sec:skill-machine-guns}
+
+The character may fire a sub-machine gun or an emplaced machine gun
+(see \ref{sec:other-actions}).
+
+\skill{paint gun}{7 Levels/Limit: Dexterity}\label{sec:skill-paint-gun}
+
+The character may fire a paint gun.
+
+\bigskip
+
+A character rolling a \textbf{0} on either die when attempting to hit
+a target with a ranged weapon receives an Experience Point.  A
+character may not receive an Experience Point when using the Hit Table
+or rolling dice for any purpose other than actually attempting to make
+his hit chance.  A character conducting more than on e fire in a single
+Action Round considers only his \emph{first} hit chance dice roll of
+the Round for possible Experience Point gain.  If a character is firing
+in a non-combat, non-pressure situation (such as putting holes in an
+immobile, helpless target), the GM should invalidate any dice rolls he
+conducts for EP purposes.
+
+
+\subsection[Spacecraft Skills]{The following four skills are used
+  aboard a spaceship or Battlecraft during space combat.}
+\label{sec:foll-four-skills}
+
+\index{skills!spacecraft}These skills modify the procedures outlined in the \emph{Delta Vee}
+rules and \ref{sec:space-combat}.  Any character aboard a spaceship or
+Battlecraft that is participating in combat may be assigned to the
+functions that any of these skills entail.  However, if the character
+is not skilled at his function, his performance will threaten the
+spaceship's chances of survival.
+
+A character may use two space combat skills at the same time, if he is
+skilled at both, in the following instances:
+
+\begin{itemize}
+\item \emph{Pilot} and \emph{gunnery} when in a battlecraft.    
+\item \emph{Pilot} and \emph{space tactics} when in a spaceship's bridge.    
+\item \emph{Missile guidance} and \emph{space tactics} when in a
+  weapon or arsenal pod.
+\item \emph{Gunnery} and \emph{space tactics} when in a spaceship's
+  bridge, weapon, or arsenal pod.
+\end{itemize}
+
+When a character is using two skills at once, the level of each is
+\emph{reduced by} \textbf{2} (to a minimum of \textbf{1}).
+
+\skill{gunnery}{9 Levels/ Limit: Dexterity}\label{sec:skill-gunnery}
+
+The character may effectively use shipboard laser and particle weapons
+against enemy craft.  A character may be assigned to any single weapon
+aboard the spaceship (for instance, to the ship's burster, or to one
+of its pods that contains laser and particle weapons or to a
+battlecraft's burster.  The character's Skill Level modifies any fire
+conducted from his assigned location as follows:
+
+\begin{description}
+\item[Unskilled:] The Target Value is increased by \textbf{4}.  No
+  Target Program modifier is applied.
+\item[Level 1:] No Target Program modifier is applied.
+\item[Level 2:] One half the normal Target Program modifier is
+  applied.
+\item[Level 3, 4:] Fire conducted normally.
+\item[Level 5:] A \textbf{--4} modifier or the Target Program
+  modifier (whichever is greater) is applied.
+\item[Level 6:] A \textbf{--6} modifier is applied (instead of the TP
+  modifier).
+\item[Level 7:] A \textbf{--6} modifier is applied (instead of the TP
+  modifier) and may be used to reduce the range (exception to
+  \emph{Delta Vee} \ref{DV-sec:targeting-program-rel-vel}). 
+\item[Level 8:] A \textbf{--8} modifier is applied (instead of the TP
+  modifier) and may be used to reduce the range.
+\item[Level 9:] As in Level 8.  In addition, every hit achieved by the
+  gunner is considered a critical hit.
+\end{description}
+
+A gunner assigned to an arsenal pod may conduct two fires in a single
+Fire Phase (see \emph{Delta Vee} \ref{DV-sec:number-types-fires}).
+When doing so, his Skill Level is reduced by \textbf{1}.  A gunner may
+also conduct two fires in a single Fire Phase if assigned an
+additional fire from a battle communications pod.
+
+A character receives an Experience Point for gunnery each time he
+rolls a \textbf{1} when using the Fire Results Table (\emph{Delta Vee}
+\ref{DV-sec:fire-results-table}).  He may not receive an Experience
+Point when using the Hit Table.
+
+\skill{missile guidance}{9 Levels/Limit: Intelligence}\label{sec:skill-missile-guidance}
+
+The character may effectively launch missiles, control their course,
+and spot their targets.  Any character may be assigned to oversee
+missile fire in a hunter, weapon, or arsenal pod of a spaceship.  The
+character's Skill Level affects the launch and performance of missiles
+from that pod.
+
+\begin{description}
+\item[Unskilled:] MIMS and Intelligent Missiles may not be launched at
+  all.  A guided missile may not receive Maneuver Commands once
+  launched. \textbf{2} is subtracted from every missile interception
+  chance.
+\item[Level 1:] MIMS may not be launched at all.  A guided missile may
+  receive only one Maneuver Command for each Control Guided Missile
+  Command issued to its spaceship.  \textbf{1} is subtracted from
+  every missile interception chance.
+\item[Level 2:] MIMS may not be launched at all.  \textbf{1} is
+  subtracted from every missile interception chance.
+\item[Level 3:] \textbf{1} is subtracted from every missile
+  interception chance.
+\item[Levels 4,5:] No modifications.
+\item[Level 6:] Prepare Missile Command not required to launch
+  unguided or guided missile.
+\item[Level 7:] As in Level 6 and \textbf{1} is added to every missile
+  interception chance.
+\item[Level 8:] Prepare Missile Command not required to launch
+  unguided, guided, or intelligent missile.  Each missile possesses
+  \textbf{1} extra Energy Unit.  \textbf{1} is added to every missile
+  interception chance.
+\item[Level 9:] Prepare Missile Command not required to launch any
+  type of missile.  Each missile possesses \textbf{2} extra Energy
+  Units. \textbf{1} is added to every missile interception chance.
+\end{description}
+
+A character receives an Experience Point for missile guidance each
+time a missile he launched successfully intercepts a target (even if
+the target has an active force field).  In addition, at the end of a
+space combat, the character rolls percentile dice.  If the result is
+equal to or less than the total number of missiles launched by the
+character (counting a MIMS as one missile), he receives an Experience
+Point.
+
+\skill{pilot}{9 Levels/Limit: Intelligence}\label{sec:skill-pilot}
+
+The character may effectively maneuver a spaceship or Battlecraft.  Any
+one character may be assigned to pilot a spaceship or Battlecraft, and
+when doing so is considered to be in the bridge.  The character's Skill
+Level modifies the number of Maneuver Commands he may issue to the
+ship each Command Phase and affects the performance limits of the
+craft.
+
+\begin{description}
+\item[Unskilled:] No more than one Maneuver Command may be issued in a
+  single Command Phase; no Weave Commands may be issued.  The spaceship
+  is destroyed upon entering a planet hex and automatically collides
+  with an asteroid upon entering an asteroid field (see
+  \emph{Delta Vee} \ref{DV-sec:asteroid-collision}).
+\item[Level 1:] No more than two Maneuver Commands may be issued in a
+  single Command Phase; no Weave Commands may be issued.  The spaceship
+  may not receive ``free'' Maneuver Commands upon entering a planet
+  hex (see \emph{Delta Vee} \ref{DV-sec:planets-maneuvering}).
+\item[Level 2:] No more than three Maneuver Commands may be issued in
+  a single Command Phase; no Weave Commands may be issued.
+\item[Level 3:] No Weave Commands may be issued.
+\item[Level 4, 5:] No modifications.
+\item[Level 6:] Ship's Maneuver Rating increased by \textbf{1}.
+\item[Level 7:] Ship's Maneuver and Velocity Rating increased by
+  \textbf{1} each.
+\item[Level 8:] As in level 7, and the chances of missile interception
+  and asteroid collision are reduced by \textbf{1} each.
+\item[Level 9:] As in level 7, and the chances of missile interception
+  and asteroid collision are reduced by \textbf{3} each.
+\end{description}
+
+Pilot skills may also be used when controlling a shuttle or any craft
+in low planet orbit, as described in \ref{sec:vehicleskills}.
+
+A character receives an Experience Point for pilot skill at the
+conclusion of any space battle in which he piloted a craft that was
+fired upon.  He may also receive an Experience Point when attempting to
+avoid an accident while controlling a craft in low planet orbit, as
+explained in \ref{sec:vehicleeps}.
+
+\skill{space tactics}{9 Levels/Limit: Leadership}\label{sec:skill-space-tactics}
+
+The character may effectively direct battle strategies undertaken by a
+spaceship he is commanding during space combat.  Space tactics may not
+be used aboard a Battlecraft.  Any one character may be assigned to
+space tactics, and a character so assigned must occupy the ship's
+battle communications pod, if the ship has one.  If not, he must be in
+the bridge, a weapon pod or an arsenal pod.  The character's Skill
+Level affects the number of Battle Commands that may be issued to the
+ship and the number of fires that may be conducted from the ship.
+
+\begin{description}
+\item[Unskilled:] No more than \textbf{1} Battle Command may be issued
+  to the spaceship in a single Command Phase and no more than
+  \textbf{1} fire may be conducted from the spaceship in a single Fire
+  Phase.  Active Search, Rendezvous and Tractor Beam Commands may not
+  be issued at all.
+\item[Level 1:] No more than \textbf{1} Battle Command may be issued
+  in a single Command Phase and no more than \textbf{1} fire may be
+  conducted in a single Fire Phase.
+\item[Level 2:] No more than \textbf{2} Battle Commands may be issued
+  and no more than \textbf{2} fires may be conducted.
+\item[Level 3:] No more than \textbf{3} Battle Commands may be issued
+  and no more than \textbf{3} fires may be conducted.
+\item[Level 4, 5:] No modifications.
+\item[Note:] If the number or Commands of fires a ship may normally
+  receive or conduct is less than listed above, the ship's limitations
+  take precedence.
+\item[Level 6:] \textbf{1} additional Battle Command may be issued.
+\item[Level 7:] \textbf{1} additional Battle Command may be issued and
+  \textbf{1} additional fire may be conducted.
+\item[Level 8:] As in level 7, and the Civ Level of the ship is
+  increased by \textbf{2} when attempting to activate a force field
+  during missile interception (see \emph{Delta Vee}
+  \ref{DV-sec:missile-force-field}).
+\item[Level 9:] \textbf{2} additional Battle Commands may be issued,
+  and \textbf{2} additional fires may be conducted, and the ship's
+  Civ Level is increased as in Level 8.
+\end{description}
+
+A character receives one Experience Point for space tactics at the
+conclusion of any space battle in which he commanded a spaceship that
+was fired upon.
+
+\section{Psionic Skills}
+\label{sec:psionicskills}
+
+\index{skills!psionic}Psionic skills allow a character to use the powers of his mind in
+tangible ways.  These skills are \emph{restricted}; that is, unless a
+character possesses a psionic skill or is eligible to possess the
+skill (has an \textbf{\textsf{X}} in its space), he may \emph{not}
+attempt the skill \emph{at all}.  Furthermore, a character with a
+Mental Power Rating of \emph{less than} \textbf{4} may never receive
+Experience Points for any psionic skill he uses.
+
+With the exception of navigation, none of the psionic skills require
+any special equipment.  However, a \emph{psionic rig} may enhance a
+character's use of certain psionic skills.
+
+Using certain psionic skills puts a terrific strain on the character's
+mind.  If the skill is used poorly, the character may suffer
+\emph{psionic backlash}, the effects of which range from a temporary
+blackout to insanity or death.
+
+\skill{life sense}{8 Levels/Limit: Intelligence}\label{sec:skill-life-sense}
+
+The character is sensitive to the living energy emanations of all
+living beings.
+
+During the Encounter Procedure, the \emph{square} of the single
+highest \emph{Life Skill Sense Level} among the characters in the
+party is automatically subtracted from a creature's or NPC's Surprise
+Ambush Chance (see \ref{sec:awareness}).  If the GM rolls a \textbf{9}
+on either die when checking for surprise/ambush, he should inform the
+character that contributed his life sense (if any) that he has gained
+an Experience Point.
+
+\begin{tasklist}
+\item When \emph{perception} of a creature is possible (see
+  \ref{sec:encounter-procedure}), a character with life sense may
+  attempt to perceive if the creature is \emph{intelligent}:
+  \textbf{20\%}.  The creature's \emph{Intelligence Rating} (if any),
+  the character's \emph{Mental Power Rating}, and the \emph{square} of
+  his \emph{Skill Level} are added to the base chance.  If the attempt
+  is successful, the GM immediately reveals the creature's
+  Intelligence Rating (or lack thereof) to the character.  A dice
+  result that is greater than the modified chance indicates failure;
+  the character cannot perceive the creature's mind and may not try
+  again.  A character who rolls a \textbf{0} on either die when
+  attempting to perceive creature intelligence receives an Experience
+  Point.
+\end{tasklist}
+
+
+\skill{mind control}{9 Levels/Limit: Intelligence}\label{sec:skill-mind-control}
+
+The character may attempt to interfere with or actually take control
+of another individual's mind.  During an Action Round, a skilled
+character may attempt to control any character, NPC, or creature
+(however, see \ref{sec:psicreatures}) that is within his natural
+sight.  \index{psionic rig!mind control}A character wearing a psionic rig may attempt to control an
+individual with in 100 km whose exact location is known to him.  A
+character attempting mind control may not move, fire, or attack during
+the Action Round.
+
+The base chance of successful mind control is \textbf{10\%}.  To this
+is added the character's \emph{Mental Power Rating} and the square of
+his \emph{Mind Control Skill Level}.  The \emph{square} of his
+target's \emph{Mental Power Rating} is subtracted from the chance.  The
+attempting character rolls percentile dice.  If the dice result is
+greater than the modified chance, the attempt fails; \emph{check for
+  psionic backlash}.  If the dice result is equal to or less than the
+modified chance, \textbf{1} is \emph{temporarily subtracted} from the
+target's Mental Power Rating for every \textbf{10} (or fraction
+thereof) below the chance the dice result indicates.  One of the
+following two procedures is then carried out:
+
+\begin{itemize}
+\item \emph{If the target's modified MP Rating is now} \textbf{1}
+  \emph{or higher}, the target must immediately check for shock (see
+  \ref{sec:shock-check}), using the modified Rating.  If shocked, the
+  target does not collapse; he remains motionless in place for one
+  Action Round.
+\item \emph{If the target's modified MP Rating is now} \textbf{0}
+  \emph{or less}, the target is controlled by the attempting
+  character.  A controlled individual may be moved or commanded to
+  perform any other actions possible in an Action Round (see
+  \ref{sec:other-actions}) in any way the controller wishes.  A
+  controlled individual may not be directed to do anything suicidal
+  (such as walking off a cliff or firing a weapon at himself).  He may
+  be directed to do such things as attack his allies, toss aside his
+  weapons, or run wildly away.  An individual remains controlled for
+  one Action Round only.
+\end{itemize}
+
+A character who rolls a \textbf{0} or \textbf{1} on either die when
+attempting mind control receives an Experience Point.
+
+\skill{navigation}{9 Levels/Limit: Intelligence}\label{sec:skill-navigation}
+
+The character has learned the secrets of hyperdrive thought.  He is
+familiar with the concepts, design and use of spaceship hyper-drives.
+If aboard a spaceship that has an explorer, hunter, jump, or augmented
+jump pod --- and the spaceship is at a valid \emph{jump point} --- the
+character may attempt a hyperjump, within the limitations of
+\ref{sec:interstellar-travel}.  The character declares his destination
+star system (and planet within the system, if known) and calculates
+his chance of success as follows:
+
+The \emph{square} of his \emph{Navigational Skill Level} (a jump or
+augmented pod jump increases the Skill Level), \emph{plus} the
+\emph{square} of his \emph{Mental Power Rating}, \emph{plus}
+\textbf{10$\times$} the highest \emph{Starport Class} in the
+destination system (if the character has been to the star system
+before, increase the Starport Class by \textbf{1}; if the character
+frequents the star system, increase the Starport Class by \textbf{2};
+both of these increases may be applied to a \textbf{0} Class Starport,
+but may not increase the Class of any Starport above \textbf{4}),
+\emph{minus} the distance between the spaceship's current position and
+the destination star system (in light years).
+
+The character rolls percentile dice, and the GM refers to the
+Hyperjump Table (see \ref{tab:hyperjump}), using the difference
+between the dice result and the calculated chance to locate the
+outcome of the hyperjump.  If the outcome includes Psionic Backlash
+Modifier, the GM rolls percentile dice again, adds the modifier to the
+dice result, and locates the result on the Psionic Backlash Table
+(\ref{sec:psibacklashtable}).
+
+A character who rolls \textbf{0}, \textbf{1}, \textbf{2} or \textbf{3}
+on either die when attempting a hyperjump receives an Experience
+Point.  An EP may not be gained from a dice roll for the Psionic
+Backlash Table.
+
+\skill{psionic boost}{8 Levels/Limit: Intelligence}\label{sec:skill-psionic-boost}
+
+The character may attempt to call upon the powers of his subconscious
+to improve his performance in a stress situation.  In any situation
+where the character is called upon to use a military skill or a
+vehicle skill, he may declare that he is attempting to temporarily
+improve that skill with a psionic boost.  Only those skills in
+\ref{sec:military-skills} and \ref{sec:vehicleskills} that the
+character possesses at Level \textbf{1} or higher are eligible for
+psionic boost.
+
+\index{psionic rig!psionic boost}The base chance of successful psionic boost is \textbf{25\%}.  To this
+is added the character's \emph{Mental Power Rating} and the
+\emph{square} of his \emph{Psionic Boost Skill Level} (\emph{may be
+  increased} if wearing a psionic rig).  The character rolls percentile
+dice.  For every \textbf{18} points (or fraction thereof) \emph{below}
+the modified chance the dice result indicates, the declared Skill
+Level is \emph{increased} by one.  Thus a character with a
+\textbf{50\%} chance of psionic boost who rolled a \textbf{36} would
+increase the declared skill by \textbf{2} levels.  For every
+\textbf{10} points (or fraction thereof) \emph{above} the modified
+chance the dice result indicates the declared Skill Level is
+\emph{decreased} by one.  If an unsuccessful boost attempt reduces the
+declared Skill Level below \textbf{1}, the character is considered
+unskilled at the task.  The effects of psionic boost (successful or
+unsuccessful) last for one use (one die roll) of the declared skill
+only.
+
+A character who rolls a \textbf{8} on either die when attempting
+psionic boost receives an Experience Point.  A character may not
+receive an EP for a skill if he attempted to improve its current use
+with psionic boost.
+
+
+\skill{psionic communication}{8 Levels/Limit: Intelligence}\label{sec:skill-psionic-communication}
+
+The character can send and receive thoughts with other individuals.  At
+any point during play, the character may declare that he is attempting
+to send a psionic (unspoken) message to another character, NPC, or
+creature (however, see \ref{sec:psicreatures}) within his sight.
+\index{psionic rig!psionic communication}A character
+wearing a psionic rig may attempt to send a psionic message to an
+individual anywhere on the same world or within 200,000 km.
+The character declares the intended receiver and the GM calculates the
+chance of success as follows: To the base chance of \textbf{10\%} is added the
+character's \emph{Mental Power Rating}, plus the \emph{square} of his
+\emph{Psionic Communication Skill Level}, plus the \emph{receiver's MP
+  Rating}, plus the \emph{square} of the \emph{receiver's Psionic
+  Communication Skill Level}.
+
+The GM rolls percentile dice.  The GM subtracts the modified chance
+from the dice result and locates the difference in one of the
+following outcomes:
+
+\begin{description}
+\item[\textbf{--20 or less}]: Successful communication has been established.
+  The two individuals converse silently for the equivalent of one
+  minute (adjudicated by GM).
+\item[\textbf{--19 to 0:}] The character may send one message to the receiver.
+  The receiver may not return a message except to acknowledge receipt.
+\item[\textbf{+1 to +10:}] The receiver is aware that the character is
+  attempting to contact him, but cannot receive a message.
+\item[\textbf{+11 to +20:}] The receiver is aware that someone, somewhere is
+  attempting to contact him.  The sender is not aware of this fact.
+\item[\textbf{+21 or more:}] No contact is achieved at all.
+\end{description}
+
+A character may not attempt psionic communication with a specific
+individual more than once per day.  
+
+A character that rolls a
+\textbf{0} on either die when attempting psionic communication
+receives an Experience Point.  If successful psionic communication is
+established and the \emph{receiver} has (or is eligible to acquire) the
+psionic communication skill, he also receives an Experience Point on a
+roll of \textbf{0}.  The GM should not allow EP gain for psionic
+communication if the skill is being used when normal or radio
+conversation could be safely used.
+
+\skill{psychokinesis}{9 Levels/Limit: Intelligence}\label{sec:skill-psychokinesis}
+
+The character is able to move and manipulate objects with the power of
+his mind.  The character may declare that he is attempting to lift
+and/or move any unattached object within his sight.  A character
+attempting psychokinesis during an Action Round may not move or fire.
+
+The base chance of successful psychokinesis is \textbf{10\%} minus the
+size (0--9) of the world the character is on (considered \textbf{0} if
+in a zero-G environment).  The character's \emph{Mental Power Rating}
+and the \emph{square} of his \emph{Skill Level} are added to the
+chance.  The character rolls percentile dice.  If the dice result is
+\emph{less} than the modified chance by \emph{at least} a number of
+percentage points equal to the \emph{kilogram weight} of the object
+(rounded up) to be moved, it is successfully lifted.  Any
+\emph{additional} amount that the dice result falls below the chance
+may be converted to movement of the object: Divide the difference by
+the whole kilogram weight of the object (rounding the quotient to the
+nearest whole number) to determine the number of hexes (five-meter
+increments) the object may be moved in one Action Round (ten seconds).
+\textbf{Example:} A character with a \textbf{45\%} chance of lifting a
+three kg object rolls a \textbf{25}.  He may lift the object and has
+\textbf{17} percentage points with which to move it.  Dividing
+\textbf{17} by \textbf{3} provides the character with the ability to
+move the object \textbf{6} hexes in an Action Round.  If the object had
+weighed between \textbf{14} and \textbf{20 kg} , he would be able to
+lift it a short distance but would not be able to move it.
+
+A character that is able to move an object with psychokinesis may hurl
+the object at a target.  The Hit Strength of a hurled object is
+calculated as follows: ( 10 $+$ the \emph{Agility Rating of the
+  target})\index{agility!and evading psychokinetic attack} is subtracted from the \emph{speed} of the hurled object
+(the number of hexes it moves in an Action Round).  If this number is
+\textbf{0} \emph{or less}, the object may not harm the target.  If the
+number is \textbf{1} \emph{or greater}, multiply it by the whole
+kilogram weight of the object and then divide this product by
+\textbf{20}.  If this quotient is \textbf{1} \emph{or greater} (after
+rounding fractions \emph{down}) it is used as the Hit Strength on the
+Hit Table or the Equipment Damage Table (depending on the type of
+target); see \ref{sec:hits-and-damage}.  If this quotient is 
+\textbf{less than 1}, the target is not harmed.  In summary: 
+
+$$\frac{\mathrm{Weight}\times\left[\mathrm{Speed} - \left(10 +
+      \mathrm{Target\ Agility}\right)\right]}{20}$$
+
+    
+A dice result for a psychokinesis attempt that is above the modified
+chance at all in dicates failure; check for psionic backlash.
+
+\index{psionic rig!psychokinesis!}If a character is wearing a psionic rig while attempting psychokinesis
+rolls less than his modified chance, the number of percentage points
+below the chance the die result indicates is \emph{multiplied by}
+\textbf{10}.  Thus, if the character in the preceding example were
+wearing a psionic rig, his dice result would be considered
+\textbf{200} \emph{percentage points} below his chance.  He could then
+move the \textbf{3 kg} object \textbf{66} \emph{hexes} in one Action
+Round and strike an NPC (Agility Rating of \textbf{6}) with a Hit
+Strength of \textbf{7}.
+A psionic rig does not increase the actual psychokinesis chance.
+
+A successful psychokinesis attempt lasts one Action Round \emph{only}.
+If a character wishes to continue controlling an object, he must
+conduct another attempt.
+
+A character who rolls a \textbf{0} on either die when attempting
+psychokinesis receives one Experience Point.  However, a character may
+receive no more than one EP when controlling an object through more
+than one Action Round.
+
+\subsection[Psionic Rig]{A character may enhance certain of his
+  psionic skills by wearing a \hypertarget{tag:psionic-rig}{psionic rig}.}
+\label{sec:psionicrig}
+
+\index{psionic rig|bb}If wearing a psionic rig while attempting \emph{psionic boost}, a
+character's skill level is \emph{increased by} \textbf{2}.  A Psionic
+Rig greatly increases the range (to \textbf{100 km}) over which a
+character may attempt \emph{mind control} and greatly increases the
+range (anywhere on the world) over which the character may attempt
+\emph{psionic communication}.  A psionic rig increases the effect of
+successful \emph{psychokinesis} by a factor of \textbf{10}.  These
+effects are detailed in the specific skill descriptions.  A psionic rig
+does not aid navigation, psion tech, or life sense.  If a psionic rig
+is being worn by a character that must use the Psionic Backlash Table,
+10 is \emph{subtracted} from the result on the table.
+
+A psionic rig weighs 3 kg and may be purchased in a psionic institute
+for \textbf{25} Trans.
+
+\subsection[Psionic Skills and Creatures]{If a character is aware that
+  a creature has an Intelligence Rating, he may attempt mind control
+  or  psionic communication with the creature.}
+\label{sec:psicreatures}
+
+\index{skills!psionic!and creatures}Such a creature is considered to possess a Mental Power Rating of
+\textbf{1} unless otherwise specified.  A character's Mind Control and
+Psionic Communication Skill Levels are reduced by \textbf{2} when
+dealing with a creature.  If a creature has no Intelligence Rating or
+the characters are not aware that it has an Intelligence Rating, mind
+control and psionic communication cannot be attempted with it.
+
+\subsection[Psionic Backlash]{A character must sometimes check for
+  psionic backlash after attempting navigation, mind control, or
+  psychokinesis.}
+\label{sec:psibacklash}
+
+\index{psionic backlash}If a dice result for mind control or psychokinesis is above the
+modified chance, the difference is located on the Psionic Backlash
+Table and the listed effect is applied to the character (no additional
+dice roll is made).  If the outcome of a hyperjump includes a psionic
+backlash modifier, the character must roll percentile dice again,
+apply the modifier to a roll, and locate the modified result on the
+Psionic Backlash Table to determine the effect on the character.
+
+\index{psionic rig!psionic backlash}\index{psionic backlash!psionic
+  rig, effect on}If a character is wearing a psionic rig, \textbf{10} is subtracted
+from the result on the Psionic Backlash Table.  However, the rig may
+become damaged, as listed in certain outcomes.
+
+A shock result from the
+table is carried out in accordance with \ref{sec:shock-check}.  If a stunned
+character is not in an action situation, it can be assumed that he
+blacked out for a few moments and then came to with no long term
+effects.
+
+\index{mental power!loss of}A character that suffers Mental Power loss as a result of psionic
+backlash may regain the lost points only if he is healed at a psionic
+institute (see \ref{sec:psiinstitute}).  Lost Mental Power Points may be
+regained at the rate of one per month (once healing has begun).  If a
+character's Mental Power Rating is reduced by \textbf{2} or more, he
+may use none of his skills (psionic or otherwise) until healed; he is
+temporarily insane.  The manifestation of his insanity is determined by
+the GM.
+
+\subsection[Psionic Backlash table]{The Psionic Backlash Table is
+  used to determine the effects of psionic backlash.}  
+\label{sec:psibacklashtable}
+
+See table \ref{tab:psibacklash}.
+
+\begin{table}[htbp]
+  \centering
+  \fbox{%
+    \begin{minipage}{4in}
+      \centering
+      \caption{Psionic Backlash Table}
+      \label{tab:psibacklash}
+
+      \medskip
+
+      \begin{tabular}{lp{2.5in}}
+        \multicolumn{1}{c}{Percentile Dice}\\
+        \multicolumn{1}{c}{Result Minus}\\
+        \multicolumn{1}{c}{Chance} &
+        Effect On Psionic Character\\
+        \hline
+        +10 or less & No effect.\\
+        +11 to +20 &   Shock check (see \ref{sec:shock-check}).\\
+        +21 to +30 &  Character is automatically shocked.\\
+        +31 to +40 & Character is shocked; loses one die roll of points
+        from his Endurance Rating. \\
+        +41 to +55 & Character passes out; Endurance Rating reduced to
+        \textbf{0}.  Psionic rig suffers superficial damage. \\
+        +56 to +70 & Character passes out; Endurance Rating reduced to
+        \textbf{0}.  Mental Power reduced by \textbf{1} (see
+        \ref{sec:psibacklash}).  Psionic rig   
+        suffers light damage. \\
+        +71 to +85 & Character passes out; Endurance Rating reduced to
+        \textbf{0}.  Mental Power reduced by \textbf{2} (see
+        \ref{sec:psibacklash}).  Psionic 
+        rig suffers heavy damage. \\
+        +86 to +100 & Character passes out; Endurance Rating reduced
+        to \textbf{0}.  Mental Power reduced to \textbf{1} (See
+        \ref{sec:psibacklash}).  The character  
+        may use no Psionic skills until cured (see
+        \ref{sec:psiinstitute}).  Psionic 
+        rig partially destroyed.\\
+        +101 or more &  Character is dead.  Psionic rig destroyed. \\
+      \end{tabular}
+
+    \medskip
+
+    \parbox{0.9\textwidth}{When checking for psionic backlash  after
+      a hyperjump attempt, roll  percentile dice and add the modifier
+      from  the Hyperjump Table
+%% Original:
+%% (nothing)
+%% New:
+      (table \ref{tab:hyperjump})\label{tab:psibacklash-change-ref}
+%% End change
+      to the
+      dice result.  See 
+      \ref{sec:psiinstitute} for 
+      detailed explanation of use.}
+  \end{minipage}}
+\end{table}
+
+\subsection[Psionic Institutes]{A psionic institute is a secluded
+  center of research and meditation controlled by psions.}
+\label{sec:psiinstitute}
+
+\index{psionic institute}Any world with a class \textbf{3} or \textbf{4} spaceport has a
+psionic institute (see \ref{sec:spaceport-class}).  The location of an
+institute on a given world is determined by the GM.  Any character that
+is a psionic navigator or a thinker may always enter a psionic
+institute.  Any character with a Mental Power Rating of \textbf{3} or
+greater may enter a psionic institute if accompanied by a psionic
+navigator or thinker.  \index{psionic backlash!healing
+  from}\index{mental power!recovery of}A character in an institute may be healed of any
+ill effects of psionic backlash and any physical ailments as well.
+Psionic rigs may be purchased and repaired at an institute.
+
+
+\section{Vehicle Skills}
+\label{sec:vehicleskills}
+
+\index{skills!vehicle}Vehicle skills allow a character to safely drive or pilot all types of
+planet-based vehicles on the ground, in the atmosphere, or on or
+below liquid.
+
+Any character may attempt to operate a vehicle.  However, in situations
+that require skillful maneuvering or quick decisions, a character with
+the proper skill will be much more likely to see himself and his
+passengers through safely.
+
+Vehicle skills are organized in a different way than other skills.
+There are four vehicle skills: ground vehicles, air vehicles, marine
+vehicles and military vehicles.  Each of these skills is divided into
+five or six sub-skills, each representing proficiency with a
+particular type of vehicle in the skill category.  As a character
+increases a vehicle skill, he receives Experience Points to assign to
+its sub-skills.
+
+The following vehicle skills and sub-skills are available to the
+characters:
+
+\skill{air vehicles}{9 Levels/Limit: None}\label{sec:skill-air-vehicles}
+
+The character is familiar with the theories of atmospheric flight and
+the operation of all types of air vehicles, broken into the following
+sub-skills:
+
+\begin{description}
+\item[Direct Lift.]  Any jet-powered craft designed for point take-off
+  and landing.
+\item[Glider.] Any air vehicle powered only by air currents or human
+  strength.  Also includes ``mechanical birds,'' such as an
+  ornithopter.
+\item[Helicopter.]
+\item[Jet Plane.]
+\item[Propeller Plane.]
+\item[Shuttle.]  A rocket-powered vehicle designed to fly from a
+  planet surface to low orbit and back.  A character with pilot skill
+  is considered to have this skill at the same level.
+\end{description}
+
+\skill{ground vehicles}{9 Levels/Limit: None}\label{sec:skill-ground-vehicles}
+
+The character is experienced with all unarmed ground vehicles, broken
+into the following sub-skills:
+
+\begin{description}
+\item[All-Terrain Vehicle.]
+\item[Animal Drawn.] Includes all vehicles drawn by horses, oxen, and
+  alien beasts of burden, and the riding of any such animals.
+\item[Automobiles.] 
+\item[Sled.] Any powered or non-powered vehicle designed for
+   travelling over snow and ice.   If an animal-drawn sled is being
+   used, the driver uses the  lower of his Animal Drawn and Sled
+   Skill Levels.
+ \item[Tractor.] 
+ \item[Truck.] Any vehicle, designed for road use, with more than two
+   axles.
+ \end{description}
+ 
+\skill{marine vehicles}{9 Levels/Limit: None}\label{sec:skill-marine-vehicles}
+
+The character is familiar with all aspects of maritime transport and
+the operation of a wide range of marine vessels, broken into the
+following sub-skills:
+
+\begin{description}
+\item[Motorboat.] Any small engine-powered craft.
+\item[Oar boat.] Any craft powered by human strength.
+\item[Sailing ship.] A craft of any size powered by wind.
+\item[Submarine.] Any submersible vessel.
+\item[Supervessel.] Any large engine-powered ship, such as an ocean
+  liner, supertanker, or aircraft carrier.
+\end{description}
+
+\skill{military vehicles}{9 Levels/Limit: None}\label{sec:skill-military-vehicles}
+
+The character is familiar with the operation of a wide range of
+military vehicles, broken into the following sub-skills:
+
+\begin{description}
+\item[Armed All-Terrain Vehicle.]  A character with this sub-skill may
+  operate an unarmed ATV at the same skill level.  When doing so
+  however, any Experience Points gained must be applied to the Ground
+  Vehicles Skill, not to Military Vehicles.
+\item[Armored Personnel Carrier.] 
+\item[Half Track.] 
+\item[Self-propelled Artillery.] 
+\item[Tank.]
+\end{description}
+
+\subsection[Sub-Skill Levels]{Each level a character achieves in a
+  vehicle skill allows him to increase his sub-skills by a number of
+  points equal to the new Skill Level.}
+\label{sec:vehsubskills}
+
+\index{skills!vehicle!sub-skills}For example, a character at Skill Level 1 in Ground Vehicles could
+assign \textbf{1} point to the automobile sub-skill.  When he achieves
+Level 2, he could assign \textbf{1} additional point to the automobile
+sub-skill and \textbf{1} point to the truck sub-skill.  Upon reaching
+Level 3, he assigns \textbf{3} more points to any of the ground
+vehicle sub-skills, and so on until he reaches Level 9, when he
+receives \textbf{9} points to assign to any of the sub-skills (he
+would then have a total of \textbf{45} points assigned to all the
+ground vehicle sub-skills).  Points received when reaching a new Skill
+Level may be assigned to sub-skills in any manner as long as a single
+sub-skill does not exceed Level 9, and as long as points are assigned
+only to sub-skills for vehicles that have been used by the character
+in some capacity since the last Skill Level increase.
+
+\textbf{Note:} When choosing a vehicle skill during character
+generation, the player receives and assigns points to sub skills as
+follows: At Skill Level 1 he receives \textbf{1} sub-skill point; at
+Level 2 he receives a total of \textbf{3} points; at Level 3, a total
+of \textbf{6} points; and at Level 4, a total of \textbf{10} points.
+
+\subsection[Vehicle Accidents]{When a potential vehicle accident is
+  imminent, the character driving the vehicle may attempt to overcome
+  the hazard, using his vehicle skill.}
+\label{sec:vehaccidents}
+
+\index{accidents!vehicle!avoiding}The base chance to avoid an accident is \textbf{25\%}, \textbf{50\%},
+or \textbf{75\%} (see \emph{Adventure Guide} section
+\ref{AG-sec:accidents}).  The Performance Modifier of the vehicle is
+added to the base chance.  The character's \emph{Dexterity Rating} and
+the \emph{square} of his \emph{Sub-Skill Rating} are added to the base
+chance.  If an unskilled character is driving the vehicle, nothing is
+added to the base chance.
+
+\begin{enumerate}
+\item The character driving the vehicle rolls percentile dice.  If the
+  dice result is less than or equal to the modified chance, no
+  accident occurs at all, and this procedure is concluded (the GM
+  might wish to describe some sort of ``close call'' to the players).
+  If the result is greater than the chance, an accident occurs and the
+  following steps are conducted.
+\item The GM subtracts the modified chance from the dice result and
+  locates the difference on the Hit Table (\ref{tab:hit}) to secretly
+  determine the type of damage incurred by the vehicle.  He does not
+  add a die roll to the difference (as is stated on the table).  The
+  GM should then describe the nature of the accident to the players in
+  colorful terms.
+\item If the vehicle incurs \emph{heavy} damage or worse as a result
+  of the accident, any characters aboard may be hurt.  Each character
+  must roll one die, applying the following modifiers: subtract the
+  character's \index{agility!and accidents}Agility Rating; add \textbf{10} if the vehicle is
+  partially destroyed; add \textbf{20} if the vehicle is totally
+  destroyed.  \index{accidents!vehicle!hits from}Locate the modified die result on the Hit Table and
+  apply any hits incurred by the character as explained in
+  \ref{sec:hits}.  Characters are not hurt in a vehicle accident
+  resulting in \emph{superficial} or \emph{light damage}.
+\end{enumerate}
+
+\subsection[Vehicle Experience Points]{A character who rolls a
+  \textbf{0} or \textbf{1} on either die when attempting to avoid a
+  vehicle accident receives one Experience Point.}
+\label{sec:vehicleeps}
+
+The character may also check for Experience Point gain after every
+\textbf{30} hours (or so) of driving time in which no accident check
+occurs.  The GM and/or the driving character should keep track of
+``safe'' driving time since the last accident check for this purpose.
+After \textbf{30} hours have passed, the player rolls percentile dice
+and gains an Experience Point if a \textbf{0} or \textbf{1} appears on
+either die.  The dice roll has no purpose aside from checking for
+Experience Point gain.
+
+\subsection[Vehicle Types and Sub-Skills]{The type of vehicle
+  sub-skill used for a  specific vehicle is listed on the Vehicle
+  Chart.}
+\label{sec:vehtypes}
+
+Two sub-skills are listed for certain vehicles on the chart.  In this
+case, the driver must use the one sub-skill that applies to the
+current use of the vehicle.  If the GM introduces a vehicle into play
+that is not covered by the Vehicle Chart (\ref{sec:land-vehicles},
+\ref{sec:marine-vehicles}, or \ref{sec:air-vehicles}), he must assign
+one (or two) of the applicable sub-skills to it, and announce this to
+the players.
+
+
+\section{Scientific Skills}
+\label{sec:scientific-skills}
+
+\index{skills!scientific}Scientific Skills allow a character to attempt a wide variety of
+analyses, syntheses, studies and treatments that will often be of
+vital importance to the party.
+
+A character may undertake a scientific task only if he possesses the
+appropriate skill, or if he is eligible to acquire the skill (that is,
+if there is an \textbf{\textsf{X}} in the Skill Level space on his
+Character Record, see \ref{sec:skill-points-are}).
+\textbf{Exception}: Any character may attempt to \emph{diagnose} an
+ailing person.
+
+Unless otherwise stated, all scientific tasks require a particular
+lab, scanner, or other piece of equipment.  Some of these devices
+provide the character with a temporary increase in his Skill Level (as
+explained on the Personal Equipment Table).  This increase is not
+applied if the character does not possess the skill required for the
+task.  \textbf{Exception}: An unskilled character attempting
+\emph{treatment} may receive an increase when using a mediscanner (his
+Skill Level is considered to be \textbf{0} for this purpose).
+
+Each task requires a certain amount of time to perform.  In most cases
+the time required is listed with the description of the equipment
+that must be used.  If the task requires no equipment other than for
+its primary function, the time required is listed in the task
+description.  The time required to perform a task may be reduced or
+increased, as explained in the chapter introduction.
+
+The GM may have an NPC or service that the party has encountered
+attempt a task that the party previously failed.  The GM should
+discourage repetitive use of a task (such as scanning for geological
+resources every 50 meters) by informing a character do ing so that he
+is not eligible to receive Experience Points.
+
+\skill{astronomy}{6 Levels/Limit: Intelligence}\label{sec:skill-astronomy}
+
+The character is learned in the study of celestial bodies and the
+geography of known space.  His services are required when attempting
+to locate an unexplored planet or when attempting to locate one's own
+position after a hyperjump error.  All spaceships contain equipment
+necessary to survey the stars.  A Civ Level 8 spaceship or explorer pod
+increases a character's Astronomy Skill Level by \textbf{1}.  A survey
+pod increases the Level by \textbf{2}.
+
+\begin{tasklist}
+\item Locate unexplored planet (when in system space): \textbf{90\%}.
+\item Locate uncharted planet (when in system space): \textbf{70\%}.
+\item Locate own position after minor jump error: \textbf{60\%}.
+\item Locate own position after major jump error: \textbf{40\%}.
+\item Locate own position after randomized  jump: \textbf{20\%}.
+\end{tasklist}
+
+The time required for any of the above tasks is \textbf{6} hours.  A
+dice result for any of the above tasks that is no more than
+\textbf{10} above the modified chance indicates success with a
+\textbf{20\%} increase in the time required for each extra percentage
+point.  A dice result that is more than \textbf{10} above the modified
+chance indicates failure.
+
+\skill{biology}{9 Levels/ Limit: Intelligence}\label{sec:skill-biology}
+
+The character is familiar with the science of living matter in all its
+forms, and is learned in botany, zoology, biochemistry, and
+xenobiology (the study of alien life).  By observing a creature, he
+may discover its unique at tributes, the danger it presents (if any),
+how it eats, and where it fits into its ecological ``niche.'' By
+examining a creature with a bioscanner, the character may learn
+details of its inner structure (it could be edible or of commercial
+value).  A character's biology skill is reduced by \textbf{2} (to a
+minimum of \textbf{1}) when dealing with non-carbon creatures (in some
+cases this fact is know only by the GM).
+
+\begin{tasklist}
+\item During a creature encounter, when a character gets his first
+  sight of the creature, he may attempt to perceive information about
+  it (see \ref{sec:encounter-procedure}): \textbf{10\%}.  A bioscanner
+  is not required for perception, nor is time expended.  For every
+  \textbf{10} percentage points or fraction thereof that a dice result
+  for perception is greater than the modified chance, the information
+  is revealed to the character one Action Round (\textbf{10} seconds)
+  later.  Thus, if the dice result were \textbf{22} higher than the
+  chance, the GM would reveal the information three Rounds after
+  perception was attempted, or when the Action Rounds are concluded
+  (whichever comes first).
+\item Perceive a creature with a bioscanner: \textbf{20\%}.  Same as
+  preceding; however, the character must be within five meters of the
+  creature (in the same hex) and must spend one Action Round at the
+  task (this time may not be reduced).  This task may be performed
+  after the above task against a given creature, if the information
+  has not yet been revealed.
+\item Examine creature with a bioscanner: \textbf{30\%}.  Requires one
+  hour.  This task may be performed only if the creature is dead,
+  unconscious, or safely restrained.  If examination is successful,
+  the GM reveals the appropriate information about the creature to the
+  character (see \emph{Adventure Guide} \ref{AG-sec:creatures}).  A
+  dice result for examination that is no more than \textbf{10} above
+  the modified chance indicates success with a \textbf{20\%} increase
+  in the time required for each extra percentage point.  A dice result
+  that is more than \textbf{10} above the modified chance for
+  examination indicates failure.
+\end{tasklist}
+
+Biology skill is also required to diagnose and/or treat ailments
+suffered by an alien life form (see diagnosis and treatment).
+
+\skill{chemistry}{9 Levels/Limit: Intelligence}\label{sec:skill-chemistry}
+
+The character is knowledgeable in all aspects in the study of chemical
+substances and elements.  If he has a chemlab, he may analyze
+atmosphere, soil samples, or liquid samples for all chemical elements
+and compounds.  If the character has a chemsynthesizer and the proper
+raw materials, he may attempt to synthesize any chemical compound.  A
+dice result for chemical \emph{analysis} that is no more than
+\textbf{10} above the modified chance indicates successful analysis
+with a \textbf{10\%} increase in the time required for each extra
+percentage point.  A dice result that is more than \textbf{10} above
+the modified chance for analysis indicates failure.  A dice result for
+chemical \emph{synthesis} that is above the modified chance at all
+indicates failure.
+
+\begin{tasklist}
+\item Analyze sample to find all abundant chemicals: \textbf{70\%}.
+\item Analyze sample to find all abundant and trace chemicals and
+  complex compounds: \textbf{25\%}.
+\item Synthesise simple compound (water, oxygen, explosives, acids):
+  \textbf{20\%}.
+\item Synthesise complex compounds (such as drugs or edible proteins):
+  \textbf{-5\%}.
+\end{tasklist}
+
+\skill{diagnosis}{9 Levels/Limit: Intelligence}\label{sec:skill-diagnosis}
+
+The character is familiar with the theories of medicine and the nature
+of all ailments suffered by humans.  His services are essential before
+a patient may be healed.  If the character has a first aid kit or a
+mediscanner, he may attempt to diagnose injury or disease suffered by
+another person (not himself) and thus allow and aid the medical
+treatment of that person.
+
+\begin{tasklist}
+\item Diagnose ailing being for treatment: \textbf{90\%}.  From this
+  chance the GM \emph{subtracts} ($3 x$ the total number of hits
+  received by the patient); \textbf{7} hits would be a subtraction of
+  \textbf{21}.  If the patient is suffering from something other than
+  hits to his physical characteristics (such as poison or disease),
+  the GM secretly determines how much is subtracted from the chance.
+  The modified chance may exceed \textbf{100\%} after adding to it for
+  the character's skill.  No time is required to perform this task.
+  The time listed on the Equipment Chart to use a first aid kit or
+  mediscanner is for treatment only.
+\end{tasklist}
+
+A dice result for diagnosis that is above the modified chance
+indicates that diagnosis has failed; treatment may \emph{not} be
+conducted by the characters at all.  If the dice result is \emph{less}
+than the modified chance by \emph{more than} \textbf{20}, the Skill
+Level of the character that will treat the patient is \emph{increased
+  by} \textbf{1} (this may be the diagnosing character or any other
+with treatment skill).  If the dice result is less than the modified
+chance by \emph{more than} \textbf{40}, the Treatment Skill Level is
+\emph{increased by} \textbf{2}.  If the dice result is less than the
+modified chance by more than \textbf{70}, the Treatment Skill Level is
+\emph{increased by} \textbf{3}.
+
+A character without diagnosis skill may attempt to diagnose.  When
+doing so, the \textbf{90\%} chance (with the subtraction for the
+ailment) may not be increased at all.  Successful diagnosis by an
+unskilled character may not increase a character's Treatment Skill
+Level.
+
+When attempting to diagnose an ailing alien life form, a character
+uses the \emph{lower} of his \emph{Diagnosis} and \emph{Biology Skill
+  Levels}.  If he does not possess both of these skills, he is
+considered unskilled at the task.  The GM may also apply this rule when
+a character is diagnosing a human with an alien disease.
+
+\skill{geology}{7 Levels/Limit: Intelligence}\label{sec:skill-geology}
+
+The character can identify all known types of rocks and minerals and
+has studied the forces that compose and control planetary crusts and
+mantles.  If he has a geolab or geoscanner, he may analyze a sample for
+mineral and resource content.  If he has a geoscanner, on a planet
+surface, he may also survey the area for minerals, other resources,
+fissures, or volcanic activity.  A dice result for any geology task
+that is no more than \textbf{10} above the modified chance for the
+task indicates success with a \textbf{10\%} increase in the time
+required for each extra percentage point.  A dice result that is more
+than \textbf{10} above the modified chance indicates failure.
+
+\begin{tasklist}
+\item Analyze sample to find all abundant minerals and resources:
+  \textbf{70\%}.
+\item Analyze sample to find all abundant and trace minerals and
+  resources: \textbf{30\%}.
+\item Scan area to locate three minerals or resources that the
+  geoscanner is set for: \textbf{60\%}.
+\item Scan area to locate all tunnels and fissures at least three
+  meters wide: \textbf{50\%}.
+\item Scan area to locate all tunnels and fissures: \textbf{20\%}.
+\item Scan area to locate volcanic activity: \textbf{60\%}.
+\end{tasklist}
+
+All resources listed on the World Resource Table
+(\ref{tab:world-resource}) may be found with geology skill and
+geological equipment, except for light-fiber plants, wood, arable
+land, edible plants, and edible game.  If a character has declared
+that he is scanning an area for a resource that is located only at a
+site, the resource is found only if the dice result is more than
+\textbf{30} \emph{less} than the modified chance to locate resources.
+
+\skill{physics}{6 Levels/Limit: Intelligence}\label{sec:skill-physics}
+
+The character is educated in the study of matter, energy, motion, and
+force.  If he has an energy scanner, he may analyze an object, an area
+or an occurrence for the type of forces and energy that caused or
+might affect it.  Unlike most other scientific tasks, the time required
+to conduct a physics task depends on the task itself, not on the
+attributes of the energy scanner, A dice result for any physics task
+that is above the modified chance at all indicates failure.
+
+\begin{tasklist}
+\item Determine the type, intensity, and possible danger of energy
+  picked up by the energy scanner in an area: \textbf{80\%}.  Time
+  required: \textbf{1} Action Round (no reduction possible).
+\item Determine the type of energy powering an unknown device or a
+  non-protein based creature: \textbf{70\%}.  Time required:
+  \textbf{1} Action Round (no reduction possible).
+\item Determine, the type of force or energy that caused a phenomenon
+  (such as a blast crater or some other unobserved act of
+  destruction): \textbf{50\%}.  Time required: \textbf{1} hour.
+\item Determine in advance what the application of a given force or
+  energy might do to an object: \textbf{40\%}.  Time required:
+  \textbf{1} hour.
+\item Tap an energy source for use by the party: \textbf{20\%}.  Time
+  required: \textbf{2} hours.  When attempting this task, a character
+  uses the lower of his Physics and Energy Tech Skill Levels.  If he
+  does not possess both of these skills, he is considered unskilled at
+  the task.  The kit that would normally be used to repair the object
+  that the character is attempting to provide power for is also
+  required.  The character must identify the energy source (with one
+  of the above tasks) before he may attempt to tap it.  Whether or not
+  an energy source may be tapped is left up to the GM.  This task is
+  not required in order to use a common energy source, such as an
+  electrical outlet or battery pack.
+\end{tasklist}
+
+The physics skill is also required in order to attempt repair of a
+force field (see Energy Tech, \ref{sec:technical-skills}).
+
+\skill{planetology}{7 Levels/Limit: Intelligence}\label{sec:skill-planetology}
+
+The character is well versed in the geography, meteorology, and other
+general physical features that make up a world.  If he is orbiting a
+world in a spaceship capable of carrying \emph{at least} 4
+\emph{pods}, or that has an \emph{explorer} or \emph{survey} pod, he
+may analyze the world to gain information about its climate,
+atmosphere, geographical layout, and natural resource distribution.
+When the character wishes to analyze a world, he chooses one of the
+following tasks.  That task, and all listed above it (if not already
+known), may be determined in a single analysis attempt.  If the
+character's analysis dice result is greater than the modified chance
+listed for the chosen task, analysis is still successful, but the time
+required is increased by \textbf{10\%} for each percentage point over
+the chance the dice result indicates.
+
+\begin{tasklist}
+\item Determine hydrograph percentage and distribution of land and
+  liquid masses on entire world: \textbf{85\%}
+\item Determine temperatures of all environs of world: \textbf{75\%}.
+\item Determine atmosphere of world: \textbf{65\%}
+\item Determine general resources of world (all those resources that
+  exist throughout two or more environs, not number of environs per
+  resource or environ location): \textbf{50\%}.
+\item Determine the contour of all environs individually (peaks,
+  mountains, hills, or flat): \textbf{40\%}.
+\item Determine the dominant terrain feature of each environ
+  individually (such as barren, forest, craters, ice,): \textbf{20\%}.
+\item Determine the presence of general resources in all environs
+  individually (all resources except those that exist only at a site
+  in an environ, see \ref{sec:world-resource-table}): \textbf{10\%}.
+\item Determine the detailed geography/geology of all environs
+  individually, including the presence of resources found only at a
+  \emph{site} (the GM may provide the character with a detailed
+  environ map or maps, if available): \textbf{-5\%}.
+\end{tasklist}
+
+An \emph{explorer} or \emph{survey pod} is required for any world
+analysis with less than a \textbf{40\%} base chance.  A survey pod is
+required for any analysis with less than a \textbf{10\%} base chance.
+The GM may wish to reduce some of these percentages if the world has
+thick cloud cover, or has a side that never receives light from its
+star.  The GM should provide the players with a world log that varies
+in detail, depending on how much of the world they have analyzed.
+Survey of a world from orbit will not reveal the exact location of any
+resource, and will not reveal the presence of the following resources
+at all: spices, light fiber plants, wood, edible plants, and edible
+game.
+
+\skill{programming}{8 Levels/Limit: Intelligence}\label{sec:skill-programming}
+
+The character is familiar with the dynamics and operation of computers
+and robots.  A character with programming skill may always use a
+computer or robot that he owns to its full potential (no chances are
+assigned and no dice rolls are made).  He may use a robot that he does
+not own in the same way, as long as he has the robot's
+\emph{controller} (see \ref{sec:robot-controllers}).  If the character
+has access to a computer or robot owned by another person, company, or
+government agency, he may attempt the following tasks.  When dealing
+with a robot, a character's Programming Skill Level is \emph{reduced
+  by} \textbf{2} (to a minimum of \textbf{1}).
+
+\begin{tasklist}
+\item Gain control of robot not controlled by character (without
+  controller): \textbf{30\%}.  Time required: \textbf{1} hour.  An
+  electrokit or robot kit is necessary, although neither provides a
+  Skill Level increase.
+\item Call up unrestricted information in computer: \textbf{90\%}.   
+\item Call up restricted information in computer: \textbf{30\%}.   
+\item Call up top-level secrets in computer:  \textbf{10\%}.  
+\item Alter protected information in computer: \textbf{10\%}.   
+\end{tasklist}
+
+A dice result for any of the preceding tasks that is above the
+modified chance in dicates failure.  A dice result that is more than
+%% Original:
+ten
+%% New:
+\textbf{10}\label{sec:scientific-skills-change-ten}
+%% End change
+above the modified chance may cause the computer or robot to alert its
+owners (openly or secretly) that the character is using the device in
+a way that may not be to their liking.  The repercussions of such an
+occurrence are left up to the GM.  A character must have the
+\emph{compu/robot tech} skill in order to attempt any task not listed
+above that involves computer or robot \emph{hardware}, or he must work
+with a character who has the tech skill (as ruled by the GM).
+
+\skill{treatment}{9 Levels/Limit: Intelligence}\label{sec:skill-treatment}
+
+The character is familiar with all forms of paramedical and surgical
+procedures.  If he has a first aid kit or a mediscanner, \emph{and
+  successful diagnosis has been performed,} the character may treat an
+ailing person, thus speeding his recovery or even saving his life.
+
+\begin{tasklist}
+\item Treat an ailing being: \textbf{1\%}.
+\end{tasklist}
+
+Effects of treatment (whether successful or not) are explained in
+\ref{sec:rate-of-healing}.  A character's Treatment Skill Level may be
+increased if diagnosis was successfully performed (in addition to any
+increase for using a mediscanner; see diagnosis, above).  A character
+who is eligible to acquire treatment skill but has not \emph{may}
+attempt to treat a patient.  When doing so, his Skill Level
+(\textbf{0}) may be increased by successful diagnosis and use of a
+mediscanner (unlike most tasks performed by an un skilled character).
+However, treatment by an unskilled character is not as effective (see
+\ref{sec:rate-of-healing}).
+
+When attempting to treat an alien life form, a character uses the
+lower of his Treatment and Biology Skill Levels.  If he does not
+possess both of these skills, he is considered unskilled at the task.
+
+\subsection[Additions To Base Chance]{A character who is skilled in
+  any scientific task he is attempting adds his Intelligence Rating
+  and the square of his Skill Level to the base chance.}
+\label{sec:sci-skills-add-base-chance}
+
+An eligible unskilled character who is attempting a scientific task
+adds nothing (not even his Intelligence Rating) to the base chance.
+
+\subsection[Experience Points]{A character receives an Experience
+  Point when attempting a scientific task as follows:}
+\label{sec:sci-skills-ep}
+
+\begin{itemize}
+\item If he rolls a \textbf{0} or \textbf{1} on either die for a
+  \emph{chemistry}, \emph{geology}, or \emph{biology} task.
+\item If he rolls a \textbf{0}, \textbf{1}, or \textbf{2} on either
+  die for a \emph{diagnosis}, \emph{treatment}, \emph{programming} or
+  \emph{physics} task.
+\item If he rolls a \textbf{0}, \textbf{1}, \textbf{2} or \textbf{3}
+  on either die for a \emph{planetology} or \emph{astronomy} task.
+\end{itemize}
+
+\textbf{Note}: A character that is unskilled at a scientific task
+receives an Experience Point for attempting the task only if it is
+successful \emph{and} fulfills the preceding requirements.
+
+\subsection[Rate Of Healing]{The rate at which a character heals
+  from wounds incurred depends on his Endurance Rating and the quality
+  of treatment he receives.}
+\label{sec:rate-of-healing}
+
+\index{hits!healing
+  from}\index{injury|see{hits}}\index{wounds|see{hits}}\index{healing|see{hits,
+  healing from}}\begin{itemize}
+\item A wounded character who receives \emph{no} treatment or who
+  receives \emph{unsuccessful treatment} from an \emph{unskilled}
+  character regains lost Physical Characteristic points at the rates
+  indicated on the \textbf{Treatment Results Table} (Table
+  \vref{tab:treatment}).
+\item A wounded character who receives \emph{successful treatment}
+  from an \emph{unskilled character} has the time required to regain
+  each characteristic point divided by \emph{one half} his \emph{full}
+  Endurance Rating (rounded down).  Thus, a character with a full
+  Endurance Rating of \textbf{6} (regardless of his current rating)
+  who had lost five points from his Strength Rating would regain one
+  point every two days.
+\item A wounded character who receives \emph{unsuccessful} treatment
+  from a \emph{skilled} character has the time required to regain each
+  characteristic point divided by his full Endurance Rating.
+\item A wounded character who receives \emph{successful} treatment
+  from a \emph{skilled} character has the time required to regain each
+  characteristic point reduced as follows: the number of percentage
+  points below the modified treatment chance the dice result shows is
+  added to the full Endurance Rating of the character.  The time
+  required for the character to regain each characteristic point is
+  then divided by this sum.  \textbf{Example:} A character with a full
+  Endurance Rating of \textbf{6} has lost \textbf{5} points from his
+  Strength Rating.  A skilled character that is treating him with a
+  \textbf{60\%} chance of success rolls a \textbf{40} (a difference of
+  \textbf{20}).  The base time required to regain each lost point
+  (\textbf{6} days) is divided by \textbf{26}, so that one point is
+  regained approximately every \textbf{5} hours.
+\end{itemize}
+
+A character that is regaining points lost from more than one
+characteristic must regain points for each characteristic as evenly as
+possible.  Thus, a character that has lost points from his Endurance
+and Agility must regain a point in each before regaining a second
+point in either (until one or the other has returned to its full
+rating).
+
+\index{characteristics!reduced to zero}If one or more of a wounded character's Physical Characteristics are
+at \textbf{0}, a check must be made every \emph{game hour} to
+determine if permanent, untreatable damage occurs.  Every hour
+(beginning one hour after the character incurred the wounds) he rolls
+percentile dice for each characteristic at \textbf{0}.  If the dice
+result is \textbf{10} \emph{or less}, the full rating for the
+characteristic is \emph{permanently reduced by} \textbf{1}.  If the
+\emph{Endurance} Rating is currently at \textbf{0}, and the dice
+result is a \textbf{01} or \textbf{02}, the character \emph{dies}.
+These checks are made every hour until all Physical Characteristics
+are increased above \textbf{0} by healing.  As long as a character's
+Endurance Rating remains at \textbf{0}, he is considered unconscious
+(see \ref{sec:hits}).
+
+A character whose healing time is reduced by treatment begins healing
+at the new rate when the time required for treatment has passed.
+
+\begin{table}[htbp]
+  \centering
+  \fbox{%
+    \begin{minipage}{2.5in}
+      \centering
+      \caption{Treatment Results Table}
+      \label{tab:treatment}
+
+      \medskip
+
+      \begin{tabular}{cc}
+        \rowcolor{grey}
+        Total & Days required to regain\\
+        \rowcolor{grey}
+        Points Lost & one Characteristic Point\\
+        \rowcolor{white}
+        1, 2 & 1 Day\\
+        \rowcolor{grey}
+        3, 4 & 3 Days\\
+        5--7 & 6 Days\\
+        \rowcolor{grey}
+        8--10 & 10 Days\\
+        11--14 & 16 Days\\
+        \rowcolor{grey}
+        15 or more & 24 Days
+      \end{tabular}
+    \end{minipage}}
+\end{table}
+
+\section{Technical Skills}
+\label{sec:technical-skills}
+
+\index{skills!technical}\index{skills!repair|see{skills, technical}}Technical skills allow a character, to repair weapons, robots,
+vehicles, and other equipment damaged during play.
+
+When a device is damaged (as a result of weapon fire, other combat
+actions, or accident) the GM secretly determines the extent of damage
+(superficial, light, heavy or partially destroyed; see
+\ref{sec:equipment-damage}) and informs the players how the damage
+appears to them, without actually letting them know the category of
+damage.  Any character may volunteer to repair a damaged device, but
+unless he has the appropriate Tech Skill, he will rarely be able to
+repair anything more than superficial damage to small items.
+
+A character with a Tech Skill is familiar with the technology,
+materials, and operation of all devices related to the area of his
+skill.  Aside from repair work, the GM may allow a character's Tech
+Skill to come into play in such other situations, as when the party is
+inspecting unknown equipment or, if the proper materials are
+available, when the character is attempting to build a device related
+to his Tech Skill.
+
+\index{equipment!repair kits}A party may attempt to repair an item only if it has the requisite
+\emph{kit}.  A \emph{basic repair kit} usually allows repair of
+superficial damage to any item smaller than a large ground vehicle,
+and superficial or light damage to any item that may be held by a
+character.  Certain exceptions to this rule, and the type of kits
+required for repair of more extensive damage are listed with the
+appropriate Tech Skill description.  Certain kits may increase a
+character's Tech Skill Level for purposes of a given repair attempt.
+In such instances, the increase is applied to the Skill Level before
+any reductions a re made for especially difficult repair jobs (as
+noted in certain Tech Skill descriptions).  Detailed explanations of
+the attributes of all kits can be found in \ref{sec:tech-kits}.
+
+
+\skill{compu/robot tech}{9 Levels/Limit: Intelligence}\label{sec:skill-compu-robot-tech}
+
+The character may repair all types of computers, portable and
+installed.  He may also repair robots with a reduction of two to his
+Skill Level (to a minimum of \textbf{1}).  An electrokit is required
+for repair of a computer that has incurred more than superficial
+damage.  A robot kit is required for repair of a robot that has
+incurred more than superficial damage.
+
+\skill{construction}{6 Levels/Limit: None}\label{sec:skill-construction}
+
+The character is familiar with the construction of houses, shelters
+and buildings sealed from harsh environments.  He may repair any such
+structure.  Building materials (made available at the GM's discretion)
+are required for repair of any small structure (survival hut, storage
+shed) that has incurred more than superficial damage, and any large
+structure (office building, barracks) that has incurred any damage.
+Certain kits may be used in specialized repair of structures (such as
+an armor kit for a damaged pill box).
+
+\skill{electro tech}{8 Levels/Limit: Dexterity}\label{sec:skill-electro-tech}
+
+The character may repair all types of handheld, non-weapon devices,
+including scan ners, portable labs, cameras, holographers, radios, and
+all other types of small electronic equipment.  The electro tech skill
+may not be used to repair interstellar commlinks, psionic equipment,
+and computer systems.  A character's Electro Tech Skill Level is
+reduced by \textbf{2} (to a minimum of \textbf{1}) when repairing or
+in specting any Civ Level 8 device.  An electro-kit is required to
+repair any of these items that has incurred more than light damage.
+Electro Tech also allows a character to operate a two-way radio
+skilfully.
+
+\skill{energy tech}{6 Levels/Limit: Dexterity}\label{sec:skill-energy-tech}
+
+The character is familiar with all types of power systems.  He may
+repair heating and cooling systems, electrical systems, air systems,
+and all non-combustion drive systems (including spaceship engines).
+The kit required for repair depends on the type of system undergoing
+repair.  An electrokit would be used for most portable systems, a
+vehicle kit for damage to a vehicle climate-control system or engine,
+and a spaceship kit would be used for a spaceship engine or other
+spaceship system.  A basic repair kit may not be used to repair power
+systems at all.  
+
+The character may also attempt to repair a damaged
+force field.  When doing so he uses the lower of his \emph{Energy Tech}
+and \emph{Physics Skill Levels}.  If he does not possess both of these
+skills, he may not attempt repair.  An electrokit is required to repair
+a personal force field.  A vehicle or spaceship kit (as appropriate) is
+required to repair a larger force field.
+
+\skill{psion tech}{8 Levels/Limit: Dexterity}\label{sec:skill-psion-tech}
+
+The character may repair interstellar commlinks, psionic rigs, and
+other psionic equipment.  He may also repair psionic navigation
+equipment in the jump pod of a spaceship with a reduction of
+\textbf{2} to his Skill Level (to a minimum of \textbf{1}).  An
+electrokit is required to repair psionic navigation equipment that has
+incurred \emph{any} damage.
+
+\skill{spaceship tech}{9 Levels/Limit: Intelligence}\label{sec:skill-spaceship-tech}
+
+The character may repair damage incurred by spaceship hulls and pods
+(including Battlecraft).  Each damaged part of a spaceship must be
+repaired separately.  When repairing damage to sp aceship engine or to
+spaceship armor, the character's Skill Level is reduced by \textbf{2}
+(to a minimum of \textbf{1}).  Psionic equipment may not be repaired
+with the spaceship tech skill.  Repair of superficial damage requires a
+Civ Level 6 spaceship kit, light damage a Civ Level 7 spaceship kit,
+and heavy damage a Civ Level 8 spaceship kit.  A partially destroyed
+part of a spaceship may only be repaired at a Class 4 spaceport.
+
+\skill{suit tech}{8 Levels/Limit: Dexterity}\label{sec:skill-suit-tech}
+
+The character may repair all types of expedition suits, respirators,
+respirator helmets, and body armor.  He may also repair armor on small
+vehicles.  However, when repairing armor his Skill Level is reduced by
+\textbf{2} (to a minimum of \textbf{1}).  A character that is repairing
+body armor may declare that he is repairing punctures only.  If he does
+so, his Skill Level is not reduced, but any reductions to the
+projectile and beam defense strength of the armor may not be repaired.
+A suit kit is required to repair an expedition suit or body armor that
+has incurred more than superficial damage.  A suit kit may not be used
+to repair the projectile and beam defense strength of armor.  An armor
+kit is required to do full repair work on body armor and vehicle
+armor.
+
+\skill{vehicle tech}{8 Levels/Limit: Dexterity}\label{sec:skill-vehicle-tech}
+
+The character may repair all types of vehicles listed in
+\ref{sec:vehicles}.  When he is repairing a military vehicle, an air
+vehicle, or armor on any vehicle, his Skill Level is reduced by
+\textbf{2} (to a minimum of \textbf{1}).  A vehicle kit is required in
+order to repair a small vehicle that has incurred any damage, or a
+large vehicle that has incurred any damage.
+
+\skill{weapon tech}{8 Levels/Limit: Dexterity}\label{sec:skill-weapon-tech}
+
+The character is familiar with the workings of projectiles and beam
+weapons, both hand held and mounted.  He may repair any type of weapon
+listed in \ref{sec:weapons}.  He may also repair artillery and spaceship
+missile, laser and particle fire systems with a reduction of
+\textbf{2} to his Skill Level (to a minimum of \textbf{1}).  A weapon
+kit is required to repair any handheld weapon that has incurred more
+than light damage and any larger weapon that has incurred more than
+superficial damage.  A spaceship kit is required to repair any damage
+incurred by spaceship weapon systems.
+
+\subsection[Repair]{One character may attempt to repair an item that
+  is damaged, whether or not he possesses the  appropriate Tech
+  Skill.}
+\label{sec:repair}
+
+\index{equipment!repair}\index{repair}When a character declares that he wishes to do so, and announces the
+type of kit he is using, the following steps are undertaken:
+
+\begin{enumerate}
+\item The GM secretly determines the \emph{base repair chance}, depending on
+  the type of damage incurred by the item, as indicated on the \textbf{Damage
+  Repair Table} (Table \vref{tab:damage-repair}).
+\item The GM secretly determines the \emph{maximum repair time} by
+  multiplying the \emph{Base Repair Time} (listed in the description
+  of the item under repair) by the appropriate \emph{Repair Time
+    Multiplier} listed above.\label{item:1}
+\item The  GM determines the  \emph{actual repair chance}  using the 
+following formula:
+
+$$\mathrm{Base\ Repair\ Chance} + \mathrm{Tech\ Skill\ Level}^2 +
+   \mathrm{Intelligence\ Rating}^2$$
+   
+   A character's Tech Skill Level may be increased (before squaring)
+   for this purpose if the appropriate kit is being used.  The actual
+   repair chance may exceed \textbf{100\%}.
+ \item The character attempting repair rolls percentile dice.
+   \renewcommand{\theenumii}{\Alph{enumii}}  If the
+   dice result is greater than the actual repair chance, the attempt
+   fails; conduct \ref{item:3} below.  If the dice result is equal to or
+   less than the actual repair chance, the attempt succeeds; conduct
+   \ref{item:4} 
+   below.\label{item:2}
+   \begin{enumerate}
+   \item The GM determines how much time is spent in the futile
+     attempt to repair the item.  He divides the maximum repair time
+     (as calculated in Step \ref{item:1}) by the character's Tech Skill Level
+     (plus any increase the kit allows) \emph{squared}, \emph{or} by his
+     \emph{Intelligence Rating} (not squared), whichever is higher.  The
+     amount of time derived from this calculation passes as the party
+     waits for the repairer to realize that he cannot do the job.  If
+     this period of time is long, an encounter may even occur.\label{item:3}
+   \item The GM determines how much time is spent successfully
+     repairing the item.  The dice result obtained in Step
+     \ref{item:2} is subtracted from the \emph{actual} repair chance.
+     The difference is applied as a percentage reduction to the
+     maximum repair time to determine the \emph{actual} repair time.
+     Example: The actual repair chance to repair an item with a
+     maximum repair time of \textbf{24} hours is \textbf{70\%}.  The
+     player rolls a \textbf{30}, which is less than the actual repair
+     time by \textbf{40} (this can also be expressed as 60\% of the
+     maximum repair time).  The actual repair time is then \textbf{14.5}
+     hours.\label{item:4}
+   \end{enumerate}
+\end{enumerate}
+ 
+If the dice result in a successful repair attempt is less than the
+actual repair chance by more than \textbf{90\%}, the maximum repair time is
+reduced by \textbf{90\%} only.
+
+A character without the appropriate Tech Skill may only attempt to
+repair superficial or light damage to an item.  When doing so, his
+actual repair chance is equal to the base repair chance.  He receives
+no adjustments for his Intelligence Rating or the kit he is using.
+
+The GM may implement the passage of time when a character is
+attempting to repair an item in one of two ways: he may announce the
+amount of time at the outset and skip directly to the point in time
+that repair is accomplished or failure is realized; \emph{or} he may allow
+time to pass normally and not reveal the result of the repair attempt
+until the moment of realization is reached.  If he chooses the latter,
+and repair is successful but lengthy, he should inform the players
+that the attempt will be successful and how long it will take well
+before the repair is accomplished.  The amount of time that passes
+before revealing successful repair may be calculated as in Step \ref{item:3}
+above, except of course, that the GM announces success instead of
+failure.
+
+\newcolumntype{G}{%^^A
+   >{\color{black}\columncolor{grey}%^^A
+      \raggedright}c}
+\begin{table}[htbp]
+  \centering
+  \fbox{%
+    \begin{minipage}{3.25in}
+      \centering
+      \caption{Damage Repair Table}
+      \label{tab:damage-repair}
+
+      \medskip
+      
+      \begin{tabular}{lcc}
+        & Base Repair & Repair Time\\
+        Type Of Damage & Chance & Multiplier\\
+        \rowcolor{grey}
+        Superficial         & 50\%    & $\times$ 1\\
+        Light               & 20\%    & $\times$ 2\\
+        \rowcolor{grey}
+        Heavy               & --10\% & $\times$ 4\\
+        Partially Destroyed & --40\% & $\times$ 8\\
+        \rowcolor{grey}
+        Totally Destroyed   & \multicolumn{2}{G}{Repair Impossible}
+      \end{tabular}
+    \end{minipage}}
+\end{table}
+
+\subsection[Experience Points]{A character who rolls a \textbf{0},
+  \textbf{1}, or \textbf{2} on either die when attempting repair
+  receives an Experience Point.}
+\label{sec:tech-skills-ep}
+
+The GM may also give a character an Experience Point in this manner
+when the character is rolling percentile dice for some other use of
+his tech skill.
+
+\subsection[Repair Service]{A damaged item that the characters are
+  unable to repair may be taken to a repair service.}
+\label{sec:repair-service}
+
+A town or suburb area on a planet is considered to have services for
+repairing any item of a Civ Level equal to or less than that of the
+planet.  An urban area is considered to have services for repairing any
+item of a Civ Level up to \textbf{1} greater than that of the planet.
+
+\textbf{Exception}: Spaceships and spaceship parts may be repaired
+only at a spaceport.  A Class 2 spaceport has facilities for repair of
+superficial and light damage, a Class 3 spaceport for heavy damage,
+and a Class 4 spaceport for partially destroyed spaceships.  Psionic
+equipment may be repaired only at a Psionic institute (see
+\ref{sec:psiinstitute}).
+
+An item taken to a repair service is automatically repaired.  The
+repair time is always equal to the \emph{Base Repair Time} multiplied
+by the \emph{Repair Time Multiplier}.  This product, when expressed in
+hours, also represents the \emph{cost} to repair the item in 100's of Mils.
+Thus, an item with a Base Repair Time of \textbf{6} hours that has
+suffered heavy damage would take \textbf{24} hours of work time to
+repair and the job would cost \textbf{2400 Mils} (2.4 Trans).
+The price of repair service may not be haggled over.
+
+
+\section{Interpersonal Skills}
+\label{sec:interpersonal-skills}
+
+\index{skills!interpersonal}Interpersonal skills are used by the character when dealing directly
+with society, in business, leisure, legal, and communication matters.
+More so than with other skills, the GM should consider the \emph{player's}
+actual interplay with NPC's or authorities when using one of these
+skills.  For example, a character may have a high Diplomacy Skill
+Level, but if the player blatantly insults the individual that he is
+conversing with, the skill should not do him much good.
+
+\skill{diplomacy}{6 Levels/Limit: Empathy}\label{sec:skill-diplomacy}
+
+The character is experienced in all manner of official conversation
+and negotiation, and is generally well-spoken and tactful.  He will be
+most effective when dealing with those from the \emph{local establishment} or
+a higher social standing (see table \ref{sec:social-standing-table}).
+
+\index{skills!diplomacy!and communication with NPCs}\index{skills!streetwise!and communication with NPCs}When a character is acting as party \emph{spokesman}, he may use his
+streetwise and/or diplomacy skill to aid the establishment of friendly
+communications with an NPC or group of NPCs (see
+\ref{sec:npc-encounters}).  During Step \ref{item:npc-interact-7}
+of the NPC Encounter
+Procedure, the chance of successful communication is calculated by the
+GM: To the base chance of \textbf{40\%} is added \emph{twice} the spokesman's
+\emph{Empathy Rating}.  The spokesman declares whether he is using
+his \emph{streetwise} or \emph{diplomacy} skill.  If he declares use
+of the skill that the NPC's \emph{social standing} responds to, the
+\emph{square} of the Skill Level is added to the chance.  If he declares the
+skill that the NPC's social standing does \emph{not} respond to, the
+Skill Level (not squared) is added to the chance.  If the spokesman is
+unskilled in both streetwise and diplomacy, his Empathy Rating (not
+doubled) is added to the base chance \emph{only}.  The GM rolls
+percentile dice and applies the outcome to the NPC Reaction Table
+(\ref{tab:npc-reaction}) in terms of \emph{shifts}, as explained in
+the NPC Encounter Procedure.
+
+In addition to the communications task, the GM should take a
+character's streetwise and/or diplomacy skill into account when the
+character is participating in any sort of extended dialogue with
+NPC's.  These skills do not aid a character in financial negotiations
+(the \emph{trading} skill is used for money matters).
+
+A character who rolls a \textbf{0}, \textbf{1}, or \textbf{2} on
+either die when using his streetwise or diplomacy skill receives an
+Experience Point.
+
+\skill{disguise}{8 Levels/Limit: Dexterity}\label{sec:skill-disguise}
+
+The character can control his voice, mimic a wide variety of postures,
+and alter his facial appearance through the use of make-up, latex,
+skin injections and dyes.  It is assumed a character with this skill
+possesses the requisite materials to alter his appearance; however,
+accessories such as clothing and insignia must be acquired by the
+character when necessary.  The base time required to prepare a disguise
+is four hours.  The character's \emph{Dexterity Rating} and the
+\emph{square} of his \emph{Skill Level} are added to the base chance
+of the following tasks.
+
+\begin{tasklist}
+\item Disguise self to gain anonymity: \textbf{60\%}.
+\item Disguise self to resemble person that has been extensively
+  observed: \textbf{40\%}.
+\item Disguise self to resemble person that has been seen briefly or
+  in pictures only: \textbf{25\%}.
+\end{tasklist}
+
+The GM rolls percentile dice secretly and compares the dice result to
+the modified chance:
+
+\begin{itemize}
+\item \emph{Result under chance by} \textbf{more than 20}: The
+  disguise fools all except those intimately familiar with the
+  subject.  If the character is unskilled, the next outcome is used
+  instead.
+\item \emph{Result equal to or under chance by} \textbf{20 or less}:
+  The disguise fools those who do not have everyday contact with the
+  subject.
+\item \emph{Result over chance by} \textbf{30 or less}: Anyone who
+  gets a good look at the disguise, or hears the character say more
+  than a few words will not be fooled.  If the character is skilled, he
+  is informed of this fact.  If he is not skilled, he is told that the
+  disguise looks fine.
+\item \emph{Result over chance by more than} \textbf{30}: The character fails
+  his attempt and is told that it will not work.
+\end{itemize}
+
+A character that rolls a \textbf{0}, \textbf{1}, or \textbf{2} on
+either die when attempting disguise receives an Experience Point.
+
+\skill{economics}{8 Levels/Limit: Intelligence}\label{sec:skill-economics}
+
+The character understands the complex economic systems of the future;
+how the resources, shipping schedules and laws of supply and demand on
+the worlds of the federation affect the value of any item from place
+to place.  If he has a business computer, the character may attempt to
+predict the price of any declared item in the future at a declared
+location.  If the location is another star system, he must have access
+to an interstellar commlink.  The base time required for price
+prediction is \textbf{12} hours.
+
+\begin{tasklist}
+\item Determine price of an item at a declared time and location:
+  \textbf{35\%} minus the number of weeks (or fraction thereof) in the
+  future the price is requested for.  The character's
+  \emph{Intelligence Rating} and the \emph{square} of his \emph{Skill
+    Level} are added to the base chance.
+\end{tasklist}
+
+The GM rolls percentile dice.  If the dice result is equal to or less
+than the modified chance, the attempt succeeds; the GM immediately
+uses the Actual Price Table (\ref{tab:actual-price}) to determine the price
+and announces it to the character.  A dice result above the modified
+chance indicates failure (after \textbf{12} hours have passed).  If a
+failing dice result is even, the character is told that the prediction
+is unsuccessful.  If a failing dice result is odd, the GM reads the
+player a random result from the Actual Price Table as if it were a
+correctly predicted price.
+
+A character who rolls a \textbf{0}, \textbf{1}, or \textbf{2} on
+either die when attempting to predict a price receives an Experience
+Point.
+
+\skill{forgery/counterfeiting}{8 Levels/Limit: Dexterity}\label{sec:skill-forgery-counterfeiting}
+
+The character is experienced in the art of forging documents used for
+identification, shipping, and other business and government
+transactions.  If he has the requisite materials (as determined by the
+GM) and a model to work from, the character may attempt to copy a
+document or piece of currency.  The character's \emph{Dexterity Rating}
+and the \emph{square} of his \emph{Skill Level} are added to the base
+chance of the following tasks.  The time required for each task is
+determined by the GM, depending on the complexity of the document.
+
+\begin{tasklist}
+\item Forge commercial document: \textbf{50\%}.
+\item Forge world or local government document: \textbf{30\%}.
+\item Forge federal document: \textbf{10\%}
+\item Counterfeit 100 Mil note: \textbf{25\%}
+\item Counterfeit 1 Tran note: \textbf{0\%}
+\end{tasklist}
+
+The GM rolls percentile dice secretly and compares the result to the
+modified chance:
+
+\begin{itemize}
+\item \emph{Result under chance by} \textbf{more than 20}: The
+  document passes all inspections (visual and electronic).
+  \textbf{Exception}: If the character is unskilled and/or the world
+  has a Law Level of \textbf{4}, the next outcome is used instead.
+\item \emph{Result equal to or under chance by} \textbf{20 or less}:
+  Document passes all visual inspection.  \textbf{50\%} chance that
+  the document will be found false each time it undergoes electronic
+  inspection.
+\item \emph{Result over chance by} \textbf{30 or less}: Document found
+  false by any electronic inspection.  When undergoing visual
+  inspection, the GM rolls percentile dice; if the result is less than
+  or equal to the inspector's \emph{Intelligence Rating} plus the
+  \emph{square} of his Forgery/Counterfeit \emph{Skill Level}, the
+  document is found false.  \textbf{Note}: A character with
+  forgery/counterfeit skill may attempt to detect false documents made
+  by others in the same way.
+\item \emph{Result over chance by} \textbf{more than 30}: Document
+  will not fool anybody.  If the forger is skilled, he is told of this
+  fact.
+\end{itemize}
+
+Any repercussions of character's forged documents being found out are
+left up to the GM.
+
+A character who rolls a \textbf{0}, \textbf{1}, \textbf{2} or
+\textbf{3} on either die when attempting forgery receives an
+Experience Point.
+
+\skill{gambling}{6 Levels/Limit: Intelligence}\label{sec:skill-gambling}
+
+The character is familiar with all common games of chance.  If he is at
+a casino, some other gaming establishment, a bar or inn with an
+informal game, or with another character or NPC who wishes to play
+against him, the character may gamble.  He must state his \emph{bet
+  size} (if playing against another character or NPC, both agree on a
+bet size).  The bet size is not the total amount to be risked, but
+rather an amount that will be continuously risked over the four or
+five hour period that each gambling attempt represents.  The
+character's \emph{Intelligence Rating} and \emph{Gambling Skill Level
+  (not squared)} are added to the base chance.
+
+\begin{tasklist}
+\item Gamble at a casino or established gaming house: \textbf{35\%}.
+  Minimum bet size: \textbf{10 Mils}; Maximum bet size: \textbf{1
+  Tran}.
+\item Gamble at an informal gathering in public place: \textbf{40\%}.
+  Minimum bet size: \textbf{1 Mil}; Maximum bet size: \textbf{100
+    Mils}.
+\end{tasklist}
+
+If the dice result is less than the modified chance, character wins an
+amount equal to the difference multiplied by the bet size.  If the dice
+result is greater than the modified chance, the character loses the
+amount.
+
+When gambling against another character or NPC, both individuals roll
+percentile dice separately, adding their Intelligence Rating and
+Gambling \emph{Skill Level} to the dice result.  The difference between
+the dice results is multiplied by the bet size, and the character with
+the lower dice result must pay the product to the character with the
+higher result.
+
+\index{skills!gambling!cheating}\index{cheating at
+  gambling|see{skills, gambling, cheating}}A character may declare that he is \emph{cheating} in any gambling
+attempt.  If he does so, his Skill Level is \emph{doubled}, but if his
+dice result is \emph{even}, the GM checks for detection by his
+opponent.  He rolls two dice.  If the result is \emph{less than} the
+opponent's Intelligence Rating plus his \emph{Skill Level}, minus the
+cheating character's \emph{Skill Level}, the character's cheating is
+revealed.  A casino is considered to have a combined Intelligence and
+gambling skill of \textbf{18}, and an informal gathering of
+\textbf{15} for this purpose.  The consequences of revealed cheating
+and/or a character's inability to pay a gambling debt are up to the
+GM.
+
+A character who rolls a \textbf{0} or \textbf{1} on either die when
+gambling receives an Experience Point.
+
+\skill{law}{8 Levels/Limit: Intelligence}\label{sec:skill-law}
+
+The character is learned in the structure of most federal and local
+laws and judicial systems.  He is a skilful speaker and is eligible to
+practice law in court.  The character may attempt any of the following
+tasks, adding his \emph{Intelligence Rating} and the \emph{square} of
+his \emph{Skill Level} to the base chance.  The chances of all these
+tasks assume that a basically honorable legal system is being dealt
+with; the GM should apply modifiers if the system is corrupt.
+
+\begin{tasklist}
+\item Bribe authority to ignore trespassing, illegal possessions or
+  other criminal act: \textbf{20\%} \textbf{plus 1} for \emph{every
+    100 Mils} offered, \emph{minus} \textbf{10$\times$} the 
+  \emph{Law Level} of the world.  In addition, the GM should secretly
+  reduce the chance by anywhere from \textbf{0} to \textbf{50}, based
+  on the loyalty of the individual being bribed toward his employer or
+  government.  \textbf{Example}: \textbf{50} would be subtracted for
+  an elite federal soldier while a local security guard might cause no
+  subtraction at all.
+\item Convince authority that a criminal act is not illegal or that
+  the party is exempt: \textbf{10\%} \emph{minus} the authority's
+  \emph{Intelligence Rating} and minus \textbf{10$\times$} the Law
+  Level of the world.
+\item Successfully defend innocent party in court: \textbf{35\%}
+  \emph{plus} \textbf{10$\times$} the Law Level of the world.
+\item Successfully defend guilty party in a court: \textbf{35\%}
+  \emph{minus} \textbf{10$\times$} the Law Level of the world.
+\end{tasklist}
+
+Any dice result under the modified chance indicates success.  Any dice
+result over the modified chance indicates failure.  If a bribery
+attempt fails by more than \textbf{10} percentage points, the
+authority will either accept the bribe and report the party anyway, or
+will report the party's bribe attempt as well as their original
+transgression, at the discretion of the GM.
+
+A character who rolls a \textbf{0}, \textbf{1}, or \textbf{2} on
+either die when attempting a law task receives an Experience Point.  An
+unskilled character may not defend a party in court.
+
+\skill{linguistics}{8 Levels/Limit: Intelligence}\label{sec:skill-linguistics}
+
+\index{languages}The character is fluent in other languages other than Universal.  He
+can speak, read, and write in a number of additional languages equal
+to his Skill Level.  A character that receives the linguistics skill
+during character generation should choose any languages from among
+those listed in \ref{sec:universe-future} and note them on the back of his
+Character Record.  \textbf{Exception}: A language written in a
+non-roman alphabet may not be chosen until Skill Level 3 is reached.
+All characters are considered fluent in Universal.
+
+When the party must speak with an NPC in an unknown language, a
+skilled character may attempt to comprehend the NPC and make himself
+understood.  A \emph{translator} (see \ref{sec:comm-gear}) is not required
+to use the linguistics skill, but the device does increase the user's
+Skill Level (even if he is \emph{unskilled}).  A translator does not
+increase the number of languages a character may speak.  The chance of
+successful communication equals the sum of the NPC's
+\emph{Intelligence Rating}, the character's \emph{Intelligence
+  Rating}, (if skilled) and the \emph{square} of the character's
+\emph{Skill Level}.  The GM secretly rolls percentile dice and
+compares the result to the chance:
+
+\begin{itemize}
+\item \emph{Result under chance by} \textbf{more than 20}: All
+  information that the NPC and characters wish to exchange is
+  understood.
+\item \emph{Result equal to or under chance by}  \textbf{20 or less}:
+  Simple  direction, numerical and identification information is
+  exchanged.
+\item \emph{Result over chance by} \textbf{20 or less}: Names and
+  small numbers may be exchanged only.
+\item \emph{Result over chance by} \textbf{more than 20}: Absolutely
+  nothing is understood by either party or, if the GM wishes, one
+  side totally misunderstands the information or intent of the other.
+\end{itemize}
+
+The linguistics skill may also be used to attempt communication with
+certain creatures, once the desire to communicate has been
+established.  See \ref{tab:npc-reaction}, Procedure CC.
+
+A character who rolls a \textbf{0} or \textbf{1} on either die when
+attempting to communicate in an unknown language receives an
+Experience Point.  Each time a character attains a new level in
+linguistics he may choose a new language.  The new language should be
+one he attempted to use since his last Skill Level increase.  A
+character \emph{never} receives an Experience Point for a language he
+already understands.
+
+\skill{recruiting}{6 Levels/Limit: Empathy}\label{sec:skill-recruiting}
+
+The character is skilled in the administrative and personnel side of
+business.  When the party seeks NPC's to aid in any venture they are
+undertaking, the character may attempt to hire individuals with good
+qualifications.  The character declares how many NPC's he wishes to
+hire and the pay he is offering.  Two hours must be spent recruiting
+for each NPC declared, with a minimum time of \textbf{6} hours.  The
+character's Empathy Rating and the square of his Skill Level are added
+to the base chance.
+
+\begin{tasklist}
+\item Hire NPC's in a Starport or urban area: \textbf{50\%}
+\item Hire NPC's in a suburban area or town: \textbf{35\%}
+\end{tasklist}
+
+The GM may modify the base chance, depending on the pay offered,
+skills requested, the danger and legality of the job, and the means of
+seeking new employees (working through an employment agency would be
+helpful).  A decent weekly salary for an individual is \textbf{100
+  Mils} $\times$ the Civ Level of the equipment he will be dealing with.  If
+the job is dangerous, the pay should be increased by \textbf{500 Mils}
+to \textbf{1 Tran} per week.  An average individual for hire possesses
+a Mental Power of \textbf{1} and an \index{aggression!individuals for hire}Aggression of \textbf{6}.  His
+other characteristics average \textbf{4}.  He has a skill level of
+\textbf{3} in his home environ, of \textbf{1} in his home gravity, and
+has eight Skill Points distributed among all other skills by the GM.
+
+If the dice result is equal to or less than the modified chance, the
+declared number of NPC's are found.  The attributes of the NPC's may be
+improved by the GM as follows: For every percentage point below the
+modified chance the result indicates, each NPC is improved by one
+Skill Point of one Characteristic Point.  The GM should apply these
+increases to characteristics and skills that would be helpful in the
+upcoming job.  If the dice result is greater than the modified chance,
+fewer NPC's than requested are found and/or their attributes are
+reduced, at the discretion of the GM.
+
+A character who rolls a \textbf{0}, \textbf{1}, \textbf{2} or
+\textbf{3} on either die when attempting to recruit receives an
+Experience Point.  Only one recruitment attempt is allowed in a single
+area for a given purpose.
+
+
+
+\skill{streetwise}{4 Levels/Limit: Empathy}\label{sec:skill-streetwise}
+
+\index{skills!streetwise!and communication with NPCs|see{skills,
+    diplomacy}}The character is up on the slang and friendly expressions used among
+the common folk throughout the federation.  He will be most effective
+when dealing with those from the skilled tech class or a lower social
+standing.  The streetwise skill is used for the \emph{communications} task
+(see diplomacy skill description).
+
+\skill{teaching}{6 Levels/Limit: Empathy}\label{sec:skill-teaching}
+
+\index{skills!increasing!with an instructor}The character has experience teaching and/or tutoring and is able to
+pass knowledge he has acquired onto others.  He may attempt to aid
+another character (hereafter called the student) increase his
+expertise in any skill that the teacher possesses at a \emph{higher level}
+than the student.  One week of both characters' time is required to
+teach a skill.  This time may not be reduced but may be increased, as
+explained below.
+
+When the teacher and student have declared the particular skill they
+wish to study together, the chance of successful teaching is
+calculated: To the base chance of \textbf{30\%} is added the student's
+\emph{Intelligence Rating}, the teacher's \emph{Empathy Rating} and
+the \emph{square} of the teacher's \emph{Teaching Skill Level}.  The
+teacher rolls percentile dice.  The student receives \textbf{1}
+Experience Point in the studied skill for every \textbf{10} percentage
+points (or fraction thereof) below the modified chance the dice result
+indicates (for example, if the modified chance were \textbf{55\%} and
+the teacher rolled a \textbf{31}, the student would immediately gain
+\textbf{3} EP's for the declared skill).  However, a student may never
+increase a Skill Level by more than \textbf{1} in a single ``study
+session'' (any excess EP's are lost).  If the dice result is no more
+than \textbf{10} above the modified chance, the student gains
+\textbf{1} EP and the teaching time is increased by \textbf{10\%} for
+each percentage point over the chance the result indicates.  A result
+that is more than \textbf{10} above the modified chance indicates
+failure; one week is expended and the student gains no EP's.
+
+No more than one student may be taught at a time, and any equipment
+necessary to use the skill being taught must be available (such as a
+weapon, vehicle, or tech kit).  A teacher may attempt to teach a
+specific student a specific skill once only.  An unskilled character
+may attempt to teach (using the base chance of \textbf{30\%} only);
+however, his student may receive no more than \textbf{1} EP from the
+study session.  A psionic skill may be taught only if both the teacher
+and the student possess a Mental Power Rating of \textbf{4} or higher
+and the student has or is eligible to acquire the skill.  A character
+with teaching skill may charge any fee he can get for his teaching
+services.  Conversely, the GM may have an NPC offer to teach a
+character a skill as a favor or for pay.
+
+A character who rolls \textbf{0}, \textbf{1} or \textbf{2} when at
+tempting to teach receives an Experience Point.
+
+\skill{trading}{6 Levels/Limit: Empathy}\label{sec:skill-trading}
+
+The character is a skilled bargainer.  He can get the most out of a
+transaction through his understanding of commerce and his ability to
+negotiate.  When the GM is using the Actual Price Table
+(\ref{tab:actual-price}) to determine the price of an item or service
+that a character is attempting to purchase or sell, the character may
+attempt to alter the price in his favor by bargaining.  Any purchases
+from a federal establishment may not be bargained; such prices are
+set.
+
+The base chance of successful bargaining is \textbf{20\%}.  To this is
+added the character's \emph{Empathy Rating} and the \emph{square} of
+his \emph{Skill Level}.  The character rolls percentile dice.  If the
+dice result is greater than the modified chance, the attempt fails;
+\textbf{10} is \emph{added} to the GM's \emph{Actual Price} roll.  If the
+dice result is less than the modified chance, the difference is
+\emph{subtracted} from the GM's Actual Price roll.
+
+One character should check for bargaining each time such a situation
+arises.  If the character is unskilled, nothing is added to his base
+chance.
+
+A character who rolls a \textbf{0} or \textbf{1} on either die when
+bargaining receives an EP.
+
+\section{Environmental Skills}
+\label{sec:environmental-skills}
+
+\skill{agriculture}{8 Levels/Limit: None}\label{sec:skill-agriculture}
+
+The character is skilled at farming tillable soil and in the science
+of hydroponics (growing without soil).  Breakthroughs in fertilizers
+and genetic research also enable the growth of crops to be greatly
+accelerated.  When working with a hydroponic farm, \textbf{2} is
+\emph{subtracted} from the character's skill level (to a minimum of
+\textbf{1}).  A skilled character may always grow any plant (as long
+as he has the proper shoots or seeds) in an environ with arable land
+or in an established hydroponic garden.  If the character wishes to
+grow a plant in a more exotic location or wishes to accelerate the
+growth of a crop, the GM should assign a base chance to the declared
+task.  The character's \emph{Intelligence Rating} and the
+\emph{square} of his \emph{Skill Level} are added to the base chance.
+As a guideline, the simplest of agriculture tasks would have a base
+chance of \textbf{95\%} while an attempt to grow a fruit tree in an
+arctic environment with a poisonous atmosphere would have a base
+chance of \textbf{-5\%}.  A robot with an agriculture system increases
+a character's skill level by \textbf{2}.
+
+A character who rolls a \textbf{0}, \textbf{1}, or \textbf{2} on
+either die when attempting an agriculture task receives an Experience
+Point.
+
+\skill{asteroid mining}{6 Levels/Limit: None}\label{sec:skill-asteroid-mining}
+
+The character is familiar with the business and techniques of mining
+and processing resources from asteroids and small planetoids.  The
+tasks and procedures of this skill are identical to those of the
+\emph{mining} skill.
+
+\skill{environs}{6 Levels/Limit: None}\label{sec:skill-environs}
+
+As explained in character generation, each character receives positive
+or negative Skill Levels in all 33 environs shown on the Environ Skill
+Display.  A character's Skill Level in the environ he is in is used
+during an encounter for the following:
+
+\begin{itemize}
+\item \emph{Twice} the highest Environ Skill Level among the
+  characters in the party is \emph{subtracted} from the awareness
+  chance during a creature or NPC encounter (see \ref{sec:awareness}).
+\item The character chosen as the party's \emph{leader} during an Action
+  Round (see \ref{sec:initiative}) adds his Environ Skill Level to his
+  \emph{initiative die roll}.
+\item A character's Environ Skill Level is added to his chance to
+  perform an \emph{ambush} task (see the ambush skill,
+  \ref{sec:military-skills}). 
+\end{itemize}
+
+The Experience Point system explained in \ref{sec:acqu-impr-skills} is
+not used to improve Environ Skill Levels.  Instead, the GM ``hands
+out'' Environ Skill Level increases.  If a character spends one week
+(give or take a day, at the GM's discretion) adventuring in a
+particular environ away from urbanized areas, the GM should reward him
+with a Skill Level increase of one in that environ.  No single environ
+skill may be increased beyond Level \textbf{6}.
+
+\skill{gravity}{5 Levels/Limit: None}\label{sec:skill-gravity}
+
+As explained in character generation, each character receives positive
+and negative Skill Levels in all four gravity types shown on the
+Gravity Skill Display.  A character's Skill Level in the gravity type
+he is in is added to his \emph{Action Round Movement Rate} (see
+\ref{sec:action-round-movement}).  
+
+A character's Gravity Skill Level
+also affects his chance of avoiding a gravity-related accident (see
+\emph{Adventure Guide} \ref{AG-sec:accidents}).
+
+Experience Points are not used to improve Gravity Skills Levels.  If a
+character spends eight weeks (give or take a week, at the GM's
+discretion) adventuring in a particular gravity type, the GM should
+reward him with a Skill Level increase of \textbf{1} in that gravity
+type.  No single gravity skill may be increased beyond Level
+\textbf{5}.
+
+\skill{mining}{6 Levels/Limit: None}\label{sec:skill-mining}
+
+The character is familiar with the business and technique of planetary
+mineral and metal mining and processing.  After a minable resource has
+been found in an environ (see the geology skill,
+\ref{sec:scientific-skills}), the character may attempt to separate a
+quantity of it from the ground in raw form.  Simple digging tools, a
+\emph{rock blaster} or a robot with a \emph{miner} system are
+required.  The latter two items provide the character with a Skill
+Level increase.  After raw ore has been mined, the character may refine
+it if he has a robot with a miner system (the Skill Level increase
+applies).  The character's \emph{Intelligence Rating} and the
+\emph{square} of his \emph{Skill Level} are added to the base chance.
+
+\begin{tasklist}
+\item Mine raw ore from an identified source: \textbf{25\%}.
+\item Refine previously mined raw ore: \textbf{0\%}.
+\end{tasklist}  
+
+Each of these task requires \textbf{12} hours to attempt.  This time
+may be reduced if the attempt is successful (see the task procedure in
+the chapter introduction).  For every percentage point \emph{over} the
+modified chance the dice result indicates, the amount of ore mined or
+processed is reduced by \textbf{5\%} (the time required is not
+increased).  If the dice result is greater than the chance by
+\textbf{20} or more, the attempt fails completely.
+
+The GM determines the quantity of ore that a character may mine in a
+single attempt as follows: locate the ore on the World Resource Table
+(\ref{tab:world-resource}) and note the number of environs the Table states
+that the ore may appear in (if the ore is abundant on the world,
+double this number).  The \emph{square} of the number represents the
+number of \emph{kilograms of refined ore} that may be mined in a
+single attempt (its actual weight in its raw form will be considerably
+more). \textbf{Exception}: If the World Resource Table states that the
+ore exists at a \emph{site} only, \emph{one gram} of the ore may be
+mined in a single attempt.
+
+These tasks are not used when the character is dealing with larger
+mining facilities.  In such a case, his Skill Level would effect the
+administration of the factory and the efficiency with which it
+operates.
+
+A character who rolls a \textbf{0}, \textbf{1} or \textbf{2} on either
+die when attempting to mine or process ores receives an Experience
+Point.
+
+\skill{survival}{8 Levels/Limit: Intelligence}\label{sec:skill-survival}
+
+The character is experienced in ``living off the land'' and staying
+alive with a minimum of supplies in the wild.  If the character is in a
+party that has exhausted its supply of food and water, he may attempt
+to forage for the basic necessities to sustain himself and his
+comrades.  The survival skill will \emph{not} aid a party that has exhausted
+its oxygen supply.  A survival task takes \textbf{6} hours to conduct
+and if successful, lasts for one full day (including the time spent
+foraging).  The character chooses the most favourable task listed below
+that applies to the party's situation.  He adds his \emph{Survival}
+Skill Level to the \emph{highest Environ Skill Level in the party} and
+\emph{squares} the \emph{sum} (a negative sum is considered \textbf{0} for
+this purpose).  The result of this calculation \emph{and his
+Intelligence Rating} are added to the base chance.
+
+\begin{tasklist}
+\item Survive in environ with edible game and/or plants: \textbf{90\%}
+\item Survive in environ with arable land: \textbf{60\%}
+\item Survive in environ with any type of vegetation: \textbf{30\%}
+\item Survive on world that contains water: \textbf{--50\%}
+\item Survive on world that contains no water: \textbf{--150\%}
+\end{tasklist}
+
+For every \textbf{10} (or fraction thereof) below the modified chance
+the dice result indicates, one character may be kept alive and well.
+If the dice result is over the modified chance at all, no characters
+receive the basic necessities of life.  The GM determines the effect of
+lack of food and water, depending on the party's current situation.
+
+A character who rolls a \textbf{0}, \textbf{1} or \textbf{2} on either
+die when using his survival skill receives an Experience Point.
+
+\skill{urban}{6 Levels/Limit: None}\label{sec:skill-urban}
+
+A character may receive an Urban Skill Level during character
+generation.  A character's urban skill is used and improved when the
+character is in a built-up area (an area where the natural features
+have been entirely replaced with artificial structures and technology)
+exactly as an environ skill is used and improved.
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "gm_guide"
+%%% End: 
