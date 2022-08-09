@@ -22,7 +22,7 @@ scanning the text from the various Universe books and supplements,
 turning them into electronic format.  This distribution is derived
 from that effort, with changes made here and there to conform more
 closely to the original books.  The original books, both first and
-second edition, alng with other play aids, are available at
+second edition, along with other play aids, are available at
 [spigames.net](http://www.spigames.net/rules_downloads.htm#U).
 
 
