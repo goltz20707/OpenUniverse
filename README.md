@@ -23,7 +23,7 @@ turning them into electronic format.  This distribution is derived
 from that effort, with changes made here and there to conform more
 closely to the original books.  The original books, both first and
 second edition, alng with other play aids, are available at
-[spigames.net]{http://www.spigames.net/rules_downloads.htm#U).
+[spigames.net](http://www.spigames.net/rules_downloads.htm#U).
 
 
 What do I need to play?
