@@ -1,3 +1,8 @@
+*(Note: as of 1 September 2022, this effort is moribund.  You can find PDF versions 
+of the original sourcebooks, plus supplemental material, at 
+[my Dropbox site](https://www.dropbox.com/sh/nqu7o8uoz8ezxth/AACpd9Ar5lInYBH2HfRN9e0za?dl=0).
+--J.P.G.)*
+
 # OpenUniverse
 An open-source version of the out-of-print role-playing game “Universe” from SPI.
 
